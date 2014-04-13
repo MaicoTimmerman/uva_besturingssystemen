@@ -1,11 +1,13 @@
 # Enter your UVAID here
 UVAID=10542590
-PROGNAME=shell
+NAME=Timmerman
+EXERCISE=1
+PROGNAME=promptard
 
 MKDIR=mkdir
 PACK=tar -zcvf
 CC=gcc
-PREFIXCFLAGS=-Wall -ggdb -pedantic -std=c99
+PREFIXCFLAGS=-Wall -ggdb -pedantic -std=c99 -D_POSIX_SOURCE
 LIBS=
 CP=cp -r
 RM=rm -rf
@@ -32,7 +34,7 @@ remove:
 .PHONY: tarball
 tarball: $(PROGNAME)
 	$(MAKE) remove
-	$(MKDIR) $(UVAID)_$(PROGNAME)
-	$(CP) * $(UVAID)_$(PROGNAME) || true
-	$(PACK) $(UVAID)_$(PROGNAME).tar.gz $(UVAID)_$(PROGNAME)/*
-	$(RM) $(UVAID)_$(PROGNAME)
+	$(MKDIR) OS_Opgave$(EXERCISE)_$(UVAID)_$(NAME)
+	$(CP) * OS_Opgave$(EXERCISE)_$(UVAID)_$(NAME) || true
+	$(PACK) OS_Opgave$(EXERCISE)_$(UVAID)_$(NAME).tar.gz OS_Opgave$(EXERCISE)_$(UVAID)_$(NAME)/*
+	$(RM) OS_Opgave$(EXERCISE)_$(UVAID)_$(NAME)
