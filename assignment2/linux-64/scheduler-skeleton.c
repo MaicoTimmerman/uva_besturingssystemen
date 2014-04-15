@@ -5,7 +5,7 @@
 #include "mem_alloc.h"
 
 /* This file contains a bare bones skeleton for the scheduler function
-   for the second assignment for the OSN course of the 2005 fall 
+   for the second assignment for the OSN course of the 2005 fall
    semester.
    Author:
 
@@ -90,7 +90,7 @@ static void ReclaimMemory()
 }
 
 /* You may want to have the last word... */
- 
+
 static void my_finale()
 {
     /* Your very own code goes here */
