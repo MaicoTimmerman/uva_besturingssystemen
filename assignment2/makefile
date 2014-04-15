@@ -1,6 +1,6 @@
 # Enter your UVAID here
 UVAID=10542590
-NAME=Timmerman
+NAME=Timmerman&Kruger
 EXERCISE=2
 PROGNAME=scheduling
 
