@@ -151,4 +151,4 @@ function *reset_stats;
    De door de practicanten te schrijven routine
 ****************************************************************************e */
 
-void   schedule(event_type event);
+void schedule(event_type event);
