@@ -1,15 +1,15 @@
-/* Dit is de mem_alloc.h file zoals beloofd in de practicumhandleiding */
+
 /*                                                                     */
-/*   Auteur:	Dick van Albada                                        */
-/*		Faculteit Wiskunde en Informatica		       */
-/*		Universiteit van Amsterdam			       */
-/*   Datum:	5 oktober 1993                                         */
-/*   Versie:	0.01                                                   */
-/* 								       */
+/*   Auteur:    Dick van Albada                                        */
+/*      Faculteit Wiskunde en Informatica              */
+/*      Universiteit van Amsterdam                 */
+/*   Datum: 5 oktober 1993                                         */
+/*   Versie:    0.01                                                   */
+/*                                     */
 
 /* Constanten */
 
-#define MEM_SIZE	(32768)
+#define MEM_SIZE    (32768)
 
 /* Procedures */
 
@@ -45,10 +45,10 @@ void mem_available(long *empty, long *large, long *n_holes);
 
 /* mem_available vertelt de gebruiker hoeveel geheugen er nog
    beschikbaar is
-   empty:	totale hoeveelheid vrije ruimte
-   large:	omvang van het grootste gat, gecorrigeerd voor
-		administratie
-   n_holes:	het aantal gaten
+   empty:   totale hoeveelheid vrije ruimte
+   large:   omvang van het grootste gat, gecorrigeerd voor
+        administratie
+   n_holes: het aantal gaten
    */
 
 void mem_exit();
