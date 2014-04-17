@@ -141,16 +141,18 @@ static int enqueue(pcb ** proc_queue, pcb** proc) {
 }
 
 static int dequeue(pcb ** proc_queue, pcb** proc) {
-    pcb *queue_front, new_queue_front, next;
-    
-    if(proc_queue &&  proc) {
+    pcb *queue_front; 
+    pcb *new_queue_front;
+    pcb *next;
+
+    if (proc_queue &&  proc) {
         queue_front = *proc_queue;
         new_queue_front = *proc;
-        
-        if(first_process) {
+
+        if (queue_front) {
             next = queue_front->next;
             queue_front->next = NULL;
-            new_queue_front = first_process;
+            new_queue_front = queue_front;
             next->prev = NULL;
             queue_front = next;
         }
@@ -163,6 +165,6 @@ static int dequeue(pcb ** proc_queue, pcb** proc) {
         perror("Error in dequeue");
         return EXIT_FAILURE;
     }
-    
+
     return EXIT_SUCCESS;
 }
