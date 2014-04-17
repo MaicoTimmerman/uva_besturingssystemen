@@ -2,7 +2,7 @@
 UVAID=10542590
 NAME=Timmerman&Kruger
 EXERCISE=2
-PROGNAME=scheduling
+PROGNAME=schedsim2
 
 MKDIR=mkdir
 PACK=tar -zcvf
@@ -11,13 +11,13 @@ PREFIXCFLAGS=-Wall -Wextra -Werror -ggdb -pedantic-errors -std=c99 -O2
 LIBS=-lm
 CP=cp -r
 RM=rm -rf
-OFILES=schedule.o mem_alloc.o simul2014.o mt199937ar.o
+OFILES=schedule.o mem_alloc.o simul2014.o mt19937ar.o
 
 $(PROGNAME): $(OFILES)
 	$(CC) $(PREFIXCFLAGS) $(OFILES) -o $(PROGNAME) $(LIBS)
 
-%.o: %.c
-	$(CC) $(PREFIXCFLAGS) -c $< -o ./$@
+schedule.o: schedule.c
+	$(CC) $(PREFIXCFLAGS) -c $< -o $@
 
 .PHONY: run
 run: $(PROGNAME)

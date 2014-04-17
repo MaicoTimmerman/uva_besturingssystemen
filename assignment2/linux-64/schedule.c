@@ -35,7 +35,7 @@ static void CPU_scheduler() {
 
 static void GiveMemory() {
    int index;
-   pcb *proc1, *proc2, *proc3;
+   pcb __attribute__((unused))*proc1, *proc2, __attribute__((unused))*proc3;
 
    proc2 = new_proc;
    while (proc2) {
