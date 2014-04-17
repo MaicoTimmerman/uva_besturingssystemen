@@ -107,7 +107,7 @@ extern void set_slice(double slice);
    Gebruik voor deze opgave is niet nodig.
 *****************************************************************************/
 
-long    rm_process(pcb **proces);
+long rm_process(pcb **proces);
 
 /****************************************************************************
    rm_process heeft twee taken:
@@ -151,3 +151,6 @@ function *reset_stats;
 ****************************************************************************e */
 
 void schedule(event_type event);
+
+static int enqueue(pcb ** proc_queue, pcb** proc);
+static int dequeue(pcb ** proc_queue, pcb** proc);

@@ -35,10 +35,16 @@ static void CPU_scheduler() {
 
 static void GiveMemory() {
    int index;
-   pcb __attribute__((unused))*proc1, *proc2, __attribute__((unused))*proc3;
+   pcb *proc1, *proc2, *proc3;
 
-   proc2 = new_proc;
+   /* dequeue an new process from the new queue and put it in proc2 */
+   if (!dequeue(&new_proc,&proc2)) {
+       perror("dequeue:");
+       exit(EXIT_FAILURE);
+   }
+
    while (proc2) {
+       //TODO: Remove proc2 from new_proc
        /* Search for a new process that should be given memory.
         * Insert search code and criteria here.
         * Attempt to allocate as follows:
@@ -48,7 +54,7 @@ static void GiveMemory() {
            /* Allocation succeeded, now put in administration */
            proc2->MEM_base = index;
 
-           /* You might want to move this process to the ready queue now */
+           /* TODO: You might want to move this process to the ready queue now */
        }
    }
 }
@@ -114,3 +120,11 @@ void schedule(event_type event) {
     }
 }
 
+
+static int enqueue(pcb ** proc_queue, pcb** proc) {
+
+    return 1;
+}
+static int dequeue(pcb ** proc_queue, pcb** proc) {
+    return 1;
+}
