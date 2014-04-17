@@ -125,6 +125,30 @@ static int enqueue(pcb ** proc_queue, pcb** proc) {
 
     return 1;
 }
+
 static int dequeue(pcb ** proc_queue, pcb** proc) {
-    return 1;
+    pcb *queue_front, new_queue_front, next;
+    
+    if(proc_queue &&  proc) {
+        queue_front = *proc_queue;
+        new_queue_front = *proc;
+        
+        if(first_process) {
+            next = queue_front->next;
+            queue_front->next = NULL;
+            new_queue_front = first_process;
+            next->prev = NULL;
+            queue_front = next;
+        }
+        else {
+            perror("Error queue empty");
+            return EXIT_FAILURE;
+        }
+    }
+    else {
+        perror("Error in dequeue");
+        return EXIT_FAILURE;
+    }
+    
+    return EXIT_SUCCESS;
 }
