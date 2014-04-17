@@ -7,11 +7,11 @@ PROGNAME=scheduling
 MKDIR=mkdir
 PACK=tar -zcvf
 CC=gcc
-PREFIXCFLAGS=-Wall -Wextra -Werror -ggdb -pedantic-errors -std=c99
-LIBS=
+PREFIXCFLAGS=-Wall -Wextra -Werror -ggdb -pedantic-errors -std=c99 -O2
+LIBS=-lm
 CP=cp -r
 RM=rm -rf
-OFILES=$(subst .c,.o,$(wildcard *.c))
+OFILES=schedule.o mem_alloc.o simul2014.o mt199937ar.o
 
 $(PROGNAME): $(OFILES)
 	$(CC) $(PREFIXCFLAGS) $(OFILES) -o $(PROGNAME) $(LIBS)
@@ -25,11 +25,11 @@ run: $(PROGNAME)
 
 .PHONY: clean
 clean:
-	$(RM) *.o $(UVAID)_$(PROGNAME).tar.gz
+	$(RM) schedule.o $(UVAID)_$(PROGNAME).tar.gz
 
 .PHONY: remove
 remove:
-	$(RM) *.o $(PROGNAME) $(UVAID)_$(PROGNAME).tar.gz
+	$(RM) schedule.o $(PROGNAME) $(UVAID)_$(PROGNAME).tar.gz
 
 .PHONY: tarball
 tarball: $(PROGNAME)

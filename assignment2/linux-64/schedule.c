@@ -89,28 +89,28 @@ void schedule(event_type event) {
         mem_init(memory);
         finale = my_finale;
         first = 0;
-        /* Add your own initialisation code here */
+        /* TODO: Add your own initialisation code here */
     }
 
     switch (event) {
-    /* You may want to do this differently */
-    case NewProcess_event:
-        GiveMemory();
-        break;
-    case Time_event:
-    case IO_event:
-        CPU_scheduler();
-        break;
-    case Ready_event:
-        break;
-    case Finish_event:
-        ReclaimMemory();
-        GiveMemory();
-        CPU_scheduler();
-        break;
-    default:
-        printf("I cannot handle event nr. %d\n", event);
-        break;
+        /* FIXME: You may want to do this differently */
+        case NewProcess_event:
+            GiveMemory();
+            break;
+        case Time_event:
+        case IO_event:
+            CPU_scheduler();
+            break;
+        case Ready_event:
+            break;
+        case Finish_event:
+            ReclaimMemory();
+            GiveMemory();
+            CPU_scheduler();
+            break;
+        default:
+            printf("I cannot handle event nr. %d\n", event);
+            break;
     }
 }
 
