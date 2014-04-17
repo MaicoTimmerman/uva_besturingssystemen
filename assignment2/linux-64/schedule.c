@@ -122,8 +122,22 @@ void schedule(event_type event) {
 
 
 static int enqueue(pcb ** proc_queue, pcb** proc) {
+    if (!proc_queue || !proc || !(*proc)) {
+        return EXIT_FAILURE;
+    }
 
-    return 1;
+    pcb* stub;
+
+    /* Go to the end of the list */
+    stub = *proc_queue;
+    while (stub->next)
+        stub = stub->next;
+
+    /* Set the end of the queue to the process */
+    stub->next = *proc;
+    (*proc)->prev = stub;
+
+    return EXIT_SUCCESS;
 }
 static int dequeue(pcb ** proc_queue, pcb** proc) {
     return 1;
