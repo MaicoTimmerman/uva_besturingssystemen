@@ -50,15 +50,14 @@ typedef enum EVENT {NewProcess_event, Time_event, Ready_event, IO_event,
        gevuld. Niet veranderen.
 ****************************************************************************/
 
-typedef struct PCB
-{
-    void    *SIM_pcb;
-    void    *your_admin;
+typedef struct PCB {
+    void *SIM_pcb;
+    void *your_admin;
     struct PCB  *prev,
-        *next;
+                *next;
     long    MEM_need,
-        MEM_base,
-        proc_num;
+            MEM_base,
+            proc_num;
 } pcb;
 
 /****************************************************************************
