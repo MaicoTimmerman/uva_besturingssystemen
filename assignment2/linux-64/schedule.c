@@ -35,13 +35,10 @@ static void CPU_scheduler() {
 
 static void GiveMemory() {
    int index;
+   int errnum;
    pcb *proc = NULL;
 
-   /* dequeue an new process from the new queue and put it in proc2 */
-   if (!dequeue(&new_proc,&proc)) {
-       perror("dequeue:");
-       exit(EXIT_FAILURE);
-   }
+   proc = new_proc;
 
    while (proc) {
        /* Search for a new process that should be given memory.
@@ -52,7 +49,11 @@ static void GiveMemory() {
        if (index >= 0) {
            /* Allocation succeeded, now put in administration */
            proc->MEM_base = index;
+           dequeue(&new_proc);
            enqueue(&ready_proc,&proc);
+           proc = new_proc;
+       }
+       else {
        }
    }
 }
@@ -144,29 +145,26 @@ static int enqueue(pcb ** proc_queue, pcb** proc) {
     return EXIT_SUCCESS;
 }
 
-static int dequeue(pcb ** proc_queue, pcb** proc) {
+static int dequeue(pcb ** proc_queue) {
     pcb *queue_front;
-    pcb *new_queue_front;
 
-    if (proc_queue && proc) {
+    if (proc_queue) {
         queue_front = *proc_queue;
 
         if (queue_front) {
-            new_queue_front = queue_front->next; //Move pointer to next.
-            (*proc) = queue_front; //Set return value.
-			queue_front->next = NULL; //Returned value is not in a queue.
-            if (new_queue_front) {
-                new_queue_front->prev = NULL; //Queue front has no previous.
+            queue_front = queue_front->next; //Move pointer to next.
+            if (queue_front->prev) {
+                queue_front->prev->next = NULL;
             }
-            queue_front = new_queue_front; //Set the new queue back in the pointer.
-        }
-        else {
-            return EXIT_FAILURE;
+            queue_front->prev = NULL;
+        } else {
+            //queue front is null
+            return 2;
         }
     }
     else {
-        printf("Error in dequeue");
-        return EXIT_FAILURE;
+        //proc_queue or proc is null
+        return 3;
     }
 
     return EXIT_SUCCESS;
