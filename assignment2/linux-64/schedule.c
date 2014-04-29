@@ -143,26 +143,23 @@ static int enqueue(pcb ** proc_queue, pcb** proc) {
 static int dequeue(pcb ** proc_queue, pcb** proc) {
     pcb *queue_front; 
     pcb *new_queue_front;
-    pcb *next;
 
-    if (proc_queue &&  proc) {
+    if (proc_queue && proc) {
         queue_front = *proc_queue;
-        new_queue_front = *proc;
 
         if (queue_front) {
-            next = queue_front->next;
-            queue_front->next = NULL;
-            new_queue_front = queue_front;
-            next->prev = NULL;
-            queue_front = next;
+            new_queue_front = queue_front->next; //Move pointer to next.
+            *proc = queue_front; //Set return value.
+			queue_front->next = NULL; //Returned value is not in a queue.
+            new_queue_front->prev = NULL; //Queue front has no previous.
+            queue_front = new_queue_front; //Set the new queue back in the pointer.
         }
         else {
-            perror("Error queue empty");
             return EXIT_FAILURE;
         }
     }
     else {
-        perror("Error in dequeue");
+        printf("Error in dequeue");
         return EXIT_FAILURE;
     }
 
