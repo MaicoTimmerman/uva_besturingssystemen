@@ -35,26 +35,24 @@ static void CPU_scheduler() {
 
 static void GiveMemory() {
    int index;
-   pcb *proc1, *proc2, *proc3;
+   pcb *proc = NULL;
 
    /* dequeue an new process from the new queue and put it in proc2 */
-   if (!dequeue(&new_proc,&proc2)) { //TODO: Check dequeue function
+   if (!dequeue(&new_proc,&proc)) {
        perror("dequeue:");
        exit(EXIT_FAILURE);
    }
 
-   while (proc2) {
+   while (proc) {
        /* Search for a new process that should be given memory.
         * Insert search code and criteria here.
         * Attempt to allocate as follows:
         */
-       index = mem_get(proc2->MEM_need);
+       index = mem_get(proc->MEM_need);
        if (index >= 0) {
            /* Allocation succeeded, now put in administration */
-           proc2->MEM_base = index;
-
-           /* TODO: You might want to move this process to the ready queue now */
-           enqueue(&ready_proc,&proc2);
+           proc->MEM_base = index;
+           enqueue(&ready_proc,&proc);
        }
    }
 }
@@ -132,12 +130,16 @@ static int enqueue(pcb ** proc_queue, pcb** proc) {
 
     /* Go to the end of the list */
     stub = *proc_queue;
-    while (stub->next)
-        stub = stub->next;
+    if (stub) {
+        while (stub->next)
+            stub = stub->next;
 
-    /* Set the end of the queue to the process */
-    stub->next = *proc;
-    (*proc)->prev = stub;
+        /* Set the end of the queue to the process */
+        stub->next = *proc;
+        (*proc)->prev = stub;
+    } else {
+        stub = *proc;
+    }
 
     return EXIT_SUCCESS;
 }
@@ -151,9 +153,11 @@ static int dequeue(pcb ** proc_queue, pcb** proc) {
 
         if (queue_front) {
             new_queue_front = queue_front->next; //Move pointer to next.
-            *proc = queue_front; //Set return value.
+            (*proc) = queue_front; //Set return value.
 			queue_front->next = NULL; //Returned value is not in a queue.
-            new_queue_front->prev = NULL; //Queue front has no previous.
+            if (new_queue_front) {
+                new_queue_front->prev = NULL; //Queue front has no previous.
+            }
             queue_front = new_queue_front; //Set the new queue back in the pointer.
         }
         else {
