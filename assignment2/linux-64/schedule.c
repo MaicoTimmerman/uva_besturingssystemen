@@ -148,7 +148,7 @@ static int dequeue(pcb ** proc_queue) {
     pcb *queue_front;
     pcb *new_queue_front;
 
-    if (proc_queue) {
+    if (proc_queue && !(*proc_queue)) {
         queue_front = *proc_queue;
         new_queue_front = queue_front->next; //Move pointer to next.
         queue_front->next = NULL;
