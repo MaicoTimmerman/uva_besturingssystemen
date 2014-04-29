@@ -153,4 +153,4 @@ function *reset_stats;
 void schedule(event_type event);
 
 static int enqueue(pcb ** proc_queue, pcb** proc);
-static int dequeue(pcb ** proc_queue, pcb** proc);
+static int dequeue(pcb ** proc_queue);

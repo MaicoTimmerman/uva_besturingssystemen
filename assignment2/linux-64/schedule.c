@@ -147,22 +147,23 @@ static int enqueue(pcb ** proc_queue, pcb** proc) {
 
 static int dequeue(pcb ** proc_queue) {
     pcb *queue_front;
+    pcb *new_queue_front;
 
     if (proc_queue) {
         queue_front = *proc_queue;
 
         if (queue_front) {
-            queue_front = queue_front->next; //Move pointer to next.
-            if (queue_front->prev) {
-                queue_front->prev->next = NULL;
+            new_queue_front = queue_front->next; //Move pointer to next.
+            queue_front->next = NULL;
+            if (new_queue_front) {
+                new_queue_front->prev = NULL;
             }
-            queue_front->prev = NULL;
+            queue_front = new_queue_front;
         } else {
             //queue front is null
             return 2;
         }
-    }
-    else {
+    } else {
         //proc_queue or proc is null
         return 3;
     }
