@@ -35,7 +35,6 @@ static void CPU_scheduler() {
 
 static void GiveMemory() {
    int index;
-   int errnum;
    pcb *proc = NULL;
 
    proc = new_proc;
@@ -151,18 +150,12 @@ static int dequeue(pcb ** proc_queue) {
 
     if (proc_queue) {
         queue_front = *proc_queue;
-
-        if (queue_front) {
-            new_queue_front = queue_front->next; //Move pointer to next.
-            queue_front->next = NULL;
-            if (new_queue_front) {
-                new_queue_front->prev = NULL;
-            }
-            queue_front = new_queue_front;
-        } else {
-            //queue front is null
-            return 2;
+        new_queue_front = queue_front->next; //Move pointer to next.
+        queue_front->next = NULL;
+        if (new_queue_front) {
+            new_queue_front->prev = NULL;
         }
+        queue_front = new_queue_front;
     } else {
         //proc_queue or proc is null
         return 3;
