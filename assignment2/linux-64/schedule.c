@@ -40,6 +40,7 @@ static void GiveMemory() {
    proc = new_proc;
 
    while (proc) {
+
        /* Search for a new process that should be given memory.
         * Insert search code and criteria here.
         * Attempt to allocate as follows:
@@ -49,6 +50,7 @@ static void GiveMemory() {
            /* Allocation succeeded, now put in administration */
            proc->MEM_base = index;
            dequeue(&new_proc);
+
            enqueue(&ready_proc,&proc);
            proc = new_proc;
        }
@@ -122,14 +124,17 @@ void schedule(event_type event) {
 /* Function to enqueue a pcb from the given queue and
  * place it in the given process pointer */
 static int enqueue(pcb ** proc_queue, pcb** proc) {
+
+    pcb* stub;
+
+    /* Check for NULL pointers and cannot put proc in empty pointer */
     if (!proc_queue || !proc || !(*proc)) {
         return EXIT_FAILURE;
     }
 
-    pcb* stub;
-
     /* Go to the end of the list */
     stub = *proc_queue;
+
     if (stub) {
         while (stub->next)
             stub = stub->next;
@@ -138,28 +143,31 @@ static int enqueue(pcb ** proc_queue, pcb** proc) {
         stub->next = *proc;
         (*proc)->prev = stub;
     } else {
-        stub = *proc;
+        *proc_queue = *proc;
     }
 
     return EXIT_SUCCESS;
 }
 
 static int dequeue(pcb ** proc_queue) {
-    pcb *queue_front;
+
     pcb *new_queue_front;
 
-    if (proc_queue && (*proc_queue)) {
-        queue_front = *proc_queue;
-        new_queue_front = queue_front->next; //Move pointer to next.
-        queue_front->next = NULL;
-        if (new_queue_front) {
-            new_queue_front->prev = NULL;
-        }
-        queue_front = new_queue_front;
-    } else {
-        //proc_queue or proc is null
-        return 3;
+    /* Check for NULL pointer and cannot dequeue from empty queue. */
+    if (!(proc_queue && (*proc_queue))) {
+        return EXIT_FAILURE;
     }
+
+    /* Move pointer to next value. */
+    new_queue_front = (*proc_queue)->next;
+
+    /* Unchain the dequeue'd item */
+    (*proc_queue)->next = NULL;
+    if (new_queue_front) {
+        new_queue_front->prev = NULL;
+    }
+
+    (*proc_queue) = new_queue_front;
 
     return EXIT_SUCCESS;
 }
