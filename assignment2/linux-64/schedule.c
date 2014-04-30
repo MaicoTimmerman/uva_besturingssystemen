@@ -149,9 +149,11 @@ static int enqueue(pcb ** proc_queue, pcb** proc) {
     return EXIT_SUCCESS;
 }
 
+/* Remove given item out of the queue */
 static int dequeue(pcb ** proc_queue) {
 
-    pcb *new_queue_front;
+    pcb *queue_element_next;
+    pcb *queue_element_prev;
 
     /* Check for NULL pointer and cannot dequeue from empty queue. */
     if (!(proc_queue && (*proc_queue))) {
@@ -159,15 +161,43 @@ static int dequeue(pcb ** proc_queue) {
     }
 
     /* Move pointer to next value. */
-    new_queue_front = (*proc_queue)->next;
+    queue_element_next = (*proc_queue)->next;
+    queue_element_prev = (*proc_queue)->prev;
 
-    /* Unchain the dequeue'd item */
+    /* Remove all references from the removed queue item. */
     (*proc_queue)->next = NULL;
-    if (new_queue_front) {
-        new_queue_front->prev = NULL;
+    (*proc_queue)->prev = NULL;
+
+    /*
+     * Someone where in the middle of the linked list
+     * No need to move the queue pointer
+     */
+    if (queue_element_prev && queue_element_next) {
+        queue_element_prev->next = queue_element_next;
+        queue_element_next->prev = queue_element_prev;
+    } else if (queue_element_prev || queue_element_next) {
+        /*
+         * The last element of the queue, no next value on removed element.
+         * No need to move the queue pointer, there are preccesor(s).
+         */
+        if (queue_element_prev) {
+            queue_element_prev->next = NULL;
+        }
+        /*
+         * The first element of the queue, no prev value on the removed element.
+         * Queue pointer needs to be set to the next value.
+         */
+        if (queue_element_next) {
+            queue_element_next->prev = NULL;
+            (*proc_queue) = queue_element_next;
+        }
+    }
+    /* Only element in the queue. Set the queue pointer to NULL. */
+    else {
+        (*proc_queue) = NULL;
     }
 
-    (*proc_queue) = new_queue_front;
+
 
     return EXIT_SUCCESS;
 }
