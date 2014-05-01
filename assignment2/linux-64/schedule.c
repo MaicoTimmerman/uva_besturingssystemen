@@ -104,6 +104,7 @@ void schedule(event_type event) {
             GiveMemory();
             break;
         case Time_event:
+			round_robin();
         case IO_event:
             CPU_scheduler();
             break;
@@ -118,6 +119,14 @@ void schedule(event_type event) {
             printf("I cannot handle event nr. %d\n", event);
             break;
     }
+}
+
+/* A function to preform a round robbin. */
+static void round_robin() {
+	static int slice = 100; // Juiste slice kiezen?
+
+	dequeue(&ready_proc);
+	set_slice(slice);
 }
 
 
@@ -196,8 +205,6 @@ static int dequeue(pcb ** proc_queue) {
     else {
         (*proc_queue) = NULL;
     }
-
-
 
     return EXIT_SUCCESS;
 }
