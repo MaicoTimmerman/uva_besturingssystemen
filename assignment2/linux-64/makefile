@@ -23,6 +23,10 @@ schedule.o: schedule.c
 run: $(PROGNAME)
 	./$(PROGNAME)
 
+.PHONY: debug
+debug: $(PROGNAME)
+	./gdb $(PROGNAME)
+
 .PHONY: clean
 clean:
 	$(RM) schedule.o $(UVAID)_$(PROGNAME).tar.gz

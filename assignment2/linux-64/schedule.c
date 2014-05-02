@@ -34,7 +34,10 @@ static void CPU_scheduler() {
 
 
 static void GiveMemory() {
+
    int index;
+   pcb *stub;
+
    int n_tries = 0;
    pcb *proc = NULL;
 
@@ -48,22 +51,32 @@ static void GiveMemory() {
         * Attempt to allocate as follows:
         */
        index = mem_get(proc->MEM_need);
+
+       /* Stub starts at the start of the queue and finds the n'th element. */
+       stub = new_proc;
+       while ((n_tries < n_memory_alloc_tries) && stub) {
+           fprintf(stdout, "stub = %p\n", (void*)stub);
+           stub = stub->next;
+       }
+       fprintf(stdout, "proc = %p\n", (void*)proc);
+
+       /* Allocation succeeded, now put in ready queue. */
        if (index >= 0) {
 
-           /* Allocation succeeded, now put in administration */
            proc->MEM_base = index;
-           dequeue(&new_proc);
+           fprintf(stdout, "proc %p\n", (void*)proc);
+           fprintf(stdout, "&proc %p\n", (void*)&proc);
+           dequeue(&proc);
+           enqueue(&ready_proc, &proc);
 
-           enqueue(&ready_proc,&proc);
-           proc = new_proc;
+           proc = stub;
+           n_tries = 0;
        }
        else {
-           /* TODO: Try n more entries. */
-           break;
+           proc = stub;
+           n_tries++;
        }
    }
-
-   return;
 }
 
 /* Here we reclaim the memory of a process after it has finished */
@@ -217,6 +230,10 @@ static int dequeue(pcb ** proc_element) {
     queue_element_next = (*proc_element)->next;
     queue_element_prev = (*proc_element)->prev;
 
+    /* Remove all references from the removed queue item. */
+    (*proc_element)->next = NULL;
+    (*proc_element)->prev = NULL;
+
     /*
      * Someone where in the middle of the linked list
      * No need to move the queue pointer
@@ -245,10 +262,6 @@ static int dequeue(pcb ** proc_element) {
     else {
         (*proc_element) = NULL;
     }
-
-    /* Remove all references from the removed queue item. */
-    (*proc_element)->next = NULL;
-    (*proc_element)->prev = NULL;
 
     return EXIT_SUCCESS;
 }
