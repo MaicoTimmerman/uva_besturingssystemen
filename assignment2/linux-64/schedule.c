@@ -41,7 +41,7 @@ static void GiveMemory() {
 
    proc = new_proc;
 
-   while (proc) {
+   while (proc && (n_tries < n_memory_alloc_tries)) {
 
        /*
         * Search for a new process that should be given memory.
@@ -60,11 +60,8 @@ static void GiveMemory() {
        }
        else {
            /* Increase tries and continue. */
-           if (n_tries++ < n_memory_alloc_tries) {
-               proc = proc->next;
-           } else {
-               proc = NULL;
-           }
+           proc = proc->next;
+           n_tries++;
        }
    }
 
