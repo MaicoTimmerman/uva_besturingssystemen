@@ -1,23 +1,24 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#include "schedule.h"
-#include "mem_alloc.h"
-
 /* This file contains a bare bones skeleton for the scheduler function
  * for the second assignment for the OSN course of the 2005 fall
  * semester.
  *
  * Author
- * G.D. van Albada
+ * Joe Kruger & Maico Timmerman
  * Section Computational Science
- * Universiteit van Amsterd
+ * Universiteit van Amsterdam
  *
  * Date:
  * October 23, 2003
  * Modified:
  * September 29, 2005
  */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "schedule.h"
+#include "mem_alloc.h"
+
 
 
 /* This variable will simulate the allocatable memory */
@@ -59,9 +60,8 @@ static void GiveMemory() {
            proc = new_proc;
        }
        else {
-           /* Increase tries and continue. */
-           proc = proc->next;
-           n_tries++;
+           /* TODO: Try n more entries. */
+           break;
        }
    }
 
@@ -125,7 +125,6 @@ void schedule(event_type event) {
     }
 
     switch (event) {
-        /* FIXME: You may want to do this differently */
         case NewProcess_event:
             GiveMemory();
             break;
@@ -155,6 +154,7 @@ static void round_robin() {
 
     /* Test if swapping is neccesary */
     if (ready_proc && ready_proc->next) {
+        fprintf(stderr, "Swapping!");
 
         /* Move ready queue one further. */
         old_front = ready_proc;
@@ -206,23 +206,23 @@ static int enqueue(pcb ** proc_queue, pcb** proc) {
 }
 
 /* Remove given item out of the queue */
-static int dequeue(pcb ** proc_queue) {
+static int dequeue(pcb ** proc_element) {
 
     pcb *queue_element_next;
     pcb *queue_element_prev;
 
     /* Check for NULL pointer and cannot dequeue from empty queue. */
-    if (!(proc_queue && (*proc_queue))) {
+    if (!(proc_element && (*proc_element))) {
         return EXIT_FAILURE;
     }
 
     /* Move pointer to next value. */
-    queue_element_next = (*proc_queue)->next;
-    queue_element_prev = (*proc_queue)->prev;
+    queue_element_next = (*proc_element)->next;
+    queue_element_prev = (*proc_element)->prev;
 
     /* Remove all references from the removed queue item. */
-    (*proc_queue)->next = NULL;
-    (*proc_queue)->prev = NULL;
+    (*proc_element)->next = NULL;
+    (*proc_element)->prev = NULL;
 
     /*
      * Someone where in the middle of the linked list
@@ -245,12 +245,12 @@ static int dequeue(pcb ** proc_queue) {
          */
         if (queue_element_next) {
             queue_element_next->prev = NULL;
-            (*proc_queue) = queue_element_next;
+            (*proc_element) = queue_element_next;
         }
     }
     /* Only element in the queue. Set the queue pointer to NULL. */
     else {
-        (*proc_queue) = NULL;
+        (*proc_element) = NULL;
     }
 
     return EXIT_SUCCESS;
