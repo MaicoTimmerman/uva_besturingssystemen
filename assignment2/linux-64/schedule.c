@@ -154,7 +154,6 @@ static void round_robin() {
 
     /* Test if swapping is neccesary */
     if (ready_proc && ready_proc->next) {
-        fprintf(stderr, "Swapping!");
 
         /* Move ready queue one further. */
         old_front = ready_proc;
