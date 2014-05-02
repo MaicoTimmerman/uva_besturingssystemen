@@ -35,48 +35,48 @@ static void CPU_scheduler() {
 
 static void GiveMemory() {
 
-   int index;
-   pcb *stub;
+    int index;
+    pcb *stub;
 
-   int n_tries = 0;
-   pcb *proc = NULL;
+    int n_tries = 0;
+    pcb *proc = NULL;
 
-   proc = new_proc;
+    proc = new_proc;
 
-   while (proc && (n_tries < n_memory_alloc_tries)) {
+    while (proc && (n_tries < n_memory_alloc_tries)) {
 
-       /*
-        * Search for a new process that should be given memory.
-        * Insert search code and criteria here.
-        * Attempt to allocate as follows:
-        */
-       index = mem_get(proc->MEM_need);
+        /*
+         * Search for a new process that should be given memory.
+         * Insert search code and criteria here.
+         * Attempt to allocate as follows:
+         */
+        index = mem_get(proc->MEM_need);
 
-       /* Stub starts at the start of the queue and finds the n'th element. */
-       stub = new_proc;
-       while ((n_tries < n_memory_alloc_tries) && stub) {
-           fprintf(stdout, "stub = %p\n", (void*)stub);
-           stub = stub->next;
-       }
-       fprintf(stdout, "proc = %p\n", (void*)proc);
+        /* Stub starts at the start of the queue and finds the n'th element. */
+        stub = new_proc;
+        while ((n_tries < n_memory_alloc_tries) && stub) {
+            fprintf(stdout, "stub = %p\n", (void*)stub);
+            stub = stub->next;
+        }
+        fprintf(stdout, "proc = %p\n", (void*)proc);
 
-       /* Allocation succeeded, now put in ready queue. */
-       if (index >= 0) {
+        /* Allocation succeeded, now put in ready queue. */
+        if (index >= 0) {
 
-           proc->MEM_base = index;
-           fprintf(stdout, "proc %p\n", (void*)proc);
-           fprintf(stdout, "&proc %p\n", (void*)&proc);
-           dequeue(&proc);
-           enqueue(&ready_proc, &proc);
+            proc->MEM_base = index;
+            fprintf(stdout, "proc %p\n", (void*)proc);
+            fprintf(stdout, "&proc %p\n", (void*)&proc);
+            dequeue(&proc);
+            enqueue(&ready_proc, &proc);
 
-           proc = stub;
-           n_tries = 0;
-       }
-       else {
-           proc = stub;
-           n_tries++;
-       }
-   }
+            proc = stub;
+            n_tries = 0;
+        }
+        else {
+            proc = stub;
+            n_tries++;
+        }
+    }
 }
 
 /* Here we reclaim the memory of a process after it has finished */
@@ -140,7 +140,7 @@ void schedule(event_type event) {
             GiveMemory();
             break;
         case Time_event:
-			round_robin();
+            round_robin();
         case IO_event:
             CPU_scheduler();
             break;
@@ -183,7 +183,7 @@ static void round_robin() {
         old_front->prev = stub;
     }
 
-	set_slice(slice_length);
+    set_slice(slice_length);
 }
 
 
