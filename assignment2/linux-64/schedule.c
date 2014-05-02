@@ -20,16 +20,14 @@
 #include "mem_alloc.h"
 
 
-
 /* This variable will simulate the allocatable memory */
 static long memory[MEM_SIZE];
 static int n_memory_alloc_tries;
 static int slice_length;
 
 /* TODO:The actual CPU scheduler is implemented here */
-
 static void CPU_scheduler() {
-        /* Insert the code for a MLFbQ scheduler here */
+    /* Insert the code for a MLFbQ scheduler here */
 }
 
 /* The high-level memory allocation scheduler is implemented here */
@@ -219,10 +217,6 @@ static int dequeue(pcb ** proc_element) {
     queue_element_next = (*proc_element)->next;
     queue_element_prev = (*proc_element)->prev;
 
-    /* Remove all references from the removed queue item. */
-    (*proc_element)->next = NULL;
-    (*proc_element)->prev = NULL;
-
     /*
      * Someone where in the middle of the linked list
      * No need to move the queue pointer
@@ -251,6 +245,10 @@ static int dequeue(pcb ** proc_element) {
     else {
         (*proc_element) = NULL;
     }
+
+    /* Remove all references from the removed queue item. */
+    (*proc_element)->next = NULL;
+    (*proc_element)->prev = NULL;
 
     return EXIT_SUCCESS;
 }
