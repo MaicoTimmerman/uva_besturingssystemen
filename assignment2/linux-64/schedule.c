@@ -4,25 +4,26 @@
 #include "schedule.h"
 #include "mem_alloc.h"
 
- /* This file contains a bare bones skeleton for the scheduler function
-  * for the second assignment for the OSN course of the 2005 fall
-  * semester.
-  *
-  * Author
-  * G.D. van Albada
-  * Section Computational Science
-  * Universiteit van Amsterd
-  *
-  * Date:
-  * October 23, 2003
-  * Modified:
-  * September 29, 2005
-  */
+/* This file contains a bare bones skeleton for the scheduler function
+ * for the second assignment for the OSN course of the 2005 fall
+ * semester.
+ *
+ * Author
+ * G.D. van Albada
+ * Section Computational Science
+ * Universiteit van Amsterd
+ *
+ * Date:
+ * October 23, 2003
+ * Modified:
+ * September 29, 2005
+ */
 
 
 /* This variable will simulate the allocatable memory */
-
 static long memory[MEM_SIZE];
+static int n_memory_alloc_tries;
+static int slice_length;
 
 /* TODO:The actual CPU scheduler is implemented here */
 
@@ -35,18 +36,21 @@ static void CPU_scheduler() {
 
 static void GiveMemory() {
    int index;
+   int n_tries = 0;
    pcb *proc = NULL;
 
    proc = new_proc;
 
    while (proc) {
 
-       /* Search for a new process that should be given memory.
+       /*
+        * Search for a new process that should be given memory.
         * Insert search code and criteria here.
         * Attempt to allocate as follows:
         */
        index = mem_get(proc->MEM_need);
        if (index >= 0) {
+
            /* Allocation succeeded, now put in administration */
            proc->MEM_base = index;
            dequeue(&new_proc);
@@ -55,8 +59,16 @@ static void GiveMemory() {
            proc = new_proc;
        }
        else {
+           /* Increase tries and continue. */
+           if (n_tries++ < n_memory_alloc_tries) {
+               proc = proc->next;
+           } else {
+               proc = NULL;
+           }
        }
    }
+
+   return;
 }
 
 /* Here we reclaim the memory of a process after it has finished */
@@ -91,11 +103,28 @@ static void my_finale() {
 void schedule(event_type event) {
     static int first = 1;
 
+    /* Set initial variables */
     if (first) {
         mem_init(memory);
         finale = my_finale;
+        printf("Give amount of memory allocation before stopping:");
+        switch (scanf("%d", &n_memory_alloc_tries)) {
+            case 1:
+                break;
+            case EOF:
+            default:
+                exit(EXIT_FAILURE);
+        }
+        printf("Give an timeslice for the round robin:");
+        switch (scanf("%d", &slice_length)) {
+            case 1:
+                break;
+            case EOF:
+            default:
+                exit(EXIT_FAILURE);
+        }
+        set_slice(slice_length);
         first = 0;
-        /* TODO: Add your own initialisation code here */
     }
 
     switch (event) {
@@ -123,10 +152,31 @@ void schedule(event_type event) {
 
 /* A function to preform a round robbin. */
 static void round_robin() {
-	static int slice = 100; // Juiste slice kiezen?
 
-	dequeue(&ready_proc);
-	set_slice(slice);
+    pcb* stub;
+    pcb* old_front;
+
+    /* Test if swapping is neccesary */
+    if (ready_proc && ready_proc->next) {
+
+        /* Move ready queue one further. */
+        old_front = ready_proc;
+        ready_proc = ready_proc->next;
+        ready_proc->prev = NULL;
+
+        /* Search for the end of ready queue */
+        stub = ready_proc;
+        while (stub->next) {
+            stub = stub->next;
+        }
+
+        /* Add the pcb at the back of the ready queue. */
+        stub->next = old_front;
+        old_front->next = NULL;
+        old_front->prev = stub;
+    }
+
+	set_slice(slice_length);
 }
 
 
