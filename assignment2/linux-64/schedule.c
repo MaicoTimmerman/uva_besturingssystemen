@@ -25,12 +25,16 @@ static long memory[MEM_SIZE];
 static int n_memory_alloc_tries;
 static int slice_length;
 
-/* TODO:The actual CPU scheduler is implemented here */
+/* The actual CPU scheduler is implemented here */
 static void CPU_scheduler() {
     /* Insert the code for a MLFbQ scheduler here */
 }
 
-/* The high-level memory allocation scheduler is implemented here */
+/* Function GiveMemory
+ * -------------------
+ * All processes in the new_proc queue will be assigned memory if
+ * possible. Will try maximum of n allocations before returning.
+ */
 static void GiveMemory() {
 
     int index;
@@ -100,7 +104,11 @@ static void GiveMemory() {
     }
 }
 
-/* Here we reclaim the memory of a process after it has finished */
+/* Function ReclaimMemory
+ * ----------------------
+ * Reclaims memory from processes in the defunkt queue and
+ * removes them from the simulator.
+ */
 static void ReclaimMemory() {
     pcb *proc;
 
@@ -125,7 +133,7 @@ static void ReclaimMemory() {
 
 /* You may want to have the last word... */
 static void my_finale() {
-    /* TODO:Your very own code goes here */
+    /* Your very own code goes here */
 }
 
 /* The main scheduling routine */
@@ -136,6 +144,8 @@ void schedule(event_type event) {
     if (first) {
         mem_init(memory);
         finale = my_finale;
+
+        /* Read value for max mem_get tries */
         printf("Give max tries to alloc memory in the new_proc queue:");
         switch (scanf("%d", &n_memory_alloc_tries)) {
             case 1:
@@ -144,6 +154,8 @@ void schedule(event_type event) {
             default:
                 exit(EXIT_FAILURE);
         }
+
+        /* Read value for timeslice in round robin */
         printf("Give an timeslice for the round robin:");
         switch (scanf("%d", &slice_length)) {
             case 1:
@@ -178,7 +190,12 @@ void schedule(event_type event) {
     }
 }
 
-/* A function to preform a round robbin. */
+/* Function round_robin
+ * --------------------
+ * Test if there are two processes in the ready queue.
+ * If so put the current process in the back of
+ *  the queue to prevent starvation.
+ */
 static void round_robin() {
 
     pcb* stub;

@@ -152,4 +152,12 @@ function *reset_stats;
 
 void schedule(event_type event);
 
+/****************************************************************************
+    Function round_robin
+    --------------------
+    Test if there are two processes in the ready queue.
+    If so put the current process in the back of
+     the queue to prevent starvation.
+
+****************************************************************************e */
 static void round_robin();
