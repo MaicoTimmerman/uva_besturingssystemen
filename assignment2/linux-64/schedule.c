@@ -31,20 +31,17 @@ static void CPU_scheduler() {
 }
 
 /* The high-level memory allocation scheduler is implemented here */
-
-
 static void GiveMemory() {
 
     int index;
-    pcb *stub;
+    int n_tries;
+    pcb* proc;
+    pcb* stub;
 
-    int n_tries = 0;
-    pcb *proc = NULL;
-
+    n_tries = 0;
     proc = new_proc;
 
     while (proc && (n_tries < n_memory_alloc_tries)) {
-
         /*
          * Search for a new process that should be given memory.
          * Insert search code and criteria here.
@@ -52,29 +49,53 @@ static void GiveMemory() {
          */
         index = mem_get(proc->MEM_need);
 
-        /* Stub starts at the start of the queue and finds the n'th element. */
-        stub = new_proc;
-        while ((n_tries < n_memory_alloc_tries) && stub) {
-            fprintf(stdout, "stub = %p\n", (void*)stub);
-            stub = stub->next;
-        }
-        fprintf(stdout, "proc = %p\n", (void*)proc);
-
         /* Allocation succeeded, now put in ready queue. */
         if (index >= 0) {
 
+            /* Set the given memory */
             proc->MEM_base = index;
-            fprintf(stdout, "proc %p\n", (void*)proc);
-            fprintf(stdout, "&proc %p\n", (void*)&proc);
-            dequeue(&proc);
-            enqueue(&ready_proc, &proc);
 
-            proc = stub;
+            /* If n is 0 then the item was the first from the queue
+             * Else it is in the middle, and pointers need to be moved */
+            if (!n_tries) {
+                new_proc = proc->next;
+            } else {
+                /* Previous points to next */
+                proc->prev->next = proc->next;
+
+                /* If this wasn't the last element in the queue, next points to previous. */
+                if (proc->next) {
+                    proc->next->prev = proc->prev;
+                }
+            }
+
+            /* Enqueue the process in the ready queue, automatically removing
+             * it from all the other queues by resetting prev and next pointers. */
+            stub = ready_proc;
+            if (stub) {
+                /* If queue has elements, walk to the end. */
+                while (stub->next)
+                    stub = stub->next;
+                stub->next = proc;
+                proc->prev = stub;
+                proc->next = NULL;
+            }
+            else {
+                /* Only process in the new queue */
+                ready_proc = proc;
+                proc->next = NULL;
+                proc->prev = NULL;
+
+            }
+
+            /* Reset the anti-starvation process. */
+            proc = new_proc;
             n_tries = 0;
-        }
-        else {
-            proc = stub;
+
+        } else {
+            /* Mem_get failed, raise n_tries and try the next process in the queue */
             n_tries++;
+            proc = proc->next;
         }
     }
 }
@@ -115,7 +136,7 @@ void schedule(event_type event) {
     if (first) {
         mem_init(memory);
         finale = my_finale;
-        printf("Give amount of memory allocation before stopping:");
+        printf("Give max tries to alloc memory in the new_proc queue:");
         switch (scanf("%d", &n_memory_alloc_tries)) {
             case 1:
                 break;
@@ -184,84 +205,4 @@ static void round_robin() {
     }
 
     set_slice(slice_length);
-}
-
-
-/* Function to enqueue a pcb from the given queue and
- * place it in the given process pointer */
-static int enqueue(pcb ** proc_queue, pcb** proc) {
-
-    pcb* stub;
-
-    /* Check for NULL pointers and cannot put proc in empty pointer */
-    if (!proc_queue || !proc || !(*proc)) {
-        return EXIT_FAILURE;
-    }
-
-    /* Go to the end of the list */
-    stub = *proc_queue;
-
-    if (stub) {
-        while (stub->next)
-            stub = stub->next;
-
-        /* Set the end of the queue to the process */
-        stub->next = *proc;
-        (*proc)->prev = stub;
-    } else {
-        *proc_queue = *proc;
-    }
-
-    return EXIT_SUCCESS;
-}
-
-/* Remove given item out of the queue */
-static int dequeue(pcb ** proc_element) {
-
-    pcb *queue_element_next;
-    pcb *queue_element_prev;
-
-    /* Check for NULL pointer and cannot dequeue from empty queue. */
-    if (!(proc_element && (*proc_element))) {
-        return EXIT_FAILURE;
-    }
-
-    /* Move pointer to next value. */
-    queue_element_next = (*proc_element)->next;
-    queue_element_prev = (*proc_element)->prev;
-
-    /* Remove all references from the removed queue item. */
-    (*proc_element)->next = NULL;
-    (*proc_element)->prev = NULL;
-
-    /*
-     * Someone where in the middle of the linked list
-     * No need to move the queue pointer
-     */
-    if (queue_element_prev && queue_element_next) {
-        queue_element_prev->next = queue_element_next;
-        queue_element_next->prev = queue_element_prev;
-    } else if (queue_element_prev || queue_element_next) {
-        /*
-         * The last element of the queue, no next value on removed element.
-         * No need to move the queue pointer, there are preccesor(s).
-         */
-        if (queue_element_prev) {
-            queue_element_prev->next = NULL;
-        }
-        /*
-         * The first element of the queue, no prev value on the removed element.
-         * Queue pointer needs to be set to the next value.
-         */
-        if (queue_element_next) {
-            queue_element_next->prev = NULL;
-            (*proc_element) = queue_element_next;
-        }
-    }
-    /* Only element in the queue. Set the queue pointer to NULL. */
-    else {
-        (*proc_element) = NULL;
-    }
-
-    return EXIT_SUCCESS;
 }
