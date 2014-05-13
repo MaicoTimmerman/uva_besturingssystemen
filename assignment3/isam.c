@@ -233,7 +233,7 @@ static int writeHead(isamPtr f) {
         isam_error = ISAM_SEEK_ERROR;
         return -1;
     }
-    
+
     if(sizeof(fileHead) != write(f->fileId, &(f->fHead), sizeof(fileHead))) {
         isam_error = ISAM_WRITE_FAIL;
         return -1;
@@ -261,14 +261,14 @@ static int testPtr(isamPtr f) {
 static int write_cache_block(isamPtr isam_ident, int iCache) {
     unsigned long block_no = isam_ident->blockInCache[iCache];
     int rv;
-    
+
     if (lseek(isam_ident->fileId, isam_ident->fHead.DataStart +
         block_no * isam_ident->blockSize, SEEK_SET) == (off_t)-1) {
         isam_error = ISAM_SEEK_ERROR;
         return -1;
     }
     rv = write(isam_ident->fileId, isam_ident->cache[iCache], isam_ident->blockSize);
-    
+
     if (rv != (int) isam_ident->blockSize) {
         isam_error = ISAM_WRITE_FAIL;
         return -1;
@@ -276,7 +276,7 @@ static int write_cache_block(isamPtr isam_ident, int iCache) {
 
     /* STEP 2 INF: This is a good place to record the number of block writes. */
     disk_writes_global++;
-    
+
     return 0;
 }
 
@@ -294,7 +294,7 @@ static int isam_cache_block(isamPtr isam_ident, unsigned long block_no) {
     #ifdef DEBUG
     fprintf(stderr, "isam_cache_block(..., %lu)\n", block_no);
     #endif
-    
+
     /* A block beyond the current end of the file. Write it to extend
        the file right away */
 
@@ -302,24 +302,24 @@ static int isam_cache_block(isamPtr isam_ident, unsigned long block_no) {
        number of times it has been called (this is a good place to do
        that) and the number of times it needs to read from disk (see
        read() call below).  */
-       
+
     cache_call_global++;
 
     if (block_no >= isam_ident->fHead.CurBlocks) {
         iCache = isam_ident->last_in + 1;
-        
+
         if (iCache >= CACHE_SIZE) {
             iCache = 0;
         }
         memset(isam_ident->cache[iCache], 0, isam_ident->blockSize);
         isam_ident->last_in = iCache;
         isam_ident->blockInCache[iCache] = block_no;
-        
+
         if (write_cache_block(isam_ident, iCache)) {
             return -1;
         }
         isam_ident->fHead.CurBlocks = block_no + 1;
-        
+
         if (writeHead(isam_ident)) {
             return -1;
         }
@@ -340,20 +340,20 @@ static int isam_cache_block(isamPtr isam_ident, unsigned long block_no) {
         if (iCache >= CACHE_SIZE) {
             iCache = 0;
         }
-        
+
         if (lseek(isam_ident->fileId, isam_ident->fHead.DataStart +
               block_no * isam_ident->blockSize, SEEK_SET) == (off_t)-1) {
             isam_error = ISAM_SEEK_ERROR;
             return -1;
         }
-        
+
         rv = read(isam_ident->fileId, isam_ident->cache[iCache], isam_ident->blockSize);
-        
+
         if (rv != (int) isam_ident->blockSize) {
             isam_error = ISAM_READ_ERROR;
             return -1;
         }
-        
+
         isam_ident->last_in = iCache;
         isam_ident->blockInCache[iCache] = block_no;
 
@@ -790,7 +790,7 @@ int isam_readNext(isamPtr isam_ident, char *key, void *data) {
     do {
         next = head((*isam_ident),iCache,rec_no)->next;
         debugRecord(isam_ident, next, "next #1");
-        
+
         if (! next) {
             isam_error = ISAM_EOF;
             return -1;
@@ -798,12 +798,12 @@ int isam_readNext(isamPtr isam_ident, char *key, void *data) {
         block_no = next / isam_ident->fHead.NrecPB;
         rec_no = next % isam_ident->fHead.NrecPB;
         iCache = isam_cache_block(isam_ident, block_no);
-        
+
         if (iCache < 0) {
             return -1;
         }
     } while(!(head((*isam_ident),iCache,rec_no)->statusFlags & ISAM_VALID));
-    
+
     isam_ident->cur_id = iCache;
     isam_ident->cur_recno = rec_no;
     memcpy(key, cur_key(*isam_ident), isam_ident->fHead.KeyLen);
@@ -834,13 +834,13 @@ int isam_readPrev(isamPtr isam_ident, char *key, void *data) {
         memcpy(data, cur_data(*isam_ident), isam_ident->fHead.DataLen);
         rec_no = isam_ident->cur_recno;
         iCache = isam_ident->cur_id;
-        
+
         do {
             prev = head((*isam_ident),iCache,rec_no)->previous;
             block_no = prev / isam_ident->fHead.NrecPB;
             rec_no = prev % isam_ident->fHead.NrecPB;
             iCache = isam_cache_block(isam_ident, block_no);
-            
+
             if (iCache < 0) {
                 return -1;
             }
@@ -848,7 +848,7 @@ int isam_readPrev(isamPtr isam_ident, char *key, void *data) {
                 break;
             }
         }  while(!(head((*isam_ident),iCache,rec_no)->statusFlags&ISAM_VALID));
-        
+
         isam_ident->cur_id = iCache;
         isam_ident->cur_recno = rec_no;
         return 0;
@@ -1088,7 +1088,7 @@ isam_append(isamPtr isam_ident, const char * key, const void * data)
         }
         head(*isam_ident, iCache, rec_no)->next =
         isam_ident->fHead.MaxKeyRec;
-        
+
         if (write_cache_block(isam_ident, iCache)) {
             return -1;
         }
@@ -1113,7 +1113,7 @@ int isam_writeNew(isamPtr isam_ident, const char *key, const void *data) {
         isam_error = ISAM_NULL_KEY;
         return -1;
     }
-    
+
     rv = strncmp(key, isam_ident->maxKey, isam_ident->fHead.KeyLen);
     if (rv >= 0) {
         return isam_append(isam_ident, key, data);
@@ -1129,7 +1129,7 @@ int isam_writeNew(isamPtr isam_ident, const char *key, const void *data) {
     rec_no = 0;
     /* Now make sure the block is in cache */
     iCache = isam_cache_block(isam_ident, block_no);
-    
+
     if (iCache < 0) {
         return -1;
     }
@@ -1141,7 +1141,7 @@ int isam_writeNew(isamPtr isam_ident, const char *key, const void *data) {
         block_no = next / isam_ident->fHead.NrecPB;
         rec_no = next % isam_ident->fHead.NrecPB;
         iCache = isam_cache_block(isam_ident, block_no);
-        
+
         if (iCache < 0) {
             return -1;
         }
@@ -1401,7 +1401,7 @@ int isam_perror(const char *str) {
         fprintf(stderr, "isam_perror: error no %d, %s", (int)isam_error, msg);
     }
     fprintf(stderr, "\n");
-    
+
     return 0;
 }
 
@@ -1480,7 +1480,7 @@ int isam_delete(isamPtr isam_ident, const char *key, const void *data)
     head(*isam_ident, iCache, rec_no)->statusFlags = ISAM_DELETED;
     isam_ident->fHead.FileState |= ISAM_STATE_UPDATING;
     isam_ident->fHead.Nrecords--;
-    
+
     if (writeHead(isam_ident)) {
         return -1;
     }

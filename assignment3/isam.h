@@ -1,4 +1,4 @@
-#ifndef	ISAM_H
+#ifndef ISAM_H
 #define ISAM_H
 
 /* -------------------------------------------------------------------------
@@ -13,7 +13,7 @@
    Goal: Part of an assignment on file system structure for the operating
          systems course.
          It demonstrates many of the administrative and layering structures
-	 that are also used in normal file systems.
+     that are also used in normal file systems.
 --------------------------------------------------------------------------*/
 
 typedef struct ISAM *isamPtr;
@@ -27,26 +27,26 @@ struct ISAM_CACHE_STATS;
    key_len:  maximum length of the (character string) key.
    data_len: length of the data field
    NrecPB:   number of records that should be put into one block (including
-	     one overflow record per block).
+         one overflow record per block).
    Nblocks:  The number of regular data blocks = number of entries in the
-	     index
+         index
    isam_create will return an isamPtr on success, NULL on failure
 */
-	
+
 isamPtr isam_create(const char *name, unsigned long key_len,
-	unsigned long data_len, unsigned long NrecPB, unsigned long Nblocks);
+    unsigned long data_len, unsigned long NrecPB, unsigned long Nblocks);
 
 /* isam_open will open an existing isam file.
    The parameters are:
    name:     name of the file, possibly including directory information
    update:   (not used) when != 0 the file is opened for reading and writing
-	     (it actually always is).
+         (it actually always is).
    isam_open will return an isamPtr on success, NULL on failure
 */
 
 isamPtr isam_open(const char *name, int update);
 
-/* isam_close will close a previously opened/created isam_file 
+/* isam_close will close a previously opened/created isam_file
    The parameters are:
    isam_ident: the isamPtr for the file.
    isam_close will return 0 on success, -1 on failure.
@@ -54,7 +54,7 @@ isamPtr isam_open(const char *name, int update);
 
 int isam_close(isamPtr isam_ident);
 
-/* isam_setKey will position an isam file on the last valid record with 
+/* isam_setKey will position an isam file on the last valid record with
    a key smaller than the requested key, such that the next call to
    isam_readNext will return the record with the given key, if it exists.
    If no such record exists, the first record with a larger key will
@@ -106,13 +106,13 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data);
    isam_ident: the isamPtr for the file.
    key:        a string containing the requested key.
    old_data:   a pointer to a location containing a copy of the data that
-	       the record should contain before modification.
+           the record should contain before modification.
    new_data:   the new data to be stored in the record.
    isam_update will return 0 on success, -1 on failure.
 */
 
 int isam_update(isamPtr isam_ident, const char *key, const void *old_data,
-	const void *new_data);
+    const void *new_data);
 
 /* isam_writeNew will write a new record to the file, but only if the key is
    not yet in use.
@@ -131,7 +131,7 @@ int isam_writeNew(isamPtr isam_ident, const char *key, const void *data);
    isam_ident: the isamPtr for the file.
    key:        a string containing the key of the record to be deleted.
    data:       a pointer to a location containing a copy of the data that
-	       the record should contain before deletion.
+           the record should contain before deletion.
    isam_delete will return 0 on success, -1 on failure.
 */
 
@@ -151,14 +151,14 @@ int isam_fileStats(isamPtr isam_ident, struct ISAM_FILE_STATS* stats);
    error occurs. Like the standard routine perror, isam_perror should
    print a suitable error message to stderr, optionally preceded by the
    message mess provided by the user */
-   
+
 int isam_cacheStats(struct ISAM_CACHE_STATS* stats);
 
 int isam_perror(const char * mess);
 
 /* Not all of the following errors are actually used .... */
 enum isam_error {
-    ISAM_NO_ERROR =	(0),
+    ISAM_NO_ERROR = (0),
     ISAM_WRITE_FAIL,
     ISAM_KEY_LEN,
     ISAM_FILE_EXISTS,
@@ -191,11 +191,11 @@ struct ISAM_FILE_STATS {
     unsigned long blocksRegularNPartial;     /* # of partially occupied blocks.  */
     unsigned long blocksRegularNFull;        /* # of fully occupied blocks.  */
     unsigned long blocksRegularUsedMin;      /* Smallest observed number of
-						used records in a block.     */
+                        used records in a block.     */
     unsigned long blocksRegularUsedMax;      /* Largest observed number of
-						used records in a block.     */
+                        used records in a block.     */
     unsigned long blocksRegularUsedAverage;  /* Average number of used records
-						in a block (floor).          */
+                        in a block (floor).          */
 
     unsigned long recordsRegularNEmpty;      /* # of empty records.          */
     unsigned long recordsRegularNUsed;       /* # of used records.           */
@@ -224,4 +224,4 @@ struct ISAM_CACHE_STATS {
     int disk_writes;
 };
 
-#endif
+#endif /*ISAM_H */
