@@ -1395,14 +1395,13 @@ int isam_perror(const char *str) {
             break;
     }
 
-    if (str)
-    {
-    fprintf(stderr, "isam_perror: %s - error no %d, %s", str, (int)isam_error, msg);
-    } else
-    {
-    fprintf(stderr, "isam_perror: error no %d, %s", (int)isam_error, msg);
+    if (str) {
+        fprintf(stderr, "isam_perror: %s - error no %d, %s", str, (int)isam_error, msg);
+    } else {
+        fprintf(stderr, "isam_perror: error no %d, %s", (int)isam_error, msg);
     }
     fprintf(stderr, "\n");
+    
     return 0;
 }
 
