@@ -1333,7 +1333,7 @@ int isam_perror(const char *str) {
             msg = "Write failure";
             break;
         case ISAM_KEY_LEN:
-            msg = " ";
+            msg = "key length";
             break;
         case ISAM_FILE_EXISTS:
             msg = "File doesn't exist";
@@ -1342,55 +1342,55 @@ int isam_perror(const char *str) {
             msg = "Link doesn't exist";
             break;
         case ISAM_OPEN_FAIL:
-            msg = " ";
+            msg = "open fail";
             break;
         case ISAM_NO_SUCH_FILE:
-            msg = " ";
+            msg = "no such file";
             break;
         case ISAM_OPEN_COUNT:
-            msg = " ";
+            msg = "open count fail";
             break;
         case ISAM_INDEX_ERROR:
-            msg = " ";
+            msg = "index error";
             break;
         case ISAM_READ_ERROR:
-            msg = " ";
+            msg = "read error";
             break;
         case ISAM_BAD_MAGIC:
-            msg = " ";
+            msg = "bad magic ";
             break;
         case ISAM_BAD_VERSION:
-            msg = " ";
+            msg = "bad version ";
             break;
         case ISAM_HEADER_ERROR:
-            msg = " ";
+            msg = "header error ";
             break;
         case ISAM_OPEN_FOR_UPDATE:
-            msg = " ";
+            msg = "open for update ";
             break;
         case ISAM_IDENT_INVALID:
-            msg = " ";
+            msg = "identity invalid ";
             break;
         case ISAM_NO_SUCH_KEY:
-            msg = " ";
+            msg = "no such key ";
             break;
         case ISAM_NULL_KEY:
-            msg = " ";
+            msg = "key is null ";
             break;
         case ISAM_DATA_MISMATCH:
-            msg = " ";
+            msg = "data mismatch ";
             break;
         case ISAM_RECORD_EXISTS:
-            msg = " ";
+            msg = "record exists ";
             break;
         case ISAM_SEEK_ERROR:
-            msg = " ";
+            msg = "seek error ";
             break;
         case ISAM_SOF:
-            msg = " ";
+            msg = "Start of file ";
             break;
         case ISAM_EOF:
-            msg = " ";
+            msg = "End of file ";
             break;
     }
 
@@ -1819,6 +1819,11 @@ int isam_cacheStats(struct ISAM_CACHE_STATS* stats) {
     stats->cache_call = cache_call_global;
     stats->disk_reads = disk_reads_global;
     stats->disk_writes = disk_writes_global;
+    
+    cache_call_global = 0;
+    disk_reads_global = 0;
+    disk_writes_global = 0;
+    
     return 0;
 }
 
