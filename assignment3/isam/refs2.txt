@@ -1,0 +1,4245 @@
+Abrahamyan2005a
+y
+A Problem Solving Environment for Image-Based Computational Hemodynamics
+Abrahamyan2006a
+y
+Choosing Optimal L-BGK Simulation Parameters for Time Harmonic Flows
+Abrahamyan2006b
+y
+MPI parallelization and performance aspects of a graph based LB flow solver
+Abramson2005a
+y
+Flexible IO services in the Kepler Grid Workflow System
+Adamatzky2012a
+y
+Bio-development of motorway networks in the Netherlands: A slime mould approach
+Adamatzky2012b
+y
+Are motorways rational from slime mould's point of view
+Adamatzky2012c
+y
+Physarum in the Netherlands: Responding to the Flood
+Adamatzky2012d
+y
+Biorationality of motorways
+Adams2001a
+y
+The Mass Function and Structure of the Praesepe Cluster: Additional Proper Motion Candidates
+Adams2002a
+y
+Structure of the Praesepe Star Cluster
+Afanasieva2010a
+y
+Advantages of the OpenFOAM open-source software package for numerical simulation of gas and plasma dynamics problems [In Russian]
+Afanasieva2011a
+y
+Modelling the processes of fullerene synthesis in arc discharge technology
+Afanasieva2012a
+y
+Numerical modelling of fullerene synthesis in arc discharge.
+Afanasieva2013a
+y
+Modelling processes in the shock tube experiments with ignition of combustible gas mixtures
+Afsarmanesh2002a
+y
+VLAM-G: A Grid-based virtual laboratory
+Albada1973a
+y
+Proper motion of BD +16 516
+Albada1975a
+y
+High resolution neutral hydrogen observations of NGC 4258
+Albada1977a
+y
+Neutral hydrogen in NGC 4248
+Albada1978a
+y
+The peculiar spiral galaxy NGC 4258 - high resolution radio observations and their interpretation
+Albada1979a
+y
+The peculiar spiral galaxy NGC 4258
+Albada1980a
+y
+New high resolution radio observations of NGC 4258; Paper II: NGC 4258 as a spiral galaxy
+Albada1980b
+y
+New high resolution radio observations of NGC 4258; Paper I: The observations
+Albada1981a
+y
+A high resolution study of the gas flow in barred spirals
+Albada1982a
+y
+A comparative study of computational methods in cosmic gas dynamics
+Albada1982b
+y
+New high resolution radio observations of NGC 4258; Paper III: VLA and WSRT observations of the anomalous arms
+Albada1983a
+y
+Gas flow models for barred spirals
+Albada1984a
+y
+IRAS "Splines I" quick-look product
+Albada1985a
+y
+Application of a new gasdynamic code to gas flow problems in disk galaxies: a comparison with other computations
+Albada1985b
+y
+A barred galaxy: the inside viewpoint
+Albada1986a
+y
+Dimensionality of variables as a complement to strong typing in ensuring program consistency
+Albada1992a
+y
+Software architecture and simulation tools for autonomous mobile robots
+Albada1993a
+y
+Portable calibration systems for robots
+Albada1994a
+y
+Eye in hand robot calibration
+Albada1994b
+y
+A low-cost pose-measuring system for robot calibration
+Albada1994c
+y
+Eye in hand robot calibration
+Albada1995a
+y
+A portable measuring system for robot calibration
+Albada1995b
+y
+Collision avoidance for the MARIE-vehicle
+Albada1995c
+y
+A low-cost pose-measuring system for robot calibration
+Albada1997a
+y
+A Comparative Study of Computational Method in Cosmic Gas Dynamics
+Albada1997b
+y
+GRAIL = an omni-directional gravitational wave-detector
+Albada1999a
+y
+Dynamite - blasting obstacles to parallel cluster computing
+Albada1999b
+y
+Dynamite - blasting obstacles to parallel cluster computing
+Albada1999c
+y
+Measurement of mechanical vibrations in a solid aluminium sphere and bar excited by 0.5GeV electrons
+Albada2000a
+y
+Measurement of mechanical vibrations excited in aluminium resonators by 0.6 GeV electrons
+Albada2002a
+y
+Surfing the Grid - Dynamic Task Migration in the Polder Metacomputer Project
+Alexandrov2006a
+y
+Mesoscopic simulations of systolic flow in the Human abdominal aorta
+Alexandrov2013a
+y
+Proceedings of the International Conference on Computational Science, ICCS 2013
+Alexandrov2013b
+y
+Computation at the Frontiers of Science, Preface for ICCS 2013
+Ali2012a
+y
+Proceedings of the International Conference on Computational Science, ICCS 2012
+Ali2012b
+y
+Empowering Science through Computing, Preface for ICCS 2012
+Alimadhi2002a
+y
+Mobile Internet: Wireless access to Web-based interfaces of legacy simulations
+Allison2009a
+y
+Using the minimum spanning tree to trace mass segregation
+Altintas2000a
+y
+Modeling Language for Component Oriented Software Engineering: COSEML
+Altintas2001a
+y
+A Comparative Study for Component Oriented Design Modeling
+Altintas2001b
+y
+Case Studies Using Course-Projects for Component Oriented Modeling
+Altintas2003a
+y
+A Modeling and Execution Environment for Distributed Scientific Workflows
+Altintas2004a
+y
+A Web Service Composition and Deployment Framework for Scientific Workflows
+Altintas2004b
+y
+Kepler: An Extensible System for Design and Execution of Scientific Workflows
+Altintas2004c
+y
+Kepler: Towards a Grid-Enabled System for Scientific Workflows
+Altintas2005a
+y
+A Framework for the Design and Reuse of Grid Workflows
+Altintas2010a
+y
+Understanding Collaborative Studies through Interoperable Workflow Provenance
+Altintas2011a
+y
+Collaborative provenance for workflow-driven science and engineering
+Altintas2011b
+y
+A Data Model for Analyzing User Collaborations in Workflow-Driven eScience
+Amartruda2014a
+y
+From histology and imaging data to models for in-Â­stent restenosis
+Artoli2001a
+y
+Time dependent flow in a rigid tube using the Lattice Boltzmann Method
+Artoli2001b
+y
+Shear Stress in Lattice Boltzmann Simulations
+Artoli2002a
+y
+3D Pulsatile flow with the Lattice Boltzmann BGK Method
+Artoli2002b
+y
+Accuracy of 2D pulsatile flow in the lattice Boltzmann BGK method
+Artoli2003a
+y
+Accelerated Lattice BGK method for unsteady simulations through Mach number annealing
+Artoli2003b
+y
+Simulation of a Systolic Cycle in a Realistic Artery with the Lattice Boltzmann BGK Method
+Artoli2003c
+y
+Lattice Boltzmann, a Robust and Accurate Solver for Interactive Computational Hemodynamics
+Artoli2003d
+y
+Mesoscopic Computational Haemodynamics
+Artoli2004a
+y
+Accuracy versus Performance in Lattice Boltzmann BGK Simulations of Systolic Flows
+Artoli2004b
+y
+Lattice BGK simulations of flow in a symmetric bifurcation
+Artoli2006b
+y
+Optimizing lattice Boltzmann simulations for unsteady flows
+Ashyraliyev2004a
+y
+Implicit Schemes for the Lattice Boltzmann Equation
+Ashyraliyev2009a
+y
+Systems biology: parameter estimation for biochemical models
+Assel2009a
+y
+A Collaborative Environment Allowing Clinical Investigations on Integrated Biomedical Databases
+Axner2007a
+y
+High Performance Computational Hemodynamics with the Lattics Boltzmann Method
+Axner2007b
+y
+Simulating Time Harmonic Flows with the Lattice Boltzmann Method
+Axner2007c
+y
+Simulating Time Harmonic Flows with the Regularized L-BGK Method
+Axner2008a
+y
+Performance evaluation of a parallel sparse lattice Boltzmann solver
+Axner2009a
+y
+Simulations of time harmonic blood flow in the Mesenteric artery: comparing finite element and lattice Boltzmann methods
+Badia2005a
+y
+Lightweight Grid Platform: Design Methodology
+Badia2005b
+y
+Performance monitoring of GRID superscalar applications with OCM-G
+Badia2006a
+y
+Performance Monitoring of Grid Superscalar with OCM-G/G-PM: Integration Issues
+Badia2006b
+y
+Lightweight Grid Platform: Design Methodology
+Badia2006c
+y
+Integrating of the OCM-G Monitoring System into the GRID Superscalar
+Badia2007a
+y
+Performance Monitoring of Grid Superscalar with OCM-G/G-PM: Tuning and Improvements
+Badia2007b
+y
+Performance monitoring of GRID superscalar with OCM-G/G-PM: integration issues
+Badia2008a
+y
+Performance monitoring of GRID superscalar with OCM-G/G-PM: integration issues
+Badia2008b
+y
+Performance monitoring of Grid superscalar: visualization modes
+Bagot1998a
+y
+Gamma-ray bursts and density evolution of neutron star binary mergers
+Bajaja1979a
+y
+Complementing aperture synthesis radio data by short spacing components from single dish observations
+Bal2000a
+y
+The Distributed ASCI supercomputer project
+Baldridge2004a
+y
+Cluster and Grid Infrastructure for Computational Chemistry and Biochemistry
+Baldridge2005a
+y
+The Computational Chemistry Prototyping Environment
+Bali2006a
+y
+Towards a Generic P2P Monitoring Infrastructure for Grid Resources and Applications
+Bali2006b
+y
+An Instrumentation Infrastructure for Grid Workflow Applications
+Bali2006c
+y
+Fine-grained instrumentation and monitoring of legacy applications in a service-oriented environment
+Bali2006d
+y
+Fine-grained instrumentation and monitoring of legacy applications in a service-oriented environment
+Bali2006e
+y
+GEMINI -- a universal monitoring framework: concept, design, and first prototype: [abstract]
+Bali2007a
+y
+Efficient and Reliable Execution of Legacy Codes Exposed as Services
+Bali2007b
+y
+From monitoring data to experimental information monitoring of Grid scientific workflows
+Bali2007c
+y
+GEMINI: Generic Monitoring Infrastructure for Grid resources and applications
+Bali2007d
+y
+Provenance tracking in the Virolab Virtual Laboratory
+Bali2008a
+y
+Provenance tracking and querying in the ViroLab Virtual Laboratory
+Bali2008b
+y
+Provenance tracking and querying in ViroLab
+Bali2008c
+y
+Provenance querying for end-users: a drug resistance case study
+Bali2008d
+y
+Monitoring of Grid scientific workflows
+Bali2008e
+y
+LGF: a flexible framework for exposing legacy codes as services
+Bali2008f
+y
+An ontology model for execution records of Grid scientific applications
+Bali2008g
+y
+Provenance tracking in the ViroLab Virtual Laboratory
+Bani_Aman1998a
+y
+Reactive lattice gas automaton
+Bankhead2011a
+y
+A Simulation Framework to Investigate in vitro Viral Infection Dynamics
+Bankhead2012a
+y
+A simulation framework to investigate in vitro viral infection dynamics
+Bar2010a
+y
+Running parallel applications with topology-aware grid middleware
+Bartha2013a
+y
+Superinfection with drug-resistant HIV is rare and does not contribute substantially to therapy failure in a large European cohort
+Bartynski2007a
+y
+Universal Grid client: Grid Operation Invoker
+Bartynski2008a
+y
+Invocation of Grid operations in the ViroLab Virtual Laboratory
+Bartynski2008b
+y
+Universal Grid client: Grid Operation Invoker
+Bartynski2009a
+y
+Environment for collaborative e-science applications: CGW08 tutorial
+Baryshnikova2009a
+y
+Model development of a PECVD reactor for titanium dioxide film deposition
+Baryshnikova2010a
+y
+Model development of a PECVD reactor for titanium dioxide film deposition [in Russian]
+Baryshnikova2010b
+y
+Simulation of Complex Gas Feed Systems in PECVD Reactors for Synthesis of Titanium Dioxide and Nickel Thin Films
+Baud1984a
+y
+A giant asymmetric dustshell around Betelgeuse
+Baumgardt2003a
+y
+On the Central Structure of M15
+Baumgardt2003b
+y
+A Dynamical Model for the Globular Cluster G1
+Baumgardt2006a
+y
+Tidal capture of stars by intermediate-mass black holes
+Baumgardt2006b
+y
+Ejection of hypervelocity stars from the Galactic Centre by intermediate-mass black holes
+Baumgardt2006c
+y
+Ejection of Hyper-Velocity Stars by Intermediate-Mass Black Holes
+Belgacem2013a
+y
+Distributed Multiscale Computations using the MAPPER framework
+Bellavista2010b
+y
+Advances in Grid and Pervasive Computing: 5th International Conference, GPC 2010, Hualien, Taiwan, May 10-13, 2010: Proceedings
+Belleman1992a
+y
+Multivariate data processing system: transputer based data acquisition, analysis and presentation
+Belleman1997a
+y
+CACE - a case study in embedded system design.
+Belleman1998a
+y
+Interactive environments for the exploration of large data sets.
+Belleman1998b
+y
+A Virtual Environment for the Exploration of Diffusion and Flow Phenomena in Complex Geometries
+Belleman1999a
+y
+GEOPROVE: Geometric Probes for Virtual Environments
+Belleman1999b
+y
+GEOPROVE: Geometric probes for virtual environments
+Belleman2000a
+y
+The Design of Dynamic Exploration Environments for Computational Steering Simulations
+Belleman2000b
+y
+Design considerations for the construction of immersive dynamic exploration environments
+Belleman2001a
+y
+Simulated vascular reconstruction in a virtual operating theatre
+Belleman2001b
+y
+Immersive Virtual Reality on commodity hardware
+Belleman2002a
+y
+High performance distributed simulation for interactive simulated vascular reconstruction
+Belleman2002b
+y
+Dynamic Exploration Environments
+Belleman2003a
+y
+Interactive Exploration in Virtual Environments
+Belleman2005a
+y
+Simulation, visualisation, interaction and mixed reality: views of the University of Amsterdam and SARA
+Belleman2007a
+y
+Interactive Simulation and Visualization for Cancer Treatment Planning with Grid-based Technology
+Belleman2008a
+y
+High performance direct gravitational N-body simulations on graphics processing units II: An implementation in CUDA
+Belleman2010a
+y
+Visualization in Computational Science
+Belleman2010b
+y
+Interactive flood simulation and visualisation on a multitouch table
+Belloum2008a
+y
+International workshop on Applications of Workflows in Computational Science (AWCS 08)
+Belloum2011a
+y
+Collaborative e-Science and scientific workflows
+Bergman1993a
+y
+Basic Linear Algebra Subsystems
+Bergman1994a
+y
+IPS Position Paper: Preconditioning for the Conjugate Gradient Method
+Bergman1994b
+y
+IPS Progress Report
+Bergman1995a
+y
+IPS final report
+Bergman1995b
+y
+Domain Decomposition by Parallel and Weighted RSB
+Bergman1995c
+y
+IPS technical report
+Bergman1999a
+y
+Brain activity and parallel computing
+Berk1998a
+y
+Towards a parallel implementation of Lindenmayer systems
+Berk2007a
+y
+The formation of higher order hierarchical systems in star clusters
+Bernsdorf2008a
+y
+Simulation of Complex Flows and Multi-Physics with the Lattice-Boltzmann Method
+Bernsdorf2011a
+y
+Towards Distributed Multiscale Simulation of Biological Processes
+Berretz2010a
+y
+Towards an actor-driven workflow management system for Grids
+Berretz2010b
+y
+A novel approach to Workflow Management in Grid Environments
+Berretz2011a
+y
+Actor-driven workflow execution in distributed environments
+Blaak2000a
+y
+Lattice dependence of reaction-diffusion in lattice Boltzmann modelling
+Boasson1999a
+y
+Proceedings of the fifth annual conference of the Advanced School for Computing and Imaging ASCI
+Boer1993a
+y
+An exception handling model applied to autonomous mobile robots
+Boer1993b
+y
+The MARIE autonomous mobile robot
+Bogdanov2000a
+y
+3D Visualisation of Convective Cloud Simulation
+Bogdanov2006a
+y
+Performance visualization in real time monitoring of Web service application
+Boily2003a
+y
+Galactic and Stellar Dynamics, Proceedings of JENAM 2002, held in Porto, Portugal, 3-6 September, 2002
+Bona-Casas2013a
+y
+An off-lattice 3D model for in-Â­stent restenosis
+Bona-Casas2013b
+y
+First results on a 3D model for in-Â­stent restenosis
+Bontekoe1998a
+y
+High Resolution IRAS map parallelised
+Borgdorff2011a
+y
+A principled approach to Distributed Multiscale Computing, from formalization to execution
+Borgdorff2012a
+y
+A distributed multiscale computation of a tightly coupled model using the Multiscale Modeling Language.
+Borgdorff2012b
+y
+Multiscale Simulations on Distributed European e-Infrastructures
+Borgdorff2013a
+y
+Foundations of Distributed Multiscale Computing: Formalization, Specification, and Analysis
+Borgdorff2013b
+y
+Multiscale Computing with the Multiscale Modeling Library and Runtime Environment
+Borgdorff2013c
+y
+Adding MUSCLE to Multiscale Simulations
+Bossenbroek2009a
+y
+Grid Resource Allocation by Means of Option Contracts
+Botman2010a
+y
+An integrated approach to infer and model the gene network in early development of the cnidarian Nematostella vectensis
+Botman2011a
+y
+An integrated approach to infer the gene network in early development of the cnidarian Nematostella venctensis
+Botman2011b
+y
+An integrated approach to infer the gene network in early development of the cnidarian Nematostella vectensis.
+Botman2012a
+y
+Spatial gene expression quantification: a tool for analysis of in situ hybridizations in sea anemone Nematostella vectensis
+Boulanger1985a
+y
+Correlation of high galactic latitude HI and FIR emission and warm dust in the neutral interstellar medium
+Boulanger1985b
+y
+Warm dust in the neutral interstellar medium
+Braan1998a
+y
+Prototyping an HPCNet Distance Learning Environment: Rationale and Implementation
+Braan1998b
+y
+Prototyping a distance learning environment on the internet: rationale and implementation
+Brandl2007a
+y
+On the Origin of the Most Massive Stars Around R136
+Brink1997a
+y
+Performance metrics in parallel simulation
+Brown2001a
+y
+Evolution of Neutron Star, Carbon-Oxygen White Dwarf Binaries
+Brown2003a
+y
+Evolution of Neutron Star, Carbon-Oxygen White Dwarf Binaries
+Brummen1994a
+y
+MERMAID: Modelling and evaluation research in MIMD architecture design
+Bubak1998a
+y
+Off-line Performance Monitoring using OMIS
+Bubak1998b
+y
+Off-line and On-line Performance Monitoring Tools
+Bubak1999a
+y
+Enhancing the Functionality of Performance Measurement Tools for Message Passing Environments
+Bubak1999b
+y
+OCM-Based Tools for Performance Monitoring of Message Passing Applications
+Bubak2000a
+y
+Portable Library of Migratable Sockets
+Bubak2000b
+y
+Performance Measurement, Debugging and Load Balancing for Metacomputing
+Bubak2001a
+y
+Migratable Sockets for Dynamic Load Balancing
+Bubak2002a
+y
+Portable Library of Migratable Sockets
+Bubak2004a
+y
+Computational Science - ICCS 2004: 4th International Conference, Krak\'ow, Poland, June 6-9, 2004, Proceedings, Part II
+Bubak2004b
+y
+Computational Science - ICCS 2004: 4th International Conference, Krak\'ow, Poland, June 6-9, 2004, Proceedings, Part I
+Bubak2004c
+y
+Computational Science - ICCS 2004: 4th International Conference, Krak\'ow, Poland, June 6-9, 2004, Proceedings, Part IV
+Bubak2004d
+y
+Computational Science - ICCS 2004: 4th International Conference, Krak\'ow, Poland, June 6-9, 2004, Proceedings, Part III
+Bubak2006b
+y
+Fault tolerance and data synchronization in Grid registry for workflow applications
+Bubak2006c
+y
+Experiments with distributed training of neural networks on the Grid
+Bubak2006d
+y
+Using MOCCA Component Environment for Simulation of Gold Clusters
+Bubak2007a
+y
+Collaborative Virtual Laboratory for e-Health
+Bubak2007b
+y
+Appea: A Platform for Development and Execution of Grid Applications
+Bubak2007d
+y
+Cracow'06 Grid Workshop, Vol 1: October 15--18, 2006 Cracow, Poland: proceedings
+Bubak2007e
+y
+K-WfGrid knowledge-based workflow system for Grid applicatiobs
+Bubak2007f
+y
+Software engineering aspects of K-WfGrid
+Bubak2008a
+y
+Appea: a framework for the design and development of business applications on the Grid
+Bubak2008b
+y
+Virtual Laboratory for Development and Execution of Biomedical Collaborative Applications
+Bubak2009a
+y
+A platform for collaborative e-science applications
+Bubak2009c
+y
+Chapter XXVII: Virtual Laboratory for Collaborative Applications
+Buchner1998a
+y
+EEG/MEG Quellen Rekonstruktion - Die Funktionen von CURRY und CAUCHY-par
+Bucur2005a
+y
+A Grid Architecture for Medical Applications
+Bui2004a
+y
+The Network as a Data Transporting and Data Storing Application
+Bui2010a
+y
+Extracting causal relations on HIV drug resistance from literature
+Bui2011a
+y
+A hybrid approach to extract protein-protein interactions
+Bui2011b
+y
+Extracting Biological Events from Text Using Simple Syntactic Patterns
+Bui2012a
+y
+A robust approach to extract biomedical events from literature
+Bui2012b
+y
+Relation extraction methods for biomedical literature
+Burer1997a
+y
+Parallel molecular dynamics: applied to crystallization on a sphere
+Bédorf2007a
+y
+High Performance Direct Gravitational N-body Simulations on Graphics Processing Units -- An implementation in CUDA
+Caarls2002a
+y
+Genetic Alorithms Visualisation
+Caiazzo2008a
+y
+Scale-Splitting Error in Complex Automata models for Reaction-Diffusion Systems
+Caiazzo2008b
+y
+Error Investigations in Complex Automata models for Reaction-Diffusion systems
+Caiazzo2009a
+y
+Towards a Complex Automata Multiscale Model of In-Stent Restenosis
+Caiazzo2009b
+y
+Asymptotic analysis of Complex Automata models for reaction-diffusion systems
+Caiazzo2011a
+y
+A Complex Automata approach for in-stent restenosis: Two-dimensional multiscale modelling and simulations
+Calor1998a
+y
+Cellular automaton models for population dynamics
+Carey2013a
+y
+Promoter sequence determines the relationship between expression level and noise
+Caroprese2009a
+y
+A Logical Framework for Detecting Anomalies in Drug Resistance Algorithms
+Chakrabarty2004a
+y
+An Inverse-Problem Approach to Cluster Dynamics
+Chen2002a
+y
+Model of Drug Therapy for HIV Infection using Non-uniform Cellular Automata
+Chernyshev2008a
+y
+Erythrocyte lysis in isotonic solution of ammonium chloride: Theoretical modelling and experimental verification
+Chindapol2012a
+y
+Geometric Theory Predicts Bifurcations in Minimal Wiring Cost Trees in Biology Are Flat
+Chindapol2013a
+y
+Modelling Growth and Form of the Scleractinian Coral Pocillopora verrucosa and the Influence of Hydrodynamics
+Chirkin2012a
+y
+Signal analysis of flood gate vibrations
+Chopard2004a
+y
+Special Issue: Computational Science of Lattice Boltzmann Modelling (Editorial)
+Chopard2004b
+y
+Guest Editorial, Computational science of lattice Boltzmann modelling
+Chopard2008a
+y
+On the collision-propagation and gather-update formulations of a Cellular Automata rule
+Chopard2011a
+y
+A Framework for Multiscale and Multiscience Modeling and Numerical Simulations
+Chu2008a
+y
+A survey of classical simulation methods for quantum computation
+Ciepiela2008a
+y
+GridSpace Engine of the ViroLab Virtual Laboratory
+Clague2000a
+y
+On the Hydraulic Permeability of (Un)Bounded Fibrous Media Using the Lattice-Boltzmann Method
+Cook2009a
+y
+The Cook Report on Internet Protocol on Interactive Networks (A User Interface for Appliction Owned Lightpath Networks)
+Cook2009b
+y
+The Cook Report on Internet Protocol on WiVR: a Window into Virtual Reality
+Cramer2004a
+y
+Usability Evaluation And Context Analysis To Aid The Development Of Virtual Reality Applications applied to the Virtual Radiology Explorer
+Cramer2004b
+y
+Context analysis to support development of virtual reality applications
+Cramer2004c
+y
+Usability Evaluation of a Simulated Vascular Reconstruction System
+Cui2003a
+y
+Mathematical Modelling of Calcium homeostasis in Yeast Cells
+Cui2003b
+y
+Pricing Interest Rate Guarantees embedded in Life Insurance Contracts by Monte Carlo Simulation
+Cui2004a
+y
+Mathematical modelling of calcium homeostasis in yeast cells
+Cui2006a
+y
+Mathematical modeling of calcium homeostasis in yeast cells
+Cui2008a
+y
+Simulating In Vitro Transcriptional Response of Zinc Homeostasis System in Escherichia coli
+Cui2008b
+y
+Simulating Complex Calcium-Calcineurin Signaling Network
+Cui2009a
+y
+Calcium Homeostasis and Signaling in Yeast Cells and Cardiac Myocytes
+Cui2009b
+y
+Mathematical Modeling of Metal Ion Homeostasis and Signaling Systems
+Cui2009c
+y
+Simulating Calcium Influx and Free Calcium Concentrations in Yeast
+Cui2010a
+y
+Simulating Calcineurin-Centered Calcium Signaling Network in Cardiac Myocytes
+Cushing2011a
+y
+Service Level Management for Executable Papers
+Cushing2011b
+y
+Prediction-based Auto-scaling of Scientific Workflows
+Cushing2011c
+y
+Dynamic Handling for Cooperating Scientific Web Services
+Czaplicka2013a
+y
+Noise enhances information transfer in hierarchical networks
+Czaplicka2013b
+y
+Stochastic resonance for information flows on hierarchical networks
+Dam2002a
+y
+Multi-disciplinair ontwerp en multi-objective optimalisatie van een blended-wing-body vliegtuigconfiguratie met behulp van benaderingsmodellen
+Davies2006a
+y
+The MODEST questions: Challenges and future directions in stellar cluster research
+Dekker1993a
+y
+Stability of Gauss-Huard elimination for solving linear systems
+Dekker1994a
+y
+Parallel algorithms for solving large linear systems
+Dekker1997a
+y
+Stability of the Gauss-Huard Algorithm with Partial Pivoting
+Dijk2010a
+y
+Individual-based simulation of sexual selection: A quantitative genetic approach
+Dijk2010b
+y
+Identifying potential survival strategies of HIV-1 through virus-host protein interaction networks
+Dijk2013a
+y
+The symphony of gene regulation
+Dijkstra2009a
+y
+Framework for path finding in multi-layer transport networks
+Dijkstra2013a
+y
+Inference of the Russian drug community from one of the largest social networks in the Russian Federation
+Dikken1993a
+y
+DynamicPVM: Task Migration in PVM
+Dikken1994a
+y
+DynamicPVM: Dynamic Load Balancing on Parallel Systems
+Dobrzyski2007a
+y
+Computational methods for diffusion-influenced biochemical reactions
+Doornbos1993a
+y
+Polarization measurements in a Flow Cytometer; Lissajous Pattererns in scatter plots of calibrations beads
+Doornbos1994a
+y
+Lissajous-Like Patterns in Scatter Plots of Calibration Beads
+Doornbos1996a
+y
+Elastic Light Scattering Measurements of Single Biological Cells in an Optical Trap
+Dorst1997a
+y
+The virtual sensor concept applied to simulation: the evaluation of Automatic Debiting System
+Dorst1998a
+y
+Evaluating Automatic Debiting Systems by Modelling and Simulation of Virtual Sensors
+Dubbeldam1997a
+y
+Lattice-Boltzmann simulation of fluid flow in a counterflow centrifucal elutriation chamber
+Dubbeldam1999a
+y
+Computational Aspects of Multi-Species Lattice-Gas Automata
+Dubbeldam1999b
+y
+Computational Aspects of Multi-Species Lattice-Gas Automata
+Dubbeldam2000a
+y
+Dynamic Structure Factor in Single and Two-Species Thermal GBL Lattice Gas
+Dugundji2013a
+y
+Understanding Emergence in a Fully-Specified Nested Logit Model
+Ebisuzaki2001a
+y
+Missing Link Found? The ``Runaway'' Path to Supermassive Black Holes
+Erdbrink2012a
+y
+Controlling flow-induced vibrations of flood barrier gates with data-driven an d finite-element modelling
+Erdbrink2012b
+y
+Controlling flow-induced vibrations of flood barrier gates with data-driven and finite-element modelling
+Erdbrink2012c
+y
+Free-surface flow simulations for discharge-based operation of hydraulic structure gates
+Erdbrink2013a
+y
+Free-surface flow simulations for discharge-based operation of hydraulic structure gates
+Erdbrink2014a
+y
+Reducing cross-flow vibrations of underflow gates: experiments and numerical studies
+Erdbrink2014b
+y
+Evolutionary Design of Numerical Methods: Generating Finite Difference and Integration Schemes by Differential Evolution
+Ertaylan2007a
+y
+A complex automata model of HIV-1 co-receptor tropism: Understanding mutation rate pressure
+Ertaylan2008a
+y
+A complex automata model of HIV-1 co-receptor tropism: mutation rate prediction
+Ertaylan2011a
+y
+A multi-scale approach for deciphering HIV infection
+Evans2008a
+y
+Multiscale Modelling: Application of the Complex Automata Simulation Technique (COAST)
+Evans2008b
+y
+The Application of Multiscale Modelling to the Process of Development and Prevention of Stenosis in a Stented Coronary Artery
+Evans2009a
+y
+COAST: Multi-scale Simulation of Restenosis
+Faber2008a
+y
+On time-dependent orbital complexity in gravitational N-body simulations
+Falcone2010a
+y
+MML: towards a Multiscale Modeling Language
+Feyen2007a
+y
+Parameter optimisation and uncertainty assessment for large-scale streamflow simulation with the LISFLOOD model
+Filatov2008a
+y
+A compression-based group similarity measure with applications in phylogeny. Automatic detection of viral RNA recombination.
+Filatov2010a
+y
+A comparison between coral colonies of the genus Madracis and simulated forms
+Fomekong-Nanfack2007a
+y
+Efficient parameter estimation for spatio-temporal models of pattern formation: Case study of Drosophila melanogaster
+Fomekong-Nanfack2009a
+y
+Inferring Drosophila gap gene regulatory network: a parameter sensitivity and perturbation analysis
+Fomekong-Nanfack2009b
+y
+Inferring Drosophila gap gene regulatory network: pattern analysis of simulated gene expression profiles and stability analysis
+Fomekong-Nanfack2010a
+y
+Genetic regulatory networks inference : modeling, parameters estimation \& model validation
+Fontijne2000a
+y
+Rigid body simulation and evolution of virtual creatures
+Frade2010a
+y
+Semi-permeable species boundaries in the coral genus Madracis: Introgression in a brooding coral system
+Fregeau2000a
+y
+Mass Segregation and Evaporation in Globular Star Clusters
+Fregeau2004a
+y
+Stellar collisions during binary-binary and binary-single star interactions
+Fregeau2007a
+y
+Stellar Collisions During Binary Interactions and the Effect on Runaway Collisions
+Frentz2010a
+y
+Comparison of HIV-1 Genotypic Resistance Test Interpretation Systems in Predicting Virological Outcomes Over Time
+Frijlink2000a
+y
+Application of the Discrete Dipole Approximation to Radiation Pressure Calculations on Dust-Aggregates: An Exploration
+Funika2006a
+y
+Towards user-defined performance monitoring of distributed Java applications
+Funika2008a
+y
+User interfaces of the Virolab Virtual Laboratory
+Funika2008b
+y
+OCM2PRV: performance visualization of Grid applications based on OCM-G and Paraver
+Funika2008c
+y
+Environment for collaborative development and execution of Virtual Laboratory applications
+Gaburov2008a
+y
+Stellar collisions in young star clusters
+Gaburov2008b
+y
+On the onset of runaway stellar collisions in dense star clusters: I. Dynamics of the first collision
+Gaburov2008c
+y
+Mixing in massive stellar mergers
+Gaburov2009a
+y
+SAPPORO: A way to turn your graphics cards into a GRAPE-6
+Gallagher2000a
+y
+A few General Remarks from the Final Discussion of the Workshop on Massive Stellar Clusters
+Gavidia_Simonetti2003a
+y
+Interactive Visualization of Biomedical Data
+Gavidia_Simonetti2004a
+y
+A Client-Server Engine for Parallel Computation of High-Resolution Planes
+Geerdink2008a
+y
+Entropic and multiple relaxation time lattice Boltzmann methods compared for time harmonic flows
+Geerdink2009a
+y
+Comparing entropic and multiple relaxation time lattice Boltzmann methods for blood flow simulations
+Geldof2007a
+y
+Generic Computing on a Graphics Processing Unit
+Gerhards2010a
+y
+A History-tracing XML-based Provenance Framework for Workflows
+Gerhards2011a
+y
+HisT/PLIER: A Two-Fold Provenance Approach for Grid-Enabled Scientific Workflows Using WS-VLAM
+Ghoreifi1998a
+y
+Modeling accretive growth with particle systems using pair interactions
+Ghulghazaryan2002a
+y
+Yang-Lee zeros of the Q-state Potts model on recursive lattices
+Gieles2004a
+y
+The Effect of Spiral Arms on Star Cluster Evolution
+Gieles2006a
+y
+The Oort problem solved
+Gieles2006b
+y
+Star cluster disruption by giant molecular clouds
+Gieles2007a
+y
+On the Interpretation of the Age Distribution of Star Clusters in the Small Magellanic Cloud
+Gieles2007b
+y
+The effect of spiral arm passages on the evolution of stellar clusters
+Glebbeek2009a
+y
+The evolution of runaway stellar collision products
+Gomes2005a
+y
+Experience with the International Testbed in the CrossGrid Project
+Gomes2005b
+y
+Organization of the International Testbed of the CrossGrid Project
+Gorbachev1997a
+y
+Simulation of Amorphous Hydrogenated Silicon Plasma Enhanced Chemical Vapor Deposition in a Triode Reactor
+Gorbachev1998a
+y
+Hydrogenated Amorphous Silicon Film Growth in Remote PECVD
+Gorbachev1999a
+y
+3-D Visualization for Presenting Results of Numerical Simulation
+Gorbachev2000a
+y
+Influence of Silane Dilution with Hydrogen and Inert Gases on the Dynamics of Amorphous Hydrogenated Silicon Films Growth in PECVD Reactors
+Gorbachev2000b
+y
+Special Features of the Growth of Hydrogenated Amorphous Silicon in PECVD Reactors
+Gorbachev2001a
+y
+Distributed Simulation of Amorphous Hydrogenated Silicon Films: Numerical Experiments on a Linux Based Computing Environment
+Gorbachev2003a
+y
+A Software-Hardware System for Simulation of Technological Devices on Distributed Computer Clusters
+Gorbachev2004a
+y
+Virtual Laboratory for Research and Education
+Gorbachev2004b
+y
+Using GRID technologies for simulation of complex physical-chemical systems
+Gorbachev2004c
+y
+Simulation of heat and mass transfer processes in PECVD reactors for silicon films growth under the conditions of intense formation of higher silanes in the gas phase
+Gorbachev2006a
+y
+From Electronic Textbooks to Virtual Laboratories
+Gorbachev2007a
+y
+Virtual Laboratories: Problem Solving Environments for Science and Education
+Gorbachev2007b
+y
+Numerical modeling of heat and mass transfer processes in PECVD reactors for growing silicon films under the conditions of intense formation of higher silanes in the gas phase
+Gorlatch2006a
+y
+CoreGRID Integration Workshop 2006: CGIW'2006: integrated research in Grid computing
+Gorlatch2008a
+y
+Integrating and accessing medical data resources within the ViroLab Virtual Laboratory
+Gouldby2010a
+y
+Multiscale modelling in real-time flood forecasting systems: From sand grain to dike failure and inundation
+Graaff1992a
+y
+Reduced light-scattering properties for mixtures off spherical particles: a simple approximation derived from Mie Calculations
+Graf2009a
+y
+"In Silico" Oncology for Clinical Decision Making in the Context of Nephroblastoma
+Grindlay2006a
+y
+Short gamma-ray bursts from binary neutron star mergers in globular clusters
+Groen2006a
+y
+Reliability Analysis of Grid Resources: A User Perspective
+Groen2008a
+y
+Simulating N-Body Systems on the Grid Using Dedicated Hardware
+Groen2008b
+y
+Distributed N-body Simulation on the Grid Using Dedicated Hardware
+Groen2009a
+y
+On the Origin of Grid Species: The Living Application
+Groen2010a
+y
+The living application: A self-organizing system for complex grid tasks
+Groen2010b
+y
+A platform independent communication library for distributed computing
+Groen2010c
+y
+High performance N-body simulation on computational grids
+Groen2012a
+y
+A Distributed Infrastructure for Multiscale Biomedical Simulations
+Groen2013a
+y
+Flexible composition and execution of high performance, high fidelity multiscale biomedical simulations
+Gualandris2004a
+y
+N-body simulations of stars escaping from the Orion nebula
+Gualandris2005a
+y
+Has the Black Hole in XTE J1118+480 Experienced an Asymmetric Natal Kick?
+Gualandris2005b
+y
+Three-body encounters in the Galactic Centre: the origin of the hypervelocity star SDSS J090745.0+024507
+Gualandris2006a
+y
+Simulating self-gravitating systems on parallel computers
+Gualandris2007a
+y
+Performance analysis of direct N-body algorithms on highly distributed systems
+Gualandris2007b
+y
+A hypervelocity star from the Large Magellanic Cloud
+Gualandris2008a
+y
+Evolution of stellar orbits in the Galactic centre
+Gubala2006a
+y
+Support for automatic workflow composition based on ontologies in semantic Grid environment
+Gubala2006b
+y
+Semantic composition of scientific workflows based on the Petri nets formalism
+Gubala2007a
+y
+Constructing abstract workflows of applications with workflow composition tool
+Gubala2008a
+y
+ViroLab Virtual Laboratory
+Gubala2008b
+y
+Towards a System-Level Science Support
+Gubala2009a
+y
+Chapter XXVI: Semantic Integration for Research Environments
+Guisado2008a
+y
+Parallel Cellular Automata-based Simulation of Laser Dynamics using Dynamic Load Balancing
+Guisado2008b
+y
+Using cellular automata for parallel simulation of laser dynamics with dynamic load balancing
+Guo2008a
+y
+A hybrid agent-based approach for modeling microbiological systems
+Guravage1994a
+y
+Systolic Quadratic Shading
+Gvaramadze2008a
+y
+Hyperfast pulsars as the remnants of massive stars ejected from young star clusters
+Gvaramadze2008b
+y
+On the origin of hyperfast neutron stars
+Haastert2007a
+y
+Biased Random Walk by Stochastic Fluctuations of Chemoattractant-Receptor Interactions at the Lower Limit of Detection
+Halderen1994a
+y
+SAD Technical Report
+Halderen1994b
+y
+SAD Progress Report
+Halderen1995a
+y
+Memory requirements of F2SAD
+Halderen1995b
+y
+SAD/Parasol II, Joined Report
+Halderen1995c
+y
+A tool for application performance prediction
+Halderen1995d
+y
+F2SAD - prediction capabilities
+Halderen1995e
+y
+Parasol/SAD Final Report
+Halderen1998a
+y
+Hierarchical Resource Management in the Polder Metacomputing Initiative
+Halderen1998b
+y
+Fornax: Web-based Distributed Discrete Event Simulation in Java
+Ham2010a
+y
+A Semantic Model for Complex Computer Networks: The Network Description Language
+Hammel2011a
+y
+The non-hierarchical, non-uniformly branching topology of a leuconoid sponge aquiferous system revealed by 3D reconstruction and morphometrics using corrosion casting and X-ray microtomography
+Hanegraaff2001a
+y
+Simulating the Immune System
+Hannema2001a
+y
+Interaction in Virtual Reality
+Harfst2007a
+y
+Performance analysis of direct N-body algorithms on special-purpose supercomputers
+Harfst2008a
+y
+A hybrid N-body code incorporating algorithmic regularization and post-Newtonian forces
+Harfst2008b
+y
+Status and future of MUSE
+Hartman1997a
+y
+On the absence of mildly recycled radio pulsars amongst the population of ordinary single radio pulsars.
+Havik2000a
+y
+Application of the over-set grid technique to a model singular perturbation problem
+Hegewald2008a
+y
+An Agent-Based Coupling Platform for Complex Automata
+Heggie2006a
+y
+McScatter: A simple three-body scattering package with stellar evolution
+Hendriks2002a
+y
+Towards 3D finite difference simulations of fluid flow in an interactive virtual reality environment
+Hendrikse1995a
+y
+Computation of the independent elements of the dynamical matrix
+Hendrikse1997a
+y
+The $E''\\otimes(\\epsilon' + \\epsilon'')$ Pseudo-Jahn-Teller Effect.\\ An application to KNiCl$_3$
+Hendrikse1997b
+y
+On the P6$_3$/mmc to P6$_3$cm phase transition: Application to KNiCl$_3$ and RbFeBr$_3$
+Hertzberger1994a
+y
+Information Archicture Concepts for Autonomous Control
+Hertzberger1995a
+y
+Information Archicture Concepts for Autonomous Control
+Hertzberger1997a
+y
+Proceedings High-Performance Computing and Networking (HPCN Europe '97), Vienna, Austria
+Hertzberger2001a
+y
+Proceedings High-Performance Computing and Networking (HPCN Europe 2001), Amsterdam, The Netherlands
+Heuvel2000a
+y
+On the origin of the difference between the runaway velocities of the OB-supergiant X-ray binaries and the Be/X-ray binaries
+Hlushkou2004a
+y
+Coupled lattice-Boltzmann method and finite-difference simulations of electroosmosis in microfluidic channels
+Hoekstra1991a
+y
+Time complexity analysis for distributed memory computers: Implementation of a parallel Conjugate Gradient method
+Hoekstra1991b
+y
+The effect of aniosmotic media on the volume of the T-lymphocyte nucleus
+Hoekstra1991c
+y
+Simulation of Elastic Light Scattering on distributed memory machines
+Hoekstra1993a
+y
+New computational techniques to simulate Light Scattering from arbitrary particles
+Hoekstra1993b
+y
+Implementation of a Parallel Conjugate Gradient Method for Simulation of Elastic Light
+Hoekstra1993c
+y
+Simulating Elastic Light Scattering using High Performance Computing methods
+Hoekstra1993d
+y
+Dipolar Unit Size in Coupled Dipole Calculations of the Scattering Matrix Elements Elements
+Hoekstra1993e
+y
+An unexpected signature of Lorenz-Mie scattering observed in FlowCytometric experiments
+Hoekstra1994a
+y
+Yet another face of Lorenz-Mie scattering: monodisperse distributions of spheres produce Lissajous-like patterns
+Hoekstra1994b
+y
+Computer Simulations of Elastic Light Scattering
+Hoekstra1994c
+y
+New Computational Techniques to Simulate Light Scattering from Arbitrary Particles
+Hoekstra1995a
+y
+Coupled dipole simulations of elastic light scattering on parallel systems
+Hoekstra1995b
+y
+Development of Parallel Hierarchical Methods
+Hoekstra1995c
+y
+Comparing the Parix and PVM parallel programming enviroments
+Hoekstra1995d
+y
+Comparing the Parix and PVM parallel programming environments
+Hoekstra1995e
+y
+Simulating Elastic Light Scattering
+Hoekstra1996a
+y
+Parallel hierarchical methods for large scale simulations of virtual particle models
+Hoekstra1996b
+y
+The Optical `Fingerprints' of Cells: Catching the Bad Guys
+Hoekstra1996c
+y
+Native and generic parallel programming environments on a transputer and a PowerPC platform
+Hoekstra1996d
+y
+The Discrete Dipole Approximation -- Possibilities and Problems to Simulate Elastic Light Scattering
+Hoekstra1996e
+y
+Simulating Light scattering from micron-sized particles; A parallel fast discrete dipole approximation
+Hoekstra1997a
+y
+High Performance Discrete Event Simulations to evaluate Complex Industrial Systems, The case of Automatic Debiting Systems for Electronic Toll Collection on Motor Highways
+Hoekstra1997b
+y
+Modelling and Simulation of Automatic Debiting Systems for Electronic Toll Collection on Motor Highways
+Hoekstra1997c
+y
+A Generic Simulation Environment to Evaluate and Design Automatic Debitting Systems
+Hoekstra1997d
+y
+A High Performance Simulation Environment, project status report
+Hoekstra1997e
+y
+Elastic Light Scattering from Single Biological Cells
+Hoekstra1997f
+y
+Modelling and Simulation of an Automatic Debiting System
+Hoekstra1997g
+y
+First Results of DDA Simulations of Elastic Light Scattering by Red Blood Cells
+Hoekstra1998a
+y
+Large Scale Simulations of Elastic Light Scattering by a Fast Dipole Approximation
+Hoekstra1998b
+y
+Guest Editorial, High Performance Computing and Networking Europe 1997
+Hoekstra1998c
+y
+Special Issue on High Performance Computing and Networking Europe 1997
+Hoekstra1998d
+y
+A Parallel Fast Discrete Dipole Approximation for Large Scale Simulations of Elastic Light Scattering
+Hoekstra1998e
+y
+Accuracy of Internal Fields in Volume Integral Equation Simulations of Light Scattering
+Hoekstra1998f
+y
+Internal Fields In Volume Integral Equation Simulations Of Light Scattering: Accuracy And Resonances
+Hoekstra1999a
+y
+Two New Applications of Large Scale DDA Simulations
+Hoekstra2000a
+y
+Calculation of the radiation forces on each dipole in the discrete dipole approximation
+Hoekstra2000b
+y
+Distributed Particle Simulation of Flow in Complex Geometries
+Hoekstra2000c
+y
+Biophysical and Biomedical Applications of Non-Spherical Scattering
+Hoekstra2001a
+y
+Wall effects on density fluctuations in the GBL thermal lattice gas automaton
+Hoekstra2001b
+y
+Radiation Forces in the Discrete Dipole Approximation
+Hoekstra2003a
+y
+Accuracy of internal fields inside spheroids in DDA-simulations of light scattering
+Hoekstra2003b
+y
+Lattice BGK Simulations of Unsteady Flow in a 2D Elastic Tube
+Hoekstra2004a
+y
+Unsteady flow in a 2D elastic tube with the LBGK method
+Hoekstra2005a
+y
+Introducing Grid Speedup Gamma: A Scalability Metric for Parallel Applications on the Grid
+Hoekstra2005b
+y
+Image-based computational hemodynamics with the Lattice Boltzmann Method
+Hoekstra2006a
+y
+Preface to special issue dedicated to the Optical Properties of Biological Cells
+Hoekstra2006b
+y
+Introducing Complex Automata for Modelling Multi-Scale Complex Systems
+Hoekstra2007a
+y
+Optics of Biological Particles
+Hoekstra2007b
+y
+Towards a Complex Automata Framework for Multi-Scale Modeling: Formalism and the Scale Separation Map
+Hoekstra2007c
+y
+Modelleren en Simuleren
+Hoekstra2007d
+y
+Toward a Complex Automata Formalism for Multi-Scale Modeling
+Hoekstra2008a
+y
+Book review: Optical Polarization in Biomedical Applications, V.V. Tuchin, L.V. Wang, D.A. Zimnyakov
+Hoekstra2008b
+y
+Multi-scale Modeling with Cellular Automata: The Complex Automata Approach
+Hoekstra2008c
+y
+Towards Distributed Petascale Computing
+Hoekstra2010a
+y
+Simulating Complex Systems by Cellular Automata
+Hoekstra2010b
+y
+Introduction to Modeling of Complex Systems Using Cellular Automata
+Hoekstra2010c
+y
+Complex Automata: Multi-scale Modeling with Coupled Cellular Automata
+Hoekstra2010d
+y
+Multiscale Coupling of a Lattice Boltzmann Simulation of Blood Flow to Cell- and Tissue-Level Processes: the Case of In-Stent Restenosis
+Hoekstra2010e
+y
+Modelling and simulating in-stent restenosis with complex automata
+Hoekstra2010f
+y
+Towards distributed multiscale computing for the VPH
+Hoenen2013a
+y
+Designing and running turbulence transport simulations using a distributed multiscale computing approach
+Hoffmann1989a
+y
+Iterative Algorithms for Gram-Schmidt Orthogonalization
+Hoffmann1994a
+y
+Solving dense linear systems by Gauss-Huard's method on a distributed memory system
+Hoffmann1994b
+y
+Implementation of Gauss-Huard's method on the IBM 9076 SP1
+Hoffmann1995a
+y
+Approximating Runge-Kutta matrices by triangular matrices
+Hoffmann1995b
+y
+Threshold-pivoting in parallel Gaussian elimination for improved efficiency
+Hoffmann1996a
+y
+Reducing data traffic in Gauss-Huard's algorithm
+Hoffmann1997a
+y
+Approximating Runge-Kutta matrices by triangular matrices
+Hoffmann1998a
+y
+The Gauss-Huard algorithm and LU factorization
+Hopman2004a
+y
+Ultraluminous X-Ray Sources as Intermediate-Mass Black Holes Fed by Tidally Captured Stars
+Hopman2005a
+y
+Gravitational waves from remnants of ultraluminous X-ray sources
+Hopman2006a
+y
+The Redshift Distribution of Short Gamma-Ray Bursts from Dynamically Formed Neutron Star Binaries
+Hu2001a
+y
+XML Encoding of DICOM Structured Reports in Ultrasound Applications
+Hu2001b
+y
+UML Modeling and XML Representation for DICOM Structured Reporting
+Huang2008a
+y
+Introduction to the Special Section on BioGrid: Biomedical Computations on the Grid
+Hulst1983a
+y
+The first radio discovery of a young supernova
+Huo2005a
+y
+A Projection and Its Implementation of a Ruby Subset to Program Algebra
+Iskra2000a
+y
+Experiments with migration of message passing tasks
+Iskra2000b
+y
+Performance Measurements on Dynamite/DPVM
+Iskra2000c
+y
+Dynamic Migration of PVM Tasks
+Iskra2000d
+y
+The implementation of Dynamite -- an environment for migrating PVM tasks
+Iskra2000e
+y
+Experiments with Migration of PVM Tasks
+Iskra2002a
+y
+Rollbacks in Time Warp -- Analysis and Modelling
+Iskra2002b
+y
+The Polder Computing Environment, a system for interactive distributed simulation
+Iskra2003a
+y
+Time Warp Cancellation Optimisations on High Latency Networks
+Iskra2004a
+y
+Towards Grid-aware Time Warp
+Iskra2005a
+y
+Towards Grid-Aware Time Warp
+Iskra2005b
+y
+Time Warp -- from Cluster to Grid
+Ivanov2009a
+y
+Computer Simulation of Laser Annealing of a Nanostructured Surface
+Ivanov2010a
+y
+Computer simulation of laser annealing of a nanostructured surface
+Jaeger-Frank2005a
+y
+Integrating Seismic Events Focal Mechanisms with Image Services in Kepler
+Jaeger2005a
+y
+A Scientific Workflow Approach to Distributed Geospatial Data Processing using Web Services
+Jaeger2010a
+y
+Inference of Surface Membrane Factors of HIV-1 Infection through Functional Interaction Networks
+Javaheri2011a
+y
+A Particle-Based Model for Aggregate Formation in Biomineralization
+Jones2000a
+y
+Modelling of growing natural forms
+Joshi2000a
+y
+Monte Carlo Simulations of Globular Cluster Evolution. I. Method and Test Calculations
+Jänes2011a
+y
+Efficient integration of multiscale N-body systems
+Kaandorp1986a
+y
+Rocky substrate communities of the infralittoral fringe of the Boulonnais coast, NW France: a quantitative survey
+Kaandorp1987a
+y
+Interactive generation of fractal objects
+Kaandorp1990a
+y
+Fractal growth models of sponges (Porifera)
+Kaandorp1991a
+y
+Modelling growth forms of the sponge \em Haliclona oculata\/ (Porifera; Demospongiae) using fractal techniques
+Kaandorp1991b
+y
+Modelling growth forms of sponges with fractal techniques
+Kaandorp1992a
+y
+Modelling growth forms of biological objects using fractals
+Kaandorp1992b
+y
+Sponges in Space
+Kaandorp1992c
+y
+Verification of fractal growth models of the sponge \em Haliclona oculata\/ (Porifera; class Demospongiae) with transplantation experiments
+Kaandorp1993a
+y
+2D and 3D modelling of marine sessile organisms
+Kaandorp1993b
+y
+Simulation of environmentally induced growth forms in marine sessile organisms
+Kaandorp1993c
+y
+Simulating radiate accretive growth using iterative geometric constructions
+Kaandorp1993d
+y
+Fractal modelling of growth forms of the sponge \em Haliclona oculata\/
+Kaandorp1994a
+y
+Fractal modelling: growth and form in biology
+Kaandorp1994b
+y
+Diffusion limited radiate accretive growth
+Kaandorp1994c
+y
+Growth models of sponges using geometric modelling techniques
+Kaandorp1994d
+y
+Diffusion-limited growth of sponges
+Kaandorp1994e
+y
+Simulation of environmentally induced growth forms in marine sessile organisms
+Kaandorp1994f
+y
+A formal description of radiate accretive growth
+Kaandorp1995a
+y
+A Parallel Hybrid Solver for Diffusion Limited Growth
+Kaandorp1995b
+y
+Parallel Solvers for Simulating Morphogenesis
+Kaandorp1995c
+y
+Flow and diffusion Limited growth of aggregates
+Kaandorp1995d
+y
+Analysis and synthesis of radiate accretive growth in three dimensions
+Kaandorp1996a
+y
+Modelling growth and form of marine sessile suspension feeders
+Kaandorp1996b
+y
+Modelling diffusion and flow limited morphogenesis of marine sessile orginisms
+Kaandorp1996c
+y
+The effect of nutrient diffusion and flow on coral morphology
+Kaandorp1996d
+y
+Modelling and simulation of accretive growth and form on a parallel platform
+Kaandorp1996e
+y
+From July 1996 until March 1997 (monthly), cover picture and abstract
+Kaandorp1996f
+y
+De invloed van diffusie en stroming op groei en vorm
+Kaandorp1996g
+y
+Modelling and simulation of the effect of diffusion and flow on growth processes
+Kaandorp1996h
+y
+Simulation of growth and form of sponges and corals and the influence of the physical environment
+Kaandorp1997a
+y
+Parallel simulation of accretive growth in 3-dimensions
+Kaandorp1997b
+y
+A mesoscopic Model for simulating the combined effect of hydrodynamics and diffusion on nutrient driven growth processes
+Kaandorp1998a
+y
+Guest Editorial EURO-VR Mini-conference '97: Virtual reality in industry and research
+Kaandorp1998b
+y
+Special Issue on EURO-VR Mini-conference '97: Virtual reality in industry and research
+Kaandorp1999a
+y
+Thematic issue on Virtual Reality in Industry and Research
+Kaandorp1999b
+y
+Morphological analysis of growth forms of branching marine sessile organisms along environmental gradients
+Kaandorp2000a
+y
+Growth and Form of Sponges and Corals in a Moving Fluid
+Kaandorp2001a
+y
+Morphological Models of Radiate Accretive Growth and the Influence of Hydrodynamics
+Kaandorp2001b
+y
+Simulation and visualization of processes at irregular and complex-shaped interfaces
+Kaandorp2001c
+y
+Special issue on particle based modelling in biology
+Kaandorp2001d
+y
+The algorithmic beauty of seaweeds, sponges and corals
+Kaandorp2003a
+y
+Simulation and analysis of flow patterns around the scleractinian coral Madracis mirabilis (Duchassaing and Michelotti)
+Kaandorp2003b
+y
+Modelling growth and form of stony corals and the influence of hydrodynamics on suspension feeding
+Kaandorp2004a
+y
+Morphological analysis of two- and three-dimensional images of branching sponges and corals
+Kaandorp2005a
+y
+Morphogenesis of the branching reef coral Madracis mirabilis
+Kaandorp2005b
+y
+'De witte dood': about coral bleaching and simulation models
+Kaandorp2006a
+y
+Groei en vorm van koralen \& de invloed van atmosferische CO2 en stijgende zeetemperaturen
+Kaandorp2008a
+y
+Book review: P. Pelce, New visions on growth and form: fingering growth, dendrites, and flames
+Kaandorp2008b
+y
+Exploring Theoretical Morphospaces, Book review: The Geometry of Evolution: Adaptive Landscapes and Theoretical Morphospaces. George R. McGhee
+Kaandorp2008c
+y
+Modelling genetic regulation of growth and form in a branching sponge
+Kaandorp2010a
+y
+Euro ISRS symposium 2010: reefs in a changing environment (book of abstracts)
+Kaandorp2010b
+y
+Modeling skeletal growth in sponges and absorption of silicic acid
+Kaandorp2011a
+y
+A spatial model of calcification in scleractinian corals
+Kaandorp2011b
+y
+Simulating and quantifying the environmental influence on coral growth and form
+Kaandorp2012a
+y
+Multi-scale modeling of gene regulation of morphogenesis
+Kaandorp2013a
+y
+Macroscopic Modelling of Environmental Influence on Growth and Form of Sponges and Corals Using the Accretive Growth Model
+Kaluzhnaya2005a
+y
+Dynamics of skeletal formation in the Lake Baikal sponge \em Lubomirskia baicalensis\/. Part I biological and biochemical studies
+Kandhai1995a
+y
+Parallelization of a simple general circulation model
+Kandhai1996a
+y
+Constrained Migration: exploiting spatial locality
+Kandhai1996b
+y
+Constrained migration of an atmospheric circulation model
+Kandhai1997a
+y
+Performance of a Parallel 3D Lattice Boltzmann code for simulating fluid flow
+Kandhai1998a
+y
+Lattice Boltzmann Hydrodynamics on Parallel Systems
+Kandhai1998b
+y
+Parallel Lattice-Boltzmann Simulation of Fluid Flow in Centrifugal Elutration Chambers
+Kandhai1998c
+y
+Lattice Boltzmann hydrodynamics in Centrifugal Elutriation Chambers
+Kandhai1998d
+y
+A comparison between Lattice-Boltzmann and finite element simulations of fluid flow in Static Mixer Reactors
+Kandhai1999a
+y
+Iterative Momentum Relaxation for Fast Lattice-Boltzmann Simulations
+Kandhai1999b
+y
+Implementation aspects of 3D Lattice-BGK: Boundaries, Accuracy and a new Fast Relaxation Method
+Kandhai1999c
+y
+Lattice-Boltzmann and finite element simulations of fluid flow in a SMRX mixer
+Kandhai1999d
+y
+Iterative Momentum Relaxation for Fast Lattice-Boltzmann Simulations
+Kandhai1999e
+y
+Large Scale Lattice-Boltzmann Simulations: Computational Methods and Applications
+Kandhai2000a
+y
+Finite-Difference Lattice-BGK Methods on Nested Grids
+Kandhai2001a
+y
+Iterative momentum relaxation for fast lattice-Boltzmann simulations
+Kandhai2002a
+y
+Numerical simulation and measurement of liquid hold-up in biporous media containing discrete stagnant zones
+Kandhai2002b
+y
+Influence of Stagnant Zones on Transient and Asymptotic Dispersion in Macroscopically Homogeneous Porous Media
+Kandhai2003a
+y
+Interphase drag coefficients in gas-solid flows
+Kartawidjaja1998a
+y
+Memory Efficiency of Parallel Programs and Memory Bounded Speedup
+Kasztelnik2007a
+y
+Fault tolerant Grid registery
+Kasztelnik2008a
+y
+Development and execution of collaborative application on the ViroLab Virtual Laboratory
+Kirchev2006a
+y
+Security Models for Lightweight Grid Architectures
+Kiryukhin2003a
+y
+Stochastic Modeling of Temporal Variability of HIV-1 Population
+Kiseleva2010a
+y
+Developing a model of silicon nitride film deposition in a remote inductively coupled low-pressure RF plasma discharge [in Russian]
+Kiseleva2011a
+y
+Modelling argon plasma in plasma chemical deposition reactor by ESI CFD-ACE+ software package
+Kitowski2007a
+y
+Rozw\'oj srodk\'ow i narzedzi informatyki dla potrzeb symulacji i budowy aplikacji gridowych (Development of tools and environments for computer simulations and grid applications)
+Kitowski2009a
+y
+Structure and status of National Grid Initiative in Poland
+Kler2007a
+y
+Integration of the ARToolKitPlus optical tracker into the Personal Space Station
+Klimovich2010a
+y
+Simulation of Surface Chemistry in CVD technologies: a Detailed Deposition Model with Surface Diffusion
+Kolesnikova2006a
+y
+Determination of volume, shape and refractive index of individual blood platelets
+Kommers1998a
+y
+Conceptual Support with Virtual Reality in Web-based Learning
+Konakov2011a
+y
+Comparison of two models of plasma chemical processes in silicon nitride deposition technology
+Konakov2011b
+y
+Modeling PECVD deposition process of multilayered structures based on silicon nitride
+Konakov2012a
+y
+Computer simulation of a dependency of silicon nitride film chemical composition on gas mixture flow rate in plasma chemical deposition technology (PECVD)
+Konakov2012b
+y
+Simualtion of aminosilane radical formation mechanism in PECVD technology of silicon nitride deposition from nitrogen with a small silane admixture
+Koopman2002a
+y
+A comparison of a particle tracking and a lattice Boltzmann based method for advection diffusion problems
+Koponen1997a
+y
+Fluid Flow in Three-Dimensional Random Fibre Webs
+Koponen1998a
+y
+Permeability of three-dimensional random fibre webs
+Koponen1998b
+y
+Simulation of single-fluid flow in Porous Media
+Korjoukov2004a
+y
+A Cognitive Model of Human Drawing
+Korkhov2006a
+y
+Workload Balancing in Heterogeneous Grid Environment: A Virtual Reactor Case Study
+Korkhov2006b
+y
+Benchmarking and Adaptive Load Balancing of the Virtual Reactor Application on the Russian-Dutch Grid
+Korkhov2006c
+y
+Workload Balancing in Heterogeneous Grid Environment: A Virtual Reactor Case Study
+Korkhov2008a
+y
+A Grid-Based Virtual Reactor: Parallel performance and adaptive load balancing
+Korkhov2009a
+y
+Hierarchical resource management in grid computing
+Korkhov2009b
+y
+User-Level Scheduling of Divisible Load Parallel Applications with Resource Selection and Adaptive Workload Balancing on the Grid
+Korneev2005a
+y
+Methods of Object-Oriented Reactive Agents Implementation on the Basis of Finite Automata
+Koulouzis2010a
+y
+Enabling Large Data Transfers Between Web Services
+Koulouzis2010b
+y
+Data transport between visualization web services for medical image analysis
+Koulouzis2012a
+y
+Enabling Web Services to Consume and Produce Large Datasets
+Kouwenhoven2003a
+y
+The Primordial Binary Population in OB Associations
+Kouwenhoven2004a
+y
+The Primordial Binary Population in OB Associations
+Kouwenhoven2004b
+y
+Recovering the primordial binary population using simulating observations of simulations
+Kouwenhoven2005a
+y
+The primordial binary population. I. A near-infrared adaptive optics search for close visual companions to A star members of Scorpius OB2
+Kouwenhoven2005b
+y
+A search for close companions in Sco OB2
+Kouwenhoven2006a
+y
+Finding the Primordial Binary Population in Sco OB2: on the interpretation of binary star observations
+Kouwenhoven2007a
+y
+The primordial binary population. II.. Recovering the binary population for intermediate mass stars in Scorpius OB2
+Kouwenhoven2008a
+y
+Pairing mechanisms for binary stars
+Kouwenhoven2009a
+y
+Exploring the consequences of pairing algorithms for binary stars
+Kowalewski2008a
+y
+An event-based approach to reducing coupling in large-scale applications
+Kozionov2012a
+y
+The research of the time-frequency analysis and classification of signals for detection of objects abnormal behavior
+Kozionov2013a
+y
+Intelligent signal processing for dike health monitoring
+Kranzlmüller2003a
+y
+DeWiz - A Modular tool Architecture for Parallel Program Analysis
+Kroc2009a
+y
+Complex Systems Modeling by Cellular Automata
+Kromkamp2005a
+y
+Shear-induced self-diffusion and microstructure in non-Brownian suspensions at non-zero Reynolds numbers
+Kromkamp2006a
+y
+Lattice Boltzmann simulation of 2D and 3D non-Brownian suspensions in Couette flow
+Krul2003a
+y
+Modelling Developmental Regulatory Networks
+Krul2003b
+y
+Modelling and Inferring Developmental Networks
+Kruszynski2005a
+y
+Quantifying performance of 3D skeletonization algorithms
+Kruszynski2006a
+y
+An Interactive Visualization System for Quantifying Coral Structures
+Kruszynski2007a
+y
+A computational method for quantifying morphological variation in scleractinian corals
+Krzhizhanovskaya2002a
+y
+Distributed Simulation of Silicon-Based Film Growth
+Krzhizhanovskaya2004a
+y
+A Grid-Based Problem-Solving Environment for Simulation of Plasma Enhanced Chemical Vapor Deposition
+Krzhizhanovskaya2004b
+y
+A Grid-Based Problem-Solving Environment for Simulation of Plasma Enhanced Chemical Vapor Deposition
+Krzhizhanovskaya2004c
+y
+A 3D Virtual Reactor for Simulation of Silicon-Based Film Production
+Krzhizhanovskaya2005a
+y
+Grid-based Simulation of Industrial Thin Film Production
+Krzhizhanovskaya2006a
+y
+Modeling of Plasma Chemical Deposition and Degradation of Silicon Thin Films
+Krzhizhanovskaya2006b
+y
+Computational Engineering on the Grid: Crafting a Distributed Virtual Reactor
+Krzhizhanovskaya2006c
+y
+Simulation of Multiphysics Multiscale Systems
+Krzhizhanovskaya2006d
+y
+Virtual Reactor: a distributed computing environment for simulation of plasma chemical processes on heterogeneous resources of the Grid
+Krzhizhanovskaya2006e
+y
+Problem-Solving Environments for Simulation and Optimization on Heterogeneous Distributed Computational Resources of the Grid
+Krzhizhanovskaya2006f
+y
+Simulation of Multiphysics Multiscale Systems
+Krzhizhanovskaya2006g
+y
+Software Environment for Simulation of Plasma-Chemical Deposition Reactors on Heterogeneous Computational Resources of the Grid
+Krzhizhanovskaya2007a
+y
+Special Issue on Simulation of Multiphysics Multiscale Systems
+Krzhizhanovskaya2007b
+y
+Simulation of Multiphysics Multiscale Systems: Introduction to the ICCS-2007 Workshop
+Krzhizhanovskaya2007c
+y
+Dynamic Load Balancing of Black-Box Applications with a Resource Selection Mechanism on Heterogeneous Resources of the Grid
+Krzhizhanovskaya2007d
+y
+Virtual Reactor -- Computational Environment for Multidimensional Simulation of Plasma Chemical Processing
+Krzhizhanovskaya2008a
+y
+Parallel Distributed Computing in Modeling of the Nanomaterials Production Technologies
+Krzhizhanovskaya2008b
+y
+Simulation of Multiphysics Multiscale Systems, 5th International Workshop
+Krzhizhanovskaya2008c
+y
+A Virtual Reactor for Simulation of Plasma Enhanced Chemical Vapor Deposition
+Krzhizhanovskaya2008d
+y
+Special Issue on Simulation of Multiphysics Multiscale Systems
+Krzhizhanovskaya2009a
+y
+Multi-Model Multi-Scale Simulation of Complex Plasma Chemical Processes
+Krzhizhanovskaya2009b
+y
+Simulation of Multiphysics Multiscale Systems: Going Nano
+Krzhizhanovskaya2009c
+y
+Simulation of Plasma Chemical Processes on Heterogeneous Grid Resourses with Adaptive Load Balancing for Parallel Solvers
+Krzhizhanovskaya2009d
+y
+Information Technologies and Software Packages for Education of Specialists in Materials Science
+Krzhizhanovskaya2009e
+y
+Multiphysics Multi-model Simulation of Large-Area Plasma Chemical Reactors
+Krzhizhanovskaya2009f
+y
+Challenges and Solutions in Simulation of Plasma Discharge in Reactive Flows
+Krzhizhanovskaya2009g
+y
+Simulation of Multiphysics Multiscale Systems, 6th International Workshop
+Krzhizhanovskaya2009h
+y
+Simulation of Multiphysics Multiscale Systems: Going Nano
+Krzhizhanovskaya2009i
+y
+Computer Simulation for Improving Deposition Uniformity in Large-Area RF/VHF PECVD Reactors
+Krzhizhanovskaya2010a
+y
+Simulation of multiphysics multiscale systems, 7th international workshop
+Krzhizhanovskaya2010b
+y
+A roadmap to multiscale modeling of flood defense systems: from sand grain to dike failure and inundation
+Krzhizhanovskaya2010c
+y
+The UrbanFlood multiscale modelling cascade and Virtual Dike for simulation of dike stability under dynamic hydraulic loading
+Krzhizhanovskaya2010d
+y
+Dynamic workload balancing with user-level scheduling for parallel applications on heterogeneous Grid resources
+Krzhizhanovskaya2010e
+y
+Multiphysics multi-model simulation of large-area plasma chemical reactors
+Krzhizhanovskaya2011a
+y
+Virtual Dike and Flood Simulator: Parallel distributed computing for flood early warning systems
+Krzhizhanovskaya2011b
+y
+Flood early warning system: design, implementation and computational modules
+Krzhizhanovskaya2011c
+y
+Challenges and Solutions in Simulation of Multiphysics Multiscale Systems
+Krzhizhanovskaya2012a
+y
+Computational models in flood early warning systems
+Krzhizhanovskaya2012b
+y
+Modeling Earthen Dikes: Sensitivity Analysis and Calibration of Soil Properties Based on Sensor Data
+Krzhizhanovskaya2012c
+y
+Modelling Dikes and Floods on HPC Clouds
+Krzhizhanovskaya2012d
+y
+Information Technologies and Software Packages for Education of Masters of Science in Materials Science
+Krzhizhanovskaya2013a
+y
+Distributed Simulation of City Inundation by Coupled Surface and Subsurface Porous Flow for Urban Flood Decision Support System
+Kulk2003a
+y
+On the Computational Complexity of Lattice Gas Automata
+Kvaløy2004a
+y
+Semantic Web Services Automated Matching, Composition and Selection
+Kvaløy2005a
+y
+Automatic Composition and Selection of Semantic Web Services
+Laak1991a
+y
+Parallelizing Fast Simulated Annealing: Experiments on a distributed memory system
+Laak1992a
+y
+Nonconvex continuous optimization experiments on a transputer system
+Labno2008a
+y
+A P2P approach to resource discovery in on-line monitoring of Grid workflows
+Lamers2005a
+y
+Disruption time scales of star clusters in different galaxies
+Lankamp2007a
+y
+Developing a reference implementation for a microgrid of microthreaded microprocessors
+Lauwerier1988a
+y
+Fractals (mathematics, programming and applications)
+Lebanin2010a
+y
+Development of a software package for processing the photoemission spectra of high-frequency nitrogen discharge, obtained from the MDR-12 monochromator [in Russian]
+Lebanin2011a
+y
+A review of plasma chemical methods of silicon nitride production
+Lebanin2012a
+y
+A model of reaction kinetics for two neutral particles in gases and plasmas
+Lebanin2013a
+y
+The dependence of the rate constant of the interaction between two excited particles on the excitation energy and temperature. Verification of the model with examples transfer of electronic excitation energy of the argon atom and the nitrogen molecule in the reaction of dissociation of nitrogen atom of argon
+Lee2006a
+y
+IEEE Proceedings of the 2006 International Conference on Hybrid Information Technology
+Lees2014a
+y
+Automatic Rule Identification for Agent-Based Crowd Models Through Gene Expression Programming
+Lees2014b
+y
+Quantitative Comparison Between Crowd Models for Evacuation Planning and Evaluation
+Leguy2011a
+y
+Global sensitivity analysis of a wave propagation model for arm arteries
+Leiva2001a
+y
+Morphological Analysis of Branching Structures
+Leskes2004a
+y
+Unlearning Phenomena in Co-evolution of Non-uniform Cellular Automata
+Leskes2005a
+y
+The Value of Agreement - a new boosting algorithm
+Li2002a
+y
+Web Services Technology -- Design, Implementation and Evaluation
+Libin2013a
+y
+RegaDB: Community-driven data management and analysis for infectious diseases
+Liddell1996a
+y
+Proceedings High-Performance Computing and Networking (HPCN Europe '96), Brussels, Belgium
+Linden1994a
+y
+The implementation of portable programming layers: a case study
+Linden1994b
+y
+PVM/PARIX Progress Report
+Liu2007a
+y
+In Vivo Identification and Manipulation of the Ca2+ Selectivity Filter in the Drosophila Transient Receptor Potential Channel
+Liu2008a
+y
+Ca2+-dependent metarhodopsin inactivation mediated by calmodulin and NINAC myosin III
+Lommen2005a
+y
+Cygnus X-3 and the problem of the missing Wolf-Rayet X-ray binaries
+Lonsdale1993a
+y
+Crashworthiness simulation migration to distributed memory and MIMD machines
+Lorenz2009a
+y
+Lees-Edwards boundary conditions for lattice Boltzmann suspension simulations
+Lorenz2009b
+y
+Corrected momentum exchange method for lattice Boltzmann simulations of suspension flow
+Lorenz2010a
+y
+Multi-scale simulations with complex automata: in-stent restenosis and suspension flow
+Lorenz2011a
+y
+Distributions of Cluster Sizes in Shear-Thickening, Suspensions derived from a Statistical Clustering Model
+Lorenz2011b
+y
+Heterogeneous Multiscale Simulations of Suspension Flow
+Lorenz2011c
+y
+Heterogeneous multiscale simulations of suspension flow
+Lorenz2013a
+y
+Strong Anisotropy in Shear-induced RBC-enhanced Platelet Diffusion
+Ludäscher2002a
+y
+Time to Leave the Trees: from Syntactic to Conceptual Querying of XML
+Ludäscher2003a
+y
+Compiling Abstract Scientific Workflows into Web Service Workflows
+Ludäscher2005a
+y
+Scientific Workflow Management and the Kepler System
+Lunzer2010a
+y
+Validating the ACGT Oncosimulator with a Grid-Supported Visualisation Environment
+Lunzer2010b
+y
+Preparing, exploring and comparing cancer simulation results within a large parameter space
+Machi'1998a
+y
+MPI parallelisation of a fluid-dynamical SPH code and optimisation of such code by means of dynamic geometric decompisition of the integration domain
+Machi'1998b
+y
+MPI parallelisation of a fluid-dynamical code for astrophysical applications, optimised and tested on various computing architectures
+Maheshwari2007a
+y
+Problem Solving Environment for Medical Image Analysis Application Development
+Malawski2006a
+y
+An ADL-based Support for CCA Components on the Grid
+Malawski2006b
+y
+Experiments with distributed component computing across Grid boundaries
+Malawski2006c
+y
+Towards Multiprotocol and Multilanguage Interoperability: Experiments with Babel and RMIX
+Malawski2007a
+y
+A new approach to supporting component applications on Grid
+Malawski2007b
+y
+Interoperability of grid component models: GCM and CCA case study
+Malawski2007c
+y
+Towards A High-Level Scripting Approach for Building Component-Based Gridspace Applications
+Malawski2008a
+y
+Optimization of application execution in the ViroLab Virtual Laboratory
+Malawski2008b
+y
+Optimization of Application Execution in the GridSpace Environment
+Malawski2008c
+y
+High-level scripting approach for building component-based applications on the Grid
+Malawski2008d
+y
+A tool for building collaborative applications by invocation of Grid Operations
+Malawski2008e
+y
+Optimization of application execution in the GridSpace environment
+Maltsev2011a
+y
+Optics of White Blood Cells: optical models, simulations, and experiments
+Mamikonyan2008a
+y
+TKira - A Hybrid N-Body Code
+Manchego2005a
+y
+Methodologies of Retrieval, Management and Mediation of Sensor Data
+Mancini2012a
+y
+HIV Reservoirs and Immune Surveillance Evasion Cause the Failure of Structured Treatment Interruptions: A Computational Study
+Marchi2003a
+y
+The Mass Function of Galactic Clusters and its Evolution
+Marchi2009a
+y
+Time Evolution of the Stellar Mass Function of Galactic Clusters
+Marie2013a
+y
+The shell-forming proteome of Lottia gigantea reveals both deep conservations and lineage-specific novelties
+Martinez1998a
+y
+Java CORBA DICOM Adapter Service for DICOM-compliant Datasets
+Martinez1999a
+y
+Seamless handling of DICOM-related medical information through object-oriented distributed services
+McEvoy1993a
+y
+Towards a Parallel Implementation of Gamma
+McEvoy1994a
+y
+Extending Gamma with Chromatic Typing
+McEvoy1995a
+y
+Local Linear Logic for Locality Consciousness in Multiset Transformation
+McEvoy1996a
+y
+On modelling environmentally-sensitive growth forms and cellular automata using multiset transformation
+McMillan2001a
+y
+The lives and deaths of star clusters near the Galactic Center
+McMillan2003a
+y
+Evolution of Dense Star Clusters Near the Galactic Center
+McMillan2003b
+y
+The Fate of Star Clusters near the Galactic Center. I. Analytic Considerations
+McMillan2005a
+y
+Stellar Collisions in Young Star Clusters
+McMillan2007a
+y
+A Dynamical Origin for Early Mass Segregation in Young Star Clusters
+McMillan2007b
+y
+Stellar Collisions and Black-Hole Formation in Dense Star Clusters
+Meel2008a
+y
+Harvesting graphics power for MD simulations
+Mei2010a
+y
+Quantitatively evaluating interventions in the influenza A (H1N1) epidemic on China campus grounded on individual-based simulations
+Mei2010b
+y
+Complex Agent Networks explaining the HIV epidemic among homosexual men in Amsterdam
+Mei2011a
+y
+Increasing risk behaviour can outweigh the benefits of antiretroviral drug treatment on the HIV incidence among men-having-sex-with-men in Amsterdam
+Mei2013a
+y
+Individual decision making can drive epidemics: a fuzzy cognitive map study
+Meijer2004a
+y
+Scheduling parallel processes using Genetic Algorithms
+Meizner2009a
+y
+Threat model for MOCCA component environment
+Melnikova2010a
+y
+Transient simulation of stress-strain behaviour of an earthen sea dike under the forces of tidal water infiltration and under the flood conditions [in Russian]
+Melnikova2011a
+y
+Virtual Dike: multiscale simulation of dike stability
+Melnikova2013a
+y
+Modeling earthen dikes using real-time sensor data
+Melnikova2013b
+y
+Modeling Earthen Dike Stability: Sensitivity Analysis and Automatic Calibration of Diffusivities Based on Live Sensor Data
+Merks1999a
+y
+The interplay of hydrodynamics and genetic regulation in the morphogenesis of sponges and stony corals: pilot studies
+Merks2001a
+y
+Validation of the Lowe-Frenkel tracer dispersion method in the lattice Boltzmann method
+Merks2001b
+y
+Validation of the Lowe-Frenkel tracer dispersion method in the lattice Boltzmann method
+Merks2002a
+y
+The moment propagation method for advection-diffusion in the lattice Boltzmann method: validation and P\'eclet number limits
+Merks2002b
+y
+Branching and compactification in a model of coral growth: a critical reinvestigation of the effect of hydrodynamics
+Merks2002c
+y
+Spontaneous branching in a polyp oriented model of stony coral growth
+Merks2003a
+y
+Problem Solving Environment for Modelling Stony Coral Morphogenesis
+Merks2003b
+y
+Branching Growth in Stony Corals - a Modelling Approach
+Merks2003c
+y
+Models of coral growth: Spontaneous branching, compactification and the Laplacian growth assumption
+Merks2003d
+y
+Branching and compactification in a model of coral growth: a critical reinvestigation of the effect of hydrodynamics
+Merks2003e
+y
+Diffusion Limited Growth In Laminar Flows
+Merks2004a
+y
+Polyp oriented modelling of coral growth
+Merks2005a
+y
+Droogzwemmen in het koraalrif. Computersimulaties verklaren koraalgroei
+Merks2006a
+y
+Problem-Solving Environments for Biological Morphogenesis
+Merritt2004a
+y
+Core Formation by a Population of Massive Remnants
+Mes1993a
+y
+Parasol I Progress Report
+Mes1994a
+y
+Presentation on the status of Parasol
+Mes1994b
+y
+An Abstract Machine for Execution Time Estimation
+Mes1994c
+y
+Parasol I Technical Report
+Miller-Jones2009a
+y
+The formation of the black hole in the X-ray binary system V404 Cyg
+Min2006a
+y
+Absorption and scattering properties of arbitrarily shaped particles in the Rayleigh domain: A rapid computational method and a theoretical foundation for the statistical approach
+Mocicki2007a
+y
+Quality of Service on the Grid with User Level Scheduling
+Mocicki2011a
+y
+Understanding and mastering dynamics in computing grids: processing moldable tasks with user-level overlay
+Mocicki2011b
+y
+Processing moldable tasks on the grid: Late job binding with lightweight user-level overlay
+Moll2008a
+y
+Dynamical mass of a star cluster in M 83: a test of fibre-fed multi-object spectroscopy
+Mordvintsev2012a
+y
+Simulation of City Evacuation Coupled to Flood Dynamics
+Mordvintsev2013a
+y
+Simulation of City Evacuation Coupled to Flood Dynamics
+Mountrakis2012a
+y
+Modelling the transport behaviour of platelets in intracranial aneurysms
+Mountrakis2013a
+y
+Where do the platelets go? A simulation study of fully resolved blood flow through aneurysmal vessels
+Mountrakis2013b
+y
+Shape memory and membrane fluctuations of an RBC in shear flow
+Mourabit2000a
+y
+Time Warp performance: An empirical study of rollback in the APSIS Time Warp kernel
+Msanjila2009a
+y
+On inter-organizational trust engineering in networked collaborations: modeling and management of rational trust
+Muiswinkel1992a
+y
+Parallel Sound Synthesis: Parallel Sonification of Multivariate data on a transputer platform
+Muller2008a
+y
+Multi-touch displays: design, applications and performance evaluation
+Muno2005a
+y
+A Neutron Star with a Massive Progenitor in the Star Cluster Westerlund 1
+Muno2006a
+y
+A Neutron Star with a Massive Progenitor in Westerlund 1
+Muno2006b
+y
+XMM Observations of AXP CXO J167410.2-455216 Four Days Prior to Outburst
+Muno2006c
+y
+Diffuse, Nonthermal X-Ray Emission from the Galactic Star Cluster Westerlund 1
+Muno2007a
+y
+Exciting the magnetosphere of the magnetar CXOU J164710.2-455216 in Westerlund 1
+Murtaza2007a
+y
+Performance evaluation of FPGA-based Cellular Automata accelerators
+Murtaza2007b
+y
+Performance Modeling of 2D Cellular Automata on FPGA
+Murtaza2008a
+y
+Floating point based Cellular Automata simulations using a dual FPGA-enabled system
+Murtaza2009a
+y
+Compute Bound and I/O Bound Cellular Automata Simulations on FPGA Logic
+Murtaza2010a
+y
+High performance reconfigurable computing with cellular automata
+Murtaza2011a
+y
+Cellular Automata Simulations on a FPGA cluster
+Müller2006a
+y
+Magnetic resonance imaging of the siliceous skeleton of the demosponge Lubomirskia baicalensis
+Müller2007a
+y
+Fractal-related assembly of the axial filament in the demosponge Suberites domuncula: relevance to biomineralization and the formation of biogenic silica,
+Naumov2001a
+y
+How to Increase the Speed of "Life", or Effective Data Organization for Speeding Up Cells Search and Solving the Relationship of Neighborhood in Implementation of John Horton Conway's Cellular Automaton "Life" - Part 1
+Naumov2001b
+y
+How to Increase the Speed of "Life", or Effective Data Organization for Speeding Up Cells Search and Solving the Relationship of Neighborhood in Implementation of John Horton Conway's Cellular Automaton "Life" - Part 2
+Naumov2001c
+y
+How to Increase the Speed of "Life", or Effective Data Organization for Speeding Up Cells Search and Solving the Relationship of Neighborhood in Implementation of John Horton Conway's Cellular Automaton "Life"
+Naumov2002a
+y
+Methods of Task Decomposition into Subtasks
+Naumov2002b
+y
+Tasks Solving for the Correspondence School of Modern Programming. Lesson 10: Codes and Data Compression. Part 2.
+Naumov2003a
+y
+Generalized Coordinates for Cellular Automata Grids
+Naumov2003b
+y
+Automata Theory for Multi-Agent Systems Implementation
+Naumov2003c
+y
+Automata Programming as a Sort of Synchronous Programming
+Naumov2003d
+y
+Cellular Automata. Realization and Experiments
+Naumov2003e
+y
+Automata Theory for Applied Programming
+Naumov2003f
+y
+The Art of Lift Programming. Object-Oriented Programming with Explicit States Separation
+Naumov2003g
+y
+Tasks Solving for the Correspondence School of Modern Programming. Lesson 9: Codes and Data Compression. Part 1.
+Naumov2003h
+y
+Dynamic Programming
+Naumov2004a
+y
+"Colorful" Cellular Automata
+Naumov2004b
+y
+Automata Implementation in Object-Oriented Programs
+Naumov2004c
+y
+CAMEL - Cellular Automata Modeling Environment \& Library
+Naumov2004d
+y
+CAMEL - Cellular Automata Modeling Environment \& Library
+Naumov2004e
+y
+Methods of Object-Oriented Agents Implementation, Basing on Finite Automata
+Naumov2004f
+y
+Methods of Object-Oriented Agents Implementation, Basing on Finite Automata
+Naumov2004g
+y
+CTP (Commands Transfer Protocol) - Networking Protocol for High-Performance Computations
+Naumov2005a
+y
+New Version of the Networking Protocol for High-Performance Computations CTP (Commands Transfer Protocol) v. 1.2
+Naumov2005b
+y
+Advantages of Using Generalized Coordinates for Multidimensional Cellular Automata Grids
+Naumov2005c
+y
+Classification of Structures Generated by One-Dimensional Binary Cellular Automata from a Point Embryo
+Naumov2005d
+y
+Solving Tasks with Cellular Automata using CAMEL Software. Part 1
+Naumov2005e
+y
+Solving Tasks with Cellular Automata using CAMEL Software. Part 2
+Naumov2006a
+y
+Comparision of Specialized Netwoking Protocols CTP (Commands Transfer Protocol) and IL (Internet Link)
+Naumov2006b
+y
+An Overview of Cellular Automata Modeling Software
+Naumov2007a
+y
+Conceptual Changes in Cellular Automata Development Library (CADLib) from Version 1.0 to Version 1.1
+Naumov2010a
+y
+The influence of mitoses rate on growth dynamics of a cellular automata model of tumour growth
+Naumov2011a
+y
+Modelling with Cellular Automata: Problem Solving Environments and Multidimensional Applications
+Naumov2011b
+y
+Cellular automata models of tumour natural shrinkage
+Nelemans2000a
+y
+Reconstructing the evolution of double helium white dwarfs: envelope loss without spiral-in
+Nelemans2001a
+y
+The gravitational wave signal from the Galactic disk population of binaries containing two compact objects
+Nelemans2001b
+y
+Population synthesis for double white dwarfs. II. Semi-detached systems: AM CVn stars
+Nelemans2001c
+y
+Population synthesis for double white dwarfs. I. Close detached systems
+Nelemans2004a
+y
+Short-period AM CVn systems as optical, X-ray and gravitational-wave sources
+Nguyen2005a
+y
+Robust tracking of input props with webcams
+Nichols2013a
+y
+Cost-Effectiveness of Pre-Exposure Prophylaxis (PrEP) in Preventing HIV-1 Infections in Rural Zambia: A Modeling Study
+Niculescu2011a
+y
+Towards a cell-based model of Neointimal Hyperplasia with Cellular Potts Model
+Nijs1988a
+y
+Calibration method for rotating-analyzer ellipsometers
+Noordmans1991a
+y
+Ontwikkeling van een experimentele methode voor de bepaling van de komplete verstrooiingsmatrix van biologische deeltjes in een flowcytometer
+Nualláin2004a
+y
+Online Suffix Trees with Counts
+Nualláin2008a
+y
+Enhanced Decision Support for HIV Drug Resistance Interpretation
+Oinonen2002a
+y
+Local curvature as a measurement of shape for three-dimensional complex objects
+Olabarriaga2006a
+y
+A Virtual Laboratory for fMRI Data Management and Analysis
+Olabarriaga2006b
+y
+Towards a Virtual Laboratory for fMRI Data Management and Analysis
+Olabarriaga2007a
+y
+Integrated Support for Medical Image Analysis Methods: from Development to Clinical Application
+Orlova2008a
+y
+Light scattering by neutrophils: model, simulation, and experiment
+Overeinder1991a
+y
+Parallel Discrete Event Simulation
+Overeinder1992a
+y
+Time Warp on a Transputer Platform: Pilot Study with Asynchronous Cellular Automata
+Overeinder1993a
+y
+Application of Time Warp to Parallel simulations with asynchronous cellular automata
+Overeinder1994a
+y
+Finalization Report: Homogeneous PVM/PARIX
+Overeinder1995a
+y
+A Communication Kernel for Parallel Programming Support on a Massively Parallel Processor System
+Overeinder1995b
+y
+Parallel Performance Evaluation through Critical Path Analysis
+Overeinder1995c
+y
+A Communication Kernel for Parallel Programming Support on a Massively Parallel Processor System
+Overeinder1995d
+y
+Parallel Discrete Event Simulation Performance Modeling and Evaluation
+Overeinder1996a
+y
+A Dynamic Load Balancing System for Parallel Cluster Computing
+Overeinder1997a
+y
+Performance Measurements of a Light Scattering code on the Parsytec CC: Comparison with the Parsytec PowerXplorer
+Overeinder1997b
+y
+Breaking the Curse of Dynamics by Task Migration: Pilot Experiments in the Polder Metacomputer
+Overeinder1999a
+y
+Extensions to Time Warp Parallel Simulation for Spatially Decomposed Applications
+Overeinder1999b
+y
+Extensions to Time Warp Parallel Simulation for Spatial Decomposed Applications
+Overeinder2000a
+y
+Distributed Event-driven Simulation - Scheduling Strategies and Resource Management
+Overeinder2001a
+y
+Spatio-Temporal Correlations and Rollback Distributions in Optimistic Simulations
+Overeinder2001b
+y
+Spatio-Temporal Correlations and Rollback Distributions in Optimistic Simulations
+Overeinder2001c
+y
+Self-Organized Criticality in Optimistic Simulation of Correlated Systems
+Patrick2004a
+y
+Data Comunnication Infrastructure for Distributed Real-Time Simulation
+Patruno2006a
+y
+The ultraluminous X-ray source in M82: an intermediate-mass black hole with a giant companion
+Pengel2011a
+y
+Flood early warning system: sensors and internet
+Pengel2011b
+y
+The urbanflood early warning system: sensors and coastal flood safety
+Pengel2012a
+y
+Flood Early Warning System: Sensors and Internet
+Pengel2013a
+y
+Flood early warning system: sensors and internet
+Penttilä2006a
+y
+Comparison between discrete dipole and exact techniques
+Penttilä2007a
+y
+Comparison between discrete dipole implementations and exact techniques
+Peterson2002a
+y
+Selection of the Space Interferometry Mission Astrometric Grid
+Pimentel1993a
+y
+The Parallelisation of the Object-oriented Simulation Language Pearl
+Pimentel1994a
+y
+Mermaid: modelling and evaluation research in MIMD Architecture Design
+Pimentel1995a
+y
+Mermaid: Modelling and Evaluation Research in MIMD Architecture Design
+Pimentel1995b
+y
+Simulation of a Mesh of Clos Wormhole Network
+Pimentel1995c
+y
+Mermaid: modelling and evaluation research in MIMD architecture design
+Pol2010a
+y
+Optical and non-optical methods for detection and characterization of microparticles and exosomes
+Pooley2002a
+y
+The Close Binary Population of Globular Clusters Revealed by Chandra
+Pooley2003a
+y
+Dynamical Formation of Close Binary Systems in Globular Clusters
+Portegies_Zwart1993a
+y
+Quick method for calculating energy dissipation in tidal interaction
+Portegies_Zwart1995a
+y
+The formation of Be stars in close binary systems. The importance of kicks and angular-momentum loss
+Portegies_Zwart1996a
+y
+The galactic merger-rate of (ns, ns) binaries. I. Perspective for gravity-wave detectors.
+Portegies_Zwart1996b
+y
+The Depletion of Giants in Globular Clusters
+Portegies_Zwart1996c
+y
+Stellar Collisions in Globular Clusters
+Portegies_Zwart1996d
+y
+Population synthesis of high-mass binaries.
+Portegies_Zwart1997a
+y
+The formation of black-holes in low-mass X-ray binaries.
+Portegies_Zwart1997b
+y
+Population Synthesis of Evolving Star Clusters
+Portegies_Zwart1997c
+y
+Star cluster ecology. I. A cluster core with encounters between single stars
+Portegies_Zwart1997d
+y
+Star cluster ecology. II. Binary evolution with single-star encounters
+Portegies_Zwart1997e
+y
+Observational constraints on kicks in supernovae
+Portegies_Zwart1998a
+y
+The disruption of globular star clusters in the galaxy: A comparative analysis between N-body and Fokker-Planck models
+Portegies_Zwart1998b
+y
+The dissipation of tidally truncated star clusters with stellar evolution: Escape from a crisis in Fokker-Planck models
+Portegies_Zwart1998c
+y
+Formation and evolution of binary neutron stars
+Portegies_Zwart1998d
+y
+Gamma-Ray Binaries: Stable Mass Transfer from a Neutron Star to a Black Hole
+Portegies_Zwart1998e
+y
+On the dissolution of evolving star clusters
+Portegies_Zwart1998f
+y
+Formation of Low-Mass Black Hole X-Ray Transients
+Portegies_Zwart1998g
+y
+Stellar Evolution and Dynamics in Star Clusters
+Portegies_Zwart1999a
+y
+Star cluster ecology. III. Runaway collisions in young compact star clusters
+Portegies_Zwart1999b
+y
+Escape from a Crisis in Fokker-Planck Models
+Portegies_Zwart1999c
+y
+The possible companions of young radio pulsars
+Portegies_Zwart1999d
+y
+Explaining the light curves of gamma-ray bursts with a precessing jet
+Portegies_Zwart1999e
+y
+Can Precessing Jets Explain the Light Curves of Gamma-Ray Bursts?
+Portegies_Zwart1999f
+y
+The origin of single radio pulsars
+Portegies_Zwart2000a
+y
+Collisions in Compact Star Clusters.
+Portegies_Zwart2000b
+y
+Black Hole Mergers in the Universe
+Portegies_Zwart2000c
+y
+The Characteristics of High-Velocity O and B Stars Which Are Ejected from Supernovae in Binary Systems
+Portegies_Zwart2001a
+y
+Fun for two
+Portegies_Zwart2001b
+y
+Is the Galactic Center Populated with Young Star Clusters?
+Portegies_Zwart2001c
+y
+Merger Rates of Black-Hole Binaries: Prospects for Gravitational-Wave Detectors
+Portegies_Zwart2001d
+y
+How Many Young Star Clusters Exist in the Galactic Center?
+Portegies_Zwart2001e
+y
+Star cluster ecology - IV. Dissection of an open star cluster: photometry
+Portegies_Zwart2001f
+y
+Precessing jets interacting with interstellar material as the origin for the light curves of gamma-ray bursts
+Portegies_Zwart2002a
+y
+The Runaway Growth of Intermediate-Mass Black Holes in Dense Star Clusters
+Portegies_Zwart2002b
+y
+The Lives and Deaths of Star Clusters near the Galactic Center
+Portegies_Zwart2002c
+y
+A dozen colliding wind X-ray binaries in the star cluster R136 in the 30 Doradus region
+Portegies_Zwart2002d
+y
+Eenzame Zon - Berekening van de evolutie van sterrenhopen
+Portegies_Zwart2003a
+y
+The Origin of IRS 16: Dynamically Driven In-Spiral of a Dense Star Cluster to the Galactic Center?
+Portegies_Zwart2004a
+y
+Star cluster ecology - V. Dissection of an open star cluster: spectroscopy
+Portegies_Zwart2004b
+y
+Formation of massive black holes through runaway collisions in dense young star clusters
+Portegies_Zwart2004c
+y
+Intermediate mass black holes in accreting binaries: formation, evolution and observational appearance
+Portegies_Zwart2005a
+y
+Explanation for the existance of a planet in a triple star system
+Portegies_Zwart2005b
+y
+Erratum: Intermediate mass black holes in accreting binaries: formation, evolution and observational appearance
+Portegies_Zwart2006a
+y
+The Ecology of Star Clusters and Intermediate-Mass Black Holes in the Galactic Bulge
+Portegies_Zwart2007a
+y
+The evolution of binary star clusters and the nature of NGC 2136/NGC 2137
+Portegies_Zwart2007b
+y
+Simulating Young Star-Clusters with Primordial Binaries
+Portegies_Zwart2007c
+y
+High-performance direct gravitational N-body simulations on graphics processing units
+Portegies_Zwart2007d
+y
+The gravitational wave signature of young and dense star clusters
+Portegies_Zwart2007e
+y
+Star cluster ecology - VII. The evolution of young dense star clusters containing primordial binaries
+Portegies_Zwart2007f
+y
+A runaway collision in a young star cluster as the origin of the brightest supernova
+Portegies_Zwart2007g
+y
+The present day mass function in the central region of the Arches cluster
+Portegies_Zwart2008a
+y
+Reconstructing the Initial Relaxation Time of Young Star Clusters in the Large Magellanic Cloud
+Portegies_Zwart2008b
+y
+A multiphysics and multiscale software environment for modeling astrophysical systems
+Portegies_Zwart2008c
+y
+A parallel gravitational N-body kernel
+Portegies_Zwart2009a
+y
+The lost siblings of the Sun
+Portegies_Zwart2009b
+y
+A multiphysics and multiscale software environment for modeling astrophysical systems
+Portegies_Zwart2010a
+y
+Simulating the universe on an intercontinental grid
+Porubov2002a
+y
+Large Solitary Waves Formation in Microstructured Solids
+Porubov2003a
+y
+Localized nonlinear strain waves in complex dispersive-dissipative solids
+Porubov2005a
+y
+On some localized waves described by the extended KdV equation
+Postma2009a
+y
+Mathematics of experimentally generated chemoattractant gradients
+Potma1994a
+y
+Boosting the performance of the linear algebra part in an ODE solver for shared memory systems
+Potma1994b
+y
+Performance Evaluation of Gauss-Huard's method for Hierarchical Memory Systems
+Pronk1993a
+y
+Performance analysis and implementation of Gauss-Huard elimination
+Prosnikov2012a
+y
+A review of methods and software packages for simulation of nanosystems
+Prosperi2010a
+y
+Antiretroviral Therapy Optimisation without Genotype Resistance Testing: A Perspective on Treatment History Based Models
+Prosperi2011a
+y
+Correction: Antiretroviral Therapy Optimisation without Genotype Resistance Testing: A Perspective on Treatment History Based Models
+Pyayt2011a
+y
+Machine Learning Methods for Environmental Monitoring and Flood Protection
+Pyayt2011b
+y
+Artificial Intelligence and Finite Element Modelling for Monitoring Flood Defence Structures
+Pyayt2012a
+y
+Data-driven methods in UrbanFlood project for flood defence structure measurements analysis
+Pyayt2012b
+y
+Signal Processing Methods for Flood Early Warning Systems
+Pyayt2012c
+y
+Data-driven modelling for flood defence structure analysis
+Pyayt2012d
+y
+Data-driven modelling for flood defence structure analysis
+Pyayt2013a
+y
+Signal analysis and anomaly detection for flood early warning systems
+Pyayt2013b
+y
+An Approach for Real-time Levee Health Monitoring Using Signal Processing Methods
+Pyayt2014a
+y
+Time-frequency Methods for Structural Health Monitoring
+Qiu2001a
+y
+An Overview of Computational Hemodynamics
+Qiu2007a
+y
+Understanding the complex dynamics of stock markets through cellular automata
+Qiu2010a
+y
+Modeling options markets by focusing on active traders
+Qiu2011a
+y
+Understanding the complex dynamics of financial markets through microsimulation
+Qiu2012a
+y
+Understanding Complex Dynamics in Derivatives Finance: Why do Options Markets Smile?
+Quax2008a
+y
+Modeling and Simulating the Propagation of Infectious Diseases Using Complex Networks
+Quax2009a
+y
+Simulating Individual-Based Models of Epidemics in Hierarchical Networks
+Quax2011a
+y
+SEECN: SIMULATING COMPLEX SYSTEMS USING DYNAMIC COMPLEX NETWORKS
+Quax2012a
+y
+Information processing reveals how microscopic components affect the macroscopic system-state in complex networks
+Quax2013a
+y
+Information processing in complex networks
+Quax2013b
+y
+Information dissipation as an early-warning signal for the Lehman Brothers collapse in financial time series
+Quax2013c
+y
+The diminishing role of hubs in dynamical processes on complex networks
+Quax2013d
+y
+Inferring epidemiological parameters from phylogenetic information for the HIV-1 epidemic among MSM
+Quax2013e
+y
+Towards understanding the behavior of physical systems using information theory
+Ragas2002a
+y
+Interactive visualization of flowfields in an Immersive Virtual Environment -- Applied to the test case of simulated abdominal vascular reconstruction
+Rahhal2007a
+y
+Interactive Distributed Computing Middleware
+Ramachandran1998a
+y
+Detectability of Relativistic binaries
+Ramos-Silva2011a
+y
+Finding patterns and differences on biomineralization-related proteins from Metazoans
+Ramos-Silva2012a
+y
+Novel molluskan biomineralization proteins retrieved from proteomics: a case study with Upsalin
+Rath2008a
+y
+Gas phase considerations for the deposition of thin film silicon cells by VHF-PECVD at low substrate temperatures
+Renes1984a
+y
+Processing of compressed IRAS data
+Rexhepi2008a
+y
+The Volatility Smile Dynamics Implied by Smile-Consistent Option Pricing Models and Empirical Data
+Ridder2004a
+y
+Collaboration in the Virtual Laboratory for e-Science
+Roberts1979a
+y
+Gas flow in barred spirals: gaseous density waves and galactic shocks
+Rodríguez2004a
+y
+Mesoscopic Stochastic Modelling for Biochemical Networks with Membrane-bound Molecules
+Rodríguez2006a
+y
+Spatial Stochastic Modelling of the phosphoenolpyruvate-dependent phosphotransferase (PTS) pathway in Escherichia coli
+Rodríguez2007a
+y
+Inferring the distribution of Inter-Reaction Intervals for Diffusion-Limited Reactions on Lattices
+Rodríguez2009a
+y
+Stochasticity in Signal Transduction Pathways
+Rohde2003a
+y
+Improved bounce-back methods for no-slip walls in lattice-Boltzmann schemes: Theory and simulations
+Rohde2005a
+y
+A generic, mass conservative local grid refinement technique for lattice-Boltzmann schemes
+Ronde1993a
+y
+Application Simulator
+Ronde1993b
+y
+A simulation methodology for the prediction of SPMD programs performance
+Ronde1993c
+y
+SAD/Parasol II Progress Report
+Ronde1993d
+y
+SAD position paper
+Ronde1993e
+y
+Parasol I\&II position paper
+Ronde1994a
+y
+The CAMAS workbench: Computer Aided Migration of Applications System
+Ronde1994b
+y
+MAP Position Paper
+Ronde1994c
+y
+Automatic Performance Estimation of SPMD Programs on MPP
+Ronde1994d
+y
+MAP Design Report
+Ronde1995a
+y
+MAP progress report
+Ronde1995b
+y
+User scenario UvA tools
+Ronde1995c
+y
+Concepts of Meta Modelling: A case study of code development for distributed memory architectures
+Ronde1995d
+y
+MAP final report
+Ronde1996a
+y
+A genetic algorithm based tool for the mapping problem
+Ronde1996b
+y
+Properties of the Task Allocation Problem
+Ronde1996c
+y
+Loadbalancing by redundant decomposition and mapping
+Ronde1997a
+y
+Load Balancing by Redundant Decomposition and Mapping
+Ronde1997b
+y
+High Performance Simulation of Gravitational Radiation Antennas
+Ronde1997c
+y
+Simulation of Gravitational Wave Detectors
+Ronde1998a
+y
+Mapping in High Performance Computing - A Case Study in Finite Element Simulation
+Rosner1999a
+y
+Security Functions of the MIRACLE System: A Case in Security for Enterprise CPR
+Rue1996a
+y
+On the normal modes of freely vibrating elastic objects of various shapes
+Rusadi2009a
+y
+Interactive Visualization of Graphs on Multiple Levels of Detail Using a Direct-Touch Interactive Graphics Device
+Rycerz2004a
+y
+Support for Effective and Fault Tolerant Execution of HLA-Based Applications in the OGSA Framework
+Rycerz2004b
+y
+Monitoring of HLA Grid Application Federates with OCM-G
+Rycerz2004c
+y
+Interactive Grid Computing: Adapting High Level Architecture-based Applications to the Grid
+Rycerz2005a
+y
+A Framework for HLA-Based Interactive Simulations on the Grid
+Rycerz2005b
+y
+HLA Grid based support for simulation of vascular reconstruction
+Rycerz2006a
+y
+A Grid Service for Management of Multiple HLA Federate Processes
+Rycerz2006b
+y
+Grid-based HLA Simulation Support
+Rycerz2006c
+y
+Problem solving environment for distributed interactive applications
+Rycerz2006d
+y
+Grid support for HLA-based collaborative environment for vascular reconstruction
+Rycerz2007a
+y
+Problem Solving Environment for Distributed Interactive Applications
+Rycerz2007b
+y
+Multiple HLA Federate Processes in Grid Environment
+Rycerz2007c
+y
+Interactive N-Body Simulations On the Grid: HLA Versus MPI
+Rycerz2008a
+y
+Dynamic Interactions in HLA Component Model for Multiscale Simulations
+Rycerz2008b
+y
+Using HLA and Grid for Distributed Multiscale Simulations
+Rycerz2008c
+y
+Problem solving environment for distributed interactive applications
+Rycerz2008d
+y
+HLA component model on the example of multiscale simulation
+Rycerz2008e
+y
+HLA component based environment for distributed multiscale simulations
+Rycerz2008f
+y
+HLA Component Based Environment for Distributed Multiscale Simulations
+Rzasa2006a
+y
+Simulation method for estimation of security overhead of Grid applications
+Rzasa2007a
+y
+Overhead verification for cryptographically secured transmission on the Grid
+Rzasa2009a
+y
+Application of Petri nets to evaluation of Grid applications efficiency
+Sakkos2003a
+y
+Physical Properties of Dendritic Structures under a constant Electric Field
+Salzberg2003a
+y
+Visualizing evolutionary dynamics of self-replicators using graph-based genealogy
+Salzberg2003b
+y
+Emergent Evolutionary Dynamics of Self-Reproducing Cellular Automata
+Salzberg2003c
+y
+Genetic diversification and complex genealogy of self-replicators discovered in simple cellular automata: A preliminary report
+Salzberg2003d
+y
+Genetic diversification and adaptation of self-replicators discovered in simple cellular automata
+Salzberg2004a
+y
+Evolutionary dynamics of cellular automata-based self-replicators in hostile environments
+Sanders1983a
+y
+Periodic orbits and gas flow in barred spirals
+Santoso2000a
+y
+Simulating Job Scheduling for Clusters of Workstations
+Santoso2000b
+y
+Hierarchical Job Scheduling for Clusters of Workstations
+Santoso2001a
+y
+Simulation of Hierarchical Resource Management for Meta-computing Systems
+Santoso2002a
+y
+A Simulation Environment for Job Scheduling on Distributed Systems
+Sato2011a
+y
+Proceedings of the International Conference on Computational Science, ICCS 2011
+Sato2011b
+y
+Preface
+Savickas2013a
+y
+Super Fast Greeks
+Scarpa2006a
+y
+Highly interactive distributed visualization
+Scarpa2007a
+y
+An interaction framework for VR and AR applications
+Schaper1997a
+y
+A parallel hierarchical radiosity solution for distributed memory machines
+Schneider2001a
+y
+Low-frequency gravitational waves from cosmological compact binaries
+Schoneveld1994a
+y
+An Abstract Cellular Genetic Algorithm
+Schoneveld1995a
+y
+Parallel Dynamical Complex Systems
+Schoneveld1996a
+y
+A Parallel Cellular Genetic Algorithm Used in Finite Element Simulation
+Schoneveld1997a
+y
+Task Allocation by Parallel Evolutionary Computing
+Schoneveld1997b
+y
+Preserving Locality for Optimal Parallelism in Task Allocation
+Schoneveld1997c
+y
+On the Complexity of Task Allocation
+Schoneveld1999a
+y
+Dynamic Load Balancing in Parallel Finite Element Simulations
+Schoneveld1999b
+y
+P-CAM: A Framework for Parallel Complex Systems Simulations
+Schoneveld1999c
+y
+Dynamic Load Balancing in Parallel Finite Element Simulations
+Schoneveld1999d
+y
+Parallel Complex Systems Simulation
+Schoneveld2000a
+y
+A Framework for Dynamic Load Balancing: A Case Study on Explosive Containment Simulation
+Schooten2009a
+y
+Evaluating Visualization and Navigation Techniques for Interpretation of MRA Data
+Schröer1994a
+y
+Advances in robot calibration: Modelling, Parameter Identification, Measurement
+Schröer1994b
+y
+Calibration applied to quality control in robot production
+Schwiegelshohn2010a
+y
+Perspectives on grid computing
+Semyanov2004a
+y
+Single-Particle Sizing from Light Scattering by Spectral Decomposition
+Semyanov2007a
+y
+Optics of leucocytes
+Semyanov2007b
+y
+Characterization of native red blood cell morphology by scanning flow cytometry
+Shen2003a
+y
+Effectiveness of Approximation Models for Multi-Disciplinary Design Optimization
+Shi2007a
+y
+Joint Discussion 14 Modeling dense stellar systems
+Shirshov2009a
+y
+Developing a model of processes in a shock tube with ignition of combustible gas mixtures
+Shirshov2010a
+y
+Modelling the inundation process for flood early warning systems [in Russian]
+Shirshov2010b
+y
+Simulation of Shock Wave Propagation in Turbulent Flow of Compressible Gas Mixture for Ignition Experiments in Shock Tubes
+Sills2003a
+y
+MODEST-2: a summary
+Silva2013a
+y
+The biocalcification of mollusk shells and coral skeletons: Integrating molecular, proteomics and bioinformatics methods
+Simm2012a
+y
+Interpreting sensor measurements in dikes - experiences from UrbanFlood pilot sites
+Simm2012b
+y
+Interpreting sensor measurements in dikes - experiences from UrbanFlood pilot sites
+Simovski2001a
+y
+Dispersion in Arrays of Complex Shaped Two-Dimensional Elements
+Sipior2004a
+y
+Recycled pulsars with black hole companions: the high-mass analogues of PSR B2303+46
+Sloot1986a
+y
+Elastic light scattering from nucleated bloodcells: Rapid numerical analysis
+Sloot1987a
+y
+Computer Assisted Centrifugal Elutriation I. Detection system and data acquisition equipment
+Sloot1987b
+y
+Spectral analysis of flow cytometric data: Design of a special purpose low-pass digital filter
+Sloot1988a
+y
+Computer Assisted Centrifugal Elutriation II. Multiparametric statistical analysis
+Sloot1988b
+y
+Osmotic response of lymphocytes measured by means of forward lightscattering: Theoretical considerations
+Sloot1988c
+y
+Elastic light scattering from leukocytes, in the development of computer assisted cell separation
+Sloot1989a
+y
+CACE: a case of Embedded System Development
+Sloot1989b
+y
+Scatter matrix elements of biological particles measured in a flow-through system: Theory and practice
+Sloot1989c
+y
+Ternary representation of trivariate data
+Sloot1990a
+y
+Arbitrarily-shaped particles measured in Flow-through systems
+Sloot1990b
+y
+Morphological characteristics of nucleated bloodcells studied by elastic light scattering
+Sloot1991a
+y
+Wegwijs in Wiskunde
+Sloot1992a
+y
+Time Complexity of a Parallel Conjugate Gradient Solver for Light Scattering Simulations: Theory and SPMD Implementation
+Sloot1992b
+y
+Multiprocessing zorgt voor teamwork
+Sloot1992c
+y
+Implementation of a parallel conjugate gradient method for simulation of elastic light scattering
+Sloot1992d
+y
+Crystallization on a Sphere: Parallel Simulation on a Transputer Network
+Sloot1992e
+y
+De Computer Oorlog
+Sloot1993a
+y
+Crystallization on a Sphere
+Sloot1993b
+y
+Light Scattering simulations on a massively parallel computer at the IC3A
+Sloot1993c
+y
+The CAMAS Workbench
+Sloot1993d
+y
+Simulated annealing: Comparison of vector and parallel implementations
+Sloot1993e
+y
+PERFORM
+Sloot1994a
+y
+A Comparison of the Iserver-Occam, Parix, Express, and PVM Programming Environments on a Parsytec GCel
+Sloot1994b
+y
+Modelling and Simulation
+Sloot1994c
+y
+Modelling and Simulation
+Sloot1995a
+y
+High Performance Simulation
+Sloot1995b
+y
+Simulated Annealing: A trade-off between Vector and Parallel Implementations
+Sloot1995c
+y
+Computational Physics: Stochastic Simulation
+Sloot1995d
+y
+Guest Editorial: Massive Parallel Computing
+Sloot1995e
+y
+Special Issue on massive parallel computing
+Sloot1995f
+y
+Modelling for Parallel Simulation: Possibilities and Pitfalls, invited lecture
+Sloot1995g
+y
+Dynamic Complex Systems (DCS): a new approach to parallel computing in computational physics
+Sloot1996a
+y
+Particle modelling environment for dynamic complex system simulation
+Sloot1996b
+y
+Modelling and simulation of reactivity, diffusion, and flow in biological systems using the lattice Boltzmann method
+Sloot1996c
+y
+Editorial: Resource Management in Distributed Systems
+Sloot1997a
+y
+Special Issue on High Performance Computing and Networking Europe 1996
+Sloot1997b
+y
+Guest Editorial, High Performance Computing and Networking Europe 1996
+Sloot1997c
+y
+Large scale simulations of complex systems Part I: conceptual framework
+Sloot1998a
+y
+Design Issues for High Performance Simulation
+Sloot1998b
+y
+Proceedings High-Performance Computing and Networking (HPCN Europe '98), Amsterdam, The Netherlands
+Sloot1999a
+y
+Time Warped Automata: Parallel Discrete Event Simulation of Asynchronous CA's
+Sloot1999b
+y
+High Performance Simulation with Cellular Automata
+Sloot1999c
+y
+De som der delen - inaugural address
+Sloot1999d
+y
+Proceedings High-Performance Computing and Networking (HPCN Europe '99), Amsterdam, The Netherlands
+Sloot1999e
+y
+Distributed Simulation with Cellular Automata: Architecture and Applications
+Sloot2000a
+y
+Simulation and Visualisation in Medical Diagnosis: Perspectives and Computational Requirements
+Sloot2001a
+y
+Cellular Automata as a Mesoscopic Approach to Model and simulate Complex Systems
+Sloot2001b
+y
+Distributed Cellular Automata: Large Scale Simulation of Natural Phenomena
+Sloot2001c
+y
+N-body Simulation on Hybrid Architectures
+Sloot2001d
+y
+Self-organized criticality in simulated correlated systems
+Sloot2001e
+y
+Modeling Fluid Flow using Lattice Gases and the Lattice Boltzmann Model
+Sloot2002a
+y
+Computational Science - ICCS 2002, Proceedings Part III
+Sloot2002b
+y
+Computational Science - ICCS 2002, Proceedings Part I
+Sloot2002c
+y
+Computational Science - ICCS 2002, Proceedings Part II
+Sloot2002d
+y
+Cellular Automata Model of Drug Therapy for HIV Infection
+Sloot2003a
+y
+Grid-based Interactive Visualisation of Medical Images
+Sloot2003b
+y
+Computational Science - ICCS 2003, Melbourne, Australia and St. Petersburg, Russia, Proceedings Part I
+Sloot2003c
+y
+Computational Science - ICCS 2003, Melbourne, Australia and St. Petersburg, Russia, Proceedings Part II
+Sloot2003d
+y
+Computational Science - ICCS 2003, Melbourne, Australia and St. Petersburg, Russia, Proceedings Part III
+Sloot2003e
+y
+A grid-based problem-solving environment for biomedicine
+Sloot2003f
+y
+Computational Science - ICCS 2003, Melbourne, Australia and St. Petersburg, Russia, Proceedings Part IV
+Sloot2004a
+y
+Virtual Vascular Surgery on the Grid
+Sloot2004b
+y
+An Interactive Grid Environment for Non-Invasive Vascular Reconstruction
+Sloot2004c
+y
+Cellular Automata: 6th International Conference on Cellular Automata for Research and Industry, ACRI 2004, Amsterdam, The Netherlands, October 25-28, 2004
+Sloot2005a
+y
+Preface
+Sloot2005b
+y
+Research on Cellular Automata
+Sloot2005c
+y
+VIROLAB - A Virtual Laboratory for Decision Support in Viral Diseases Treatment
+Sloot2005d
+y
+A Grid-based HIV Expert System
+Sloot2005e
+y
+A Grid-based HIV Expert System
+Sloot2005f
+y
+Identification of blood cells subpopulations from angle resolved light scattering
+Sloot2006a
+y
+From Molecule to Man: Decision Support in Individualized E-Health
+Sloot2006b
+y
+Handling Complexity
+Sloot2006c
+y
+2nd IEEE International Conference on e-Science and Grid Computing
+Sloot2007a
+y
+Multi-Science Decision Support for HIV Drug Resistance Treatment
+Sloot2007b
+y
+Modeling Dynamic Systems with Cellular Automata
+Sloot2007c
+y
+Computational e-Science: Studying complex systems in silico. A National Coordinated Initiative. White Paper.
+Sloot2008a
+y
+Stochastic simulation of HIV population dynamics through complex network modelling
+Sloot2008b
+y
+VIROLAB: a Distributed Decision Support System for Viral Disease Treatment
+Sloot2008c
+y
+VIROLAB: from the molecule to the man
+Sloot2008d
+y
+Multi-Science Decision Support for HIV Drug Resistance Treatment
+Sloot2008e
+y
+Virolab: A Collaborative Decision Support System in Viral Disease Treatment
+Sloot2009a
+y
+HIV Decision Support: From Molecule to Man
+Sloot2009b
+y
+Crisis Computing: beslissingsondersteuning in een complexe wereld
+Sloot2010b
+y
+Multi-scale modelling in computational biomedicine
+Sloot2010c
+y
+Preface
+Sloot2010d
+y
+Computational science: A kaleidoscopic view into science
+Sloot2012a
+y
+Information processing as a paradigm to model and simulate complex systems
+Sloot2013a
+y
+Advances in dynamic temporal networks: Understanding the temporal dynamics of complex adaptive networks
+Sluijs2006a
+y
+Simulating Flow around a Complex Geometry
+Snel2006a
+y
+A Distributed Workflow Management System for Automated Medical Image Analysis and Logistics
+Sottoriva2008a
+y
+Mathematical Modeling of Tumour Growth and Invasion Using a Hybrid Cellular Automaton
+Sottoriva2010a
+y
+Exploring Cancer Stem Cell Niche Directed Tumor Growth
+Sottoriva2010b
+y
+Cancer Stem Cell Tumor Model Reveals Invasive Morphology and Increased Phenotypical Heterogeneity
+Spijk1994a
+y
+The Optimization of Functions by means of Parallel Genetic Algorithms
+Spinnato1999a
+y
+Performance Modelling of Hybrid Parallel Systems
+Spinnato2000a
+y
+Performance Analysis of Parallel N-body Codes
+Spinnato2000b
+y
+Performance Modelling of Hybrid Architectures
+Spinnato2000c
+y
+Performance Analysis of Parallel N-Body Codes
+Spinnato2001a
+y
+A Simulator for Parallel Hybrid Computer Systems
+Spinnato2001b
+y
+Performance prediction of N-body simulations on a hybrid architecture
+Spinnato2001c
+y
+Performance of N-body Codes on Hybrid Machines
+Spinnato2002a
+y
+The Infall of Dense Star Clusters into the Galactic Centre
+Spinnato2002b
+y
+A Versatile Simulation Model for Hierarchical Treecodes
+Spinnato2002c
+y
+Performance Modelling of Hierarchical N-body Codes Running on Hybrid Architectures
+Spinnato2002d
+y
+A Versatile Simulation Model for Hierarchical Treecodes
+Spinnato2003a
+y
+The efficiency of the spiral-in of a black hole to the Galactic centre
+Spinnato2003b
+y
+Tools and Techniques for N-body Simulations
+Spinnato2003c
+y
+Hybrid Systems for N-body Simulations
+Spinnato2004a
+y
+Performance Modeling of Distributed Hybrid Architectures
+Stamatakos2010a
+y
+The ACGT Oncosimulator: from Conceptualization to Development via Multiscale Cancer Modeling
+Streekstra1991a
+y
+The interpretation of the light scattering by ellipsoidal red blood cells in ektacytometry: Fraunhofer versus Anomalous Diffraction
+Streekstra1993a
+y
+The interpretation of light scattering by ellipsoidal red blood cells in ektacytometry: Fraunhofer versus anomalous diffraction
+Streekstra1993b
+y
+Anomalous diffraction as a tools for the characterization of ellipsoidal red blood cells in Ektacytometry
+Streekstra1994a
+y
+Anomalous Diffraction by arbitrarily oriented Ellipsoids: Applications in Ektacytometry
+Streekstra2010a
+y
+Quantification of the fraction poorly deformable red blood cells using ektacytometry
+Strijkers2007a
+y
+The Network is in the Computer
+Strijkers2009a
+y
+Interactive Control over a Programmable Computer Network Using a Multi-touch Surface
+Strijkers2011a
+y
+Toward executable scientific publications
+Strokotov2009a
+y
+Is there a difference between T- and B-lymphocyte morphology?
+Suinesiaputra2002a
+y
+Multiscale optic flow analysis for Magnetic Resonance tagging
+Suinesiaputra2009a
+y
+In vivo validations of 3D tubular NURBS fitting model applied on severe stenotic and high curvature MRA of carotid arteries
+Suinesiaputra2009b
+y
+A 3D MRA Segmentation Method Based on Tubular NURBS Model
+Sunderam2005a
+y
+Performance of a Parallel Astrophysical N-body Solver on pan-European Computational Grids
+Surovtsev2002a
+y
+Use of Scanning Flow Cytometry for biodetection via earliest stages of agglutination immunoassay
+Surovtsev2003a
+y
+Kinetics of the initial stage of immunoagglutionation studied with the scanning flow cytometer
+Surovtsev2003b
+y
+Kinetics of the initial stage of immunoagglutionation studied with the scanning flow cytometer
+Surovtsev2003c
+y
+Kinetics of the initial stage of immunoagglutionation studied with the scanning flow cytometer
+Szepieniec2008a
+y
+Investigation of the DAG eligible jobs maximization algorithm in a grid
+Szepieniec2008b
+y
+Evaluation of eligible jobs maximization algorithm for DAG scheduling in grids
+Szepieniec2012a
+y
+On Importance of Service Level Management in Grids
+Tahir2011a
+y
+Multi-scale simulations of the dynamics of in-stent restenosis: impact of stent deployment and design
+Tahir2012a
+y
+Modelling the influence of re-endothelialization on in-stent restenosis
+Tahir2013a
+y
+Modelling the Effect of a Functional Endothelium on the Development of In-Stent Restenosis
+Tahir2013b
+y
+Modelling and simulating the dynamics of in-stent restenosis in porcine coronary arteries
+Tahir2013c
+y
+Modelling in-stent restenosis: morphological differences in the tissue patterns based on the origin of endothelium recovery
+Tahir2013d
+y
+In-stent restenosis patterns based on the origin of endothelium recovery
+Tahir2014a
+y
+Endothelial repair process and its relevance to longitudinal neointimal tissue patterns: Comparing histology with in-silico modelling
+Takahashi1998a
+y
+The Disruption of Globular Star Clusters in the Galaxy: A Comparative Analysis between Fokker-Planck and N-Body Models
+Takahashi1999a
+y
+Dynamical Evolution of Tidally Truncated Star Clusters
+Takahashi2000a
+y
+The Evolution of Globular Clusters in the Galaxy
+Takahashi2000b
+y
+The dynamical evolution of globular clusters in the Galaxy
+Talia1999a
+y
+Special Issue on Cellular Automata
+Talia1999b
+y
+Cellular Automata: Promise and Prospects in Computational Science
+Tamulonis2011a
+y
+A cell-based model of Nematostella vectensis gastrulation including bottle cell formation, invagination and zippering
+Tamulonis2011b
+y
+Modeling Filamentous Cyanobacteria Reveals the Advantages of Long and Fast Trichomes for Optimizing Light Exposure
+Tamulonis2013a
+y
+Cell-based models
+Tanzil2013a
+y
+Environmental controls of coral growth: Data driven multi-scale analyses of rates and patterns of growth in massive Porites corals around the Thai-Malay Peninsula
+Tarasov2007a
+y
+Optics of erythrocytes
+Teuben1986a
+y
+Kinematics and dynamics of the central region in the barred galaxy NGC 1365
+Teuben2001a
+y
+Immersive 4-D Interactive Visualization of Large-Scale Simulations
+Timsi1995a
+y
+Fast multipole methods for computer simulations of elastic light scattering
+Tirado-Ramos1999a
+y
+IHE Technical Framework Specification: Modality Worklist Management
+Tirado-Ramos2002a
+y
+Information Object Definition-based Unified Modeling Language Representation of DICOM Structured Reporting: A Case Study of Transcoding DICOM to XML
+Tirado-Ramos2003a
+y
+Experimental Grid Access for Dynamic Discovery and Data Transfer in Distributed Interactive Simulation Systems
+Tirado-Ramos2004a
+y
+Integration of Blood Flow Visualization on the Grid: the FlowFish/GVK Approach
+Tirado-Ramos2004b
+y
+An Integrative Approach to High-Performance Biomedical Problem Solving Environments on the Grid
+Tirado-Ramos2004c
+y
+An Integrative Approach to High-Performance Biomedical Problem Solving Environments on the Grid
+Tirado-Ramos2005b
+y
+On-line Application Performance Monitoring of Blood Flow Simulation in Computational Grid Architectures
+Tirado-Ramos2005c
+y
+Grid Resource Selection by Application Benchmarking: a Computational Haemodynamics Case Study
+Tirado-Ramos2005d
+y
+Interactive Problem Solving Environments on the Grid for Image-based Computational Haemodynamics
+Tirado-Ramos2005e
+y
+Exploring OGSA Interoperability with LCG-based Production Grids for Biomedical Applications
+Tirado-Ramos2006a
+y
+A Conceptual Grid Architecture for Interactive Biomedical Applications
+Tirado-Ramos2007a
+y
+Collaborative Software Architectures for Interactive Biomedical Applications
+Tirado-Ramos2008a
+y
+Grid-based Interactive Decision Support in BioMedicine
+Tirado-Ramos2008b
+y
+Second Workshop on Teaching Computational Science WTCS 2008
+Tirado-Ramos2009a
+y
+Third Workshop on Teaching Computational Science (WTCS 2009)
+Toth2013a
+y
+The importance of centralities in dark network value chains
+Truong2006a
+y
+K-WfGrid Distributed Monitoring and Performance Analysis Services for Workflows in the Grid
+Truong2006b
+y
+Towards Distributed Monitoring and Performance Analysis Services in the K-WfGrid Project
+Vankov2005a
+y
+Relational Approach to Program Slicing
+Varma2012a
+y
+Embodying a Patient Avatar for Computational Workflows
+Varma2012b
+y
+Patient-Centred Multi-scale Computational Workflows
+Verkerk2009a
+y
+Compensation of decreased ion energy by increased hydrogen dilution in plasma deposition of thin film silicon solar cells at low substrate temperatures
+Vesperini2006a
+y
+Mass segregation in young star clusters
+Vesseur1994a
+y
+Parallel Programming on a Distributed System
+Vesseur1995a
+y
+Experiments in Dynamic Load Balancing for Parallel Cluster Computing
+Vesseur1995b
+y
+Experiments in Dynamic Load Balancing for Parallel Cluster Computing
+Vismans2004a
+y
+Enabling Intelligent Interaction in Virtual Environments -- A Generic Architecture
+Visser1995a
+y
+Data and Event Handling for the MARIE Vehicle
+Visser1995b
+y
+Photogrammetry applied to robot calibration
+Visser1998a
+y
+A comparison of data decomposition techniques applied to the lattice Boltzmann method
+Voogd1993a
+y
+Simulated annealing on H.P.C. systems: Applied to crystallization with spherical boundary conditions
+Voogd1994a
+y
+Simulated Annealing for N-body Systems
+Voogd1994b
+y
+Two-dimensional Crystallisation on spherical surfaces
+Voogd1994c
+y
+Crystallization on a Sphere
+Voogd1995a
+y
+Simulated Annealing: Comparisons of Vector and Parallel Implementations
+Voogd1995b
+y
+Kristallisatie op een boloppervlak
+Voogd1995c
+y
+Crystalization on a sphere
+Voogd1995d
+y
+Comparison of Vector and Parallel Implementations of the Simulated Annealing Algorithm
+Voogd1996a
+y
+Crystallization on a sphere
+Voogd1997a
+y
+Symmetries of Crystalline Arrangements in Spherical 2D Lennard-Jones Systems
+Voogd1998a
+y
+Crystallisation on a Sphere - Computational Studies of two-dimensional Lennard-Jones Systems
+Voogd2005a
+y
+Equilibrium spherically curved two-dimensional Lennard-Jones systems
+Vrugt2006a
+y
+Application of parallel computing to stochastic parameter estimation in environmental models
+Vrugt2006b
+y
+Real-time data assimilation for operational ensemble streamflow forecasting
+Vu2005a
+y
+IMEX/Finite Volume for chemical reactions in fluid flow
+Wageningen2004a
+y
+Dynamic flow in a Kenics static mixer: An assessment of various CFD methods
+Wals1994a
+y
+The use of a tree topology on a distributed memory system for the implementation of the Conjugate Gradient method
+Wang2001a
+y
+Cross-cluster migration of parallel tasks
+Wang2005a
+y
+Microsimulation of Financial Markets
+Wang2008a
+y
+Axial growth of hexactinellid spicules: formation of cone-like structural units in the giant basal spicules of the hexactinellid Monorhaphis
+Wang2010a
+y
+Computer Simulation for Design and Optimization of Large-Area VHF PECVD Reactors: Two Novel Electrode Configurations Improving Deposition Uniformity
+Wang2013a
+y
+Genetic, biological and structural hierarchies during sponge spicule formation: From soft sol-gels to solid 3D silica composite structures
+Weerts2001a
+y
+Tortuosity of an Unsaturated Sandy Soil Estimated using Gas Diffusion and Bulk Soil Electrical Conductivity: Comparing Analogy-based Models and Lattice-Boltzmann Simulations
+Wegiel2006a
+y
+Fine-Grain Interoperability with Legacy Libraries Virtualized as Web Services
+Wibisono2002a
+y
+Cross Cluster Migration using Dynamite -- Remote File Access Support
+Wibisono2008a
+y
+Towards a Virtual Laboratory for interactive parameter Sweep applications on the Grid
+Wibisono2008b
+y
+A Framework for Interactive Parameter Sweep Applications
+Wiens2008a
+y
+Regional and modular expression of morphogenetic factors in the demosponge Lubomirskia baicalensis
+Wiersma2006a
+y
+The Effect of Pre-Main-Sequence Stars on Star Cluster Dynamics
+Wit1997a
+y
+A comparison of message passing and data parallelism on the NLR NEC SX-4/16
+Wood2010a
+y
+Applications of GPUs in Computational Finance
+Woudenberg2006a
+y
+Using FPGAs to Speed Up Cellular Automata Computations
+Woudenberg2007a
+y
+Development of Tools for Performing Computations on FPGA Systems, Using CAME\&L Software
+Wu2004a
+y
+A Probabilistic Multimedia Retrieval Model
+Wu2006a
+y
+Implementing microthreaded microprocessors in VHDL
+Xiao2003a
+y
+A High Performance Distributed Computing Architecture for Molecular Image-Guided Local Drug Delivery -- An exercise in scenario based architecture design using the AFCR model
+Yang2006a
+y
+A Service-Oriented Visualization of Medical Data
+Yungelson2001a
+y
+Close Double White Dwarfs
+Yungelson2004a
+y
+AM CVn systems as optical, X-ray and GWR sources
+Yungelson2006a
+y
+The origin and fate of short-period low-mass black-hole binaries
+Yungelson2008a
+y
+On the evolution and fate of super-massive stars
+Yurkin2005a
+y
+Applicability of effective medium approximation to light scattering by granulated biological cells - first results
+Yurkin2005b
+y
+Experimental and Theoretical Study of Light Scattering by Individual Mature Red Blood Cells with Scanning Flow Cytometry and Discrete Dipole Approximation
+Yurkin2005c
+y
+Experimental and theoretical study of light scattering by individual mature red blood cells with scanning flow cytometry and discrete dipole approximation
+Yurkin2005d
+y
+Capabilities of the discrete dipole approximation for simulation light scattering by biological cells
+Yurkin2006a
+y
+Convergence of the discrete dipole approximation. I. Theoretical analysis
+Yurkin2006b
+y
+Convergence of the discrete dipole approximation. II. An extrapolation technique to increase the accuracy
+Yurkin2006c
+y
+Can the Discrete Dipole Approximation Simulate Scattering of Particles with Size Parameter equal to 100?
+Yurkin2006d
+y
+An Extrapolation Technique to Increase the Accuracy of The Discrete Dipole Approximation
+Yurkin2007a
+y
+Light scattering by granulated spheres applied to discriminate subtypes of granulated blood cells
+Yurkin2007b
+y
+Systematic comparison of the discrete dipole approximation and the finite difference time domain method for large dielectric scatterers
+Yurkin2007c
+y
+Current capabilities of the discrete dipole approximation for very large particles: speed, accuracy, and computational tricks
+Yurkin2007d
+y
+The Amsterdam DDA (tutorial)
+Yurkin2007e
+y
+Systematic comparison of the discrete dipole approximation and the finite difference time domain method
+Yurkin2007f
+y
+Discrimination of granulocyte subtypes from light scattering: theoretical analysis using a granulated sphere model
+Yurkin2007g
+y
+The discrete dipole approximation for simulation of light scattering by particles much larger than the wavelength
+Yurkin2007h
+y
+Discrete dipole simulations of light scattering by blood cells
+Yurkin2007i
+y
+The discrete dipole approximation: an overview and recent developments
+Yurkin2008a
+y
+Application of the discrete dipole approximation to extreme refractive indices: filtered coupled dipoles revived
+Yurkin2008b
+y
+Study of light scattering by a granulated coated sphere -- a model of granulated blood cells
+Yurkin2010a
+y
+Application of the discrete dipole approximation to very large refractive indices: Filtered coupled dipoles revived
+Yurkin2010b
+y
+Accuracy of the discrete dipole approximation for simulation of optical properties of gold nanoparticles
+Yurkin2010c
+y
+Accuracy of the discrete dipole approximation for gold nanoparticles
+Yurkin2010d
+y
+Features and capabilities of the discrete dipole approximation code ADDA
+Yurkin2011a
+y
+The discrete-dipole-approximation code ADDA: Capabilities and known limitations
+Zajac2002a
+y
+A Proposal of Services For Managing Interactive Grid Applications
+Zajac2003a
+y
+Grid Services for HLA-based Distributed Simulation Frameworks
+Zajac2003b
+y
+Towards a Grid Management System for HLA-Based Interactive Simulations
+Zajac2004a
+y
+Execution and Migration Management of HLA-Based Interactive Simulations on the Grid
+Zarrabi2009a
+y
+Modeling and Simulation of HIV-1 Intracellular Replication
+Zarrabi2010a
+y
+Modeling HIV-1 intracellular replication: two simulation approaches
+Zarrabi2011a
+y
+Inferring HIV transmission networks from epidemic and genetic information
+Zarrabi2012a
+y
+Combining Epidemiological and Genetic Networks Signifies the Importance of Early Treatment in HIV-1 Transmission
+Zarrabi2013a
+y
+Combining social and genetic networks to study HIV transmission in mixing risk groups
+Zarrabi2013b
+y
+Complex networks and agent-based models of HIV epidemic
+Zasada2012a
+y
+Distributed Infrastructure for Multiscale Computing
+Zatevakhin1998a
+y
+Simulation of a-Si:H Film Growth During Remote PECVD
+Zatevakhin2001a
+y
+Numerical Simulation of Heat-Mass Transfer Processes in PECVD Reactors for a-Si:H Films Growth
+Zatevakhin2001b
+y
+Deep Convection: Its Role in Transporting Pollutants from the PBL to the Upper Troposphere
+Zhang1999a
+y
+Optimal packing of polydisperse hard-sphere fluids
+Zhang2005a
+y
+Experimental Validation of the Grid Speedup Theory
+Zhao1995a
+y
+The implementation of the instructional strategy in educational software
+Zhao1997a
+y
+How to analyse the effect and cost in using educational resources
+Zhao1997b
+y
+The courseware authoring system in Multimedia Language Learning system
+Zhao1997c
+y
+The trend of Multimedia Language Learning system
+Zhao1997d
+y
+The software environment of Multimedia language Learning system
+Zhao2001a
+y
+System integration for interactive simulation systems using intelligent agents
+Zhao2002a
+y
+Reusability and Efficiency in Constructing Interactive Simulation Systems
+Zhao2002b
+y
+AG-IVE: an Agent based solution to constructing Interactive Simulation Systems
+Zhao2002c
+y
+Scenario Switches and State Updates in an Agent-based Solution to Constructing Interactive Simulation Systems
+Zhao2003a
+y
+Interaction Scenario: Orchestrating Agents in a multi-agent System
+Zhao2003b
+y
+ISS-Studio: a prototype for a user-friendly tool for designing interactive experiments in Problem Solving Environments
+Zhao2004a
+y
+An agent based architecture for constructing Interactive Simulation Systems
+Zhao2005a
+y
+Agent technology and scientific workflow management in an e-Science environment
+Zhao2005b
+y
+Scientific workflow management: between generality and applicability
+Zhao2005c
+y
+Dynamic Workflow in a Grid Enabled Problem Solving Environment
+Zhao2005d
+y
+Agent-based flow control for HLA components
+Zhao2005e
+y
+Rapid Prototyping of Complex Interactive Simulation Systems
+Zhao2005f
+y
+Agent Technology and Generic Workflow Management in an e-Science Environment
+Zhou1997a
+y
+A new model of developing Web based courseware
+Zudilova-Seinstra2005a
+y
+Towards Service-based Interactive Visualisation
+Zudilova-Seinstra2006a
+y
+Ondersteuning van wetenschappelijk onderzoek
+Zudilova-Seinstra2006b
+y
+Combining Visualisation and Interaction to Facilitate Scientific Exploration and Discovery
+Zudilova-Seinstra2006c
+y
+Combining desktop and virtual realities. Addressing demands of real life clinical environments
+Zudilova-Seinstra2008a
+y
+Making Virtual Reality Usable for Medical Specialists
+Zudilova-Seinstra2008b
+y
+Service-Oriented Visualization applied to Medical Data Analysis
+Zudilova-Seinstra2008c
+y
+Overview of Interactive Visualization
+Zudilova-Seinstra2008e
+y
+Visualizing Climate Data on a Tiled Panel Display: A User-Centered Approach
+Zudilova-Seinstra2009a
+y
+Exploring 2D/3D Input Techniques for Medical Image Analysis
+Zudilova-Seinstra2010a
+y
+Evaluation of 2D and 3D Glove Input Applied to Medical Image Analysis
+Zudilova-Seinstra2010b
+y
+Exploring Individual User Differences in the 2D/3D Interaction with Medical Image Data
+Zudilova1999a
+y
+Using Animation for Presenting the Results of Numerical Simulation
+Zudilova2000a
+y
+Creating DEMO Presentations on the base of Visualization Model
+Zudilova2001a
+y
+Generic Approach to the Design of Simulation-visualization Complexes
+Zudilova2001b
+y
+Simulation-Visualization Complexes as Generic Exploration Environment
+Zudilova2002a
+y
+A First Step to a User-Centered Approach to a Development of Adaptive Simulation-Visualization Complexes
+Zudilova2002b
+y
+3D mesh generation for the results of anisotropic etch simulation
+Zudilova2002c
+y
+A Multi-modal Interface for an Interactive Simulated Vascular Reconstruction System
+Zudilova2003a
+y
+Virtual Reality and Desktop as a Combined Interaction-Visualisation Medium for a Problem-Solving Environment
+Zudilova2005a
+y
+Bringing Combined Interaction to a Problem Solving Environment for Vascular Reconstruction
+Zudilova2005b
+y
+Multi-modal Interaction in Biomedicine
+Zudilova2005d
+y
+Special Issue on Interaction and Visualization Techniques for Problem Solving Environments
+Zudilova2007a
+y
+On the Role of Individual Human Abilities in the Design of Adaptive User Interfaces for Scientific Problem Solving Environments
+Zudilova2007b
+y
+Visualisation and interaction for scientific exploration and knowledge discovery
+Zverev2009a
+y
+Developing a model of nickel film growth in a PECVD reactor
+Zwaal1998a
+y
+Evaluation of an LP based solution method for slot allocation
+Özsoy2009a
+y
+Interactive Visualization of Large Medical Datasets on the Grid
