@@ -200,7 +200,7 @@ static int leesBereik (isamPtr ip, char *minSleutel, char *maxSleutel, int datum
     int     rv;
     klant   klantRecordOud;
     klant   klantRecordNieuw;
-    
+
 
     /* Net als bij het plegen van een mailing */
     isam_setKey (ip, minSleutel);
@@ -285,7 +285,6 @@ int main (int argc, char *argv[]) {
     klant   nieuweKlant;
     char    str[512];
     int     i, j;
-    struct ISAM_CACHE_STATS *stats;
 
     memset(&nieuweKlant, 0, sizeof(nieuweKlant));
     /* Lees het bestand met namen (en voorvoegsels) */
@@ -448,12 +447,6 @@ int main (int argc, char *argv[]) {
     leesBereik (ip, "1000", "9999", berekenDag (25, 1, 2002));
     leesBereik (ip, "1000", "9999", berekenDag (25, 1, 2002));
     isam_close (ip);
-    
-    isam_cacheStats(stats);
-    
-    printf("Teller call: %d\n", stats->cache_call);
-    printf("Teller read: %d\n", stats->disk_reads);
-    printf("Teller write: %d\n", stats->disk_writes);
-    
+
     return 0;
 }

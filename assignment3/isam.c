@@ -1152,22 +1152,22 @@ int isam_writeNew(isamPtr isam_ident, const char *key, const void *data) {
     if (rv == 0) {
         if (head((*isam_ident),iCache,rec_no)->statusFlags & ISAM_DELETED) {
             /* Should be simple and OK */
-                /* We only need to copy the data and mark the record as valid */
-                memcpy(data(*isam_ident, iCache, rec_no), data,
-                       isam_ident->fHead.DataLen);
-                head(*isam_ident, iCache, rec_no)->statusFlags = ISAM_VALID;
-                isam_ident->fHead.Nrecords++;
-                /* No what do we write first? - writing the header twice is
-                   extra work, but at least makes it easy to identify an
-                   inconsistent file. Writing intentions would be even more
-                   secure*/
-                isam_ident->fHead.FileState |= ISAM_STATE_UPDATING;
-                writeHead(isam_ident);
-                if (write_cache_block(isam_ident, iCache))
-                {
-                    return -1;
-                }
-                isam_ident->fHead.FileState &= ~ISAM_STATE_UPDATING;
+            /* We only need to copy the data and mark the record as valid */
+            memcpy(data(*isam_ident, iCache, rec_no), data,
+                   isam_ident->fHead.DataLen);
+            head(*isam_ident, iCache, rec_no)->statusFlags = ISAM_VALID;
+            isam_ident->fHead.Nrecords++;
+            /* No what do we write first? - writing the header twice is
+               extra work, but at least makes it easy to identify an
+               inconsistent file. Writing intentions would be even more
+               secure*/
+            isam_ident->fHead.FileState |= ISAM_STATE_UPDATING;
+            writeHead(isam_ident);
+            if (write_cache_block(isam_ident, iCache))
+            {
+            return -1;
+            }
+            isam_ident->fHead.FileState &= ~ISAM_STATE_UPDATING;
             isam_ident->cur_id = iCache;
             isam_ident->cur_recno = rec_no;
             return writeHead(isam_ident);
@@ -1819,9 +1819,9 @@ int isam_cacheStats(struct ISAM_CACHE_STATS* stats) {
     stats->disk_reads = disk_reads_global;
     stats->disk_writes = disk_writes_global;
 
-    cache_call_global = 0;
-    disk_reads_global = 0;
-    disk_writes_global = 0;
+    //cache_call_global = 0;
+    //disk_reads_global = 0;
+    //disk_writes_global = 0;
 
     return 0;
 }
