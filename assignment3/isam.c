@@ -543,8 +543,7 @@ isamPtr isam_create(const char * name, unsigned long KeyLen,
     return fp;
 }
 
-isamPtr
-isam_open(const char *name, int update)
+isamPtr isam_open(const char *name, int update)
 {
     struct stat buf;
     isamPtr fp;
@@ -562,8 +561,8 @@ isam_open(const char *name, int update)
      */
     if (stat(name, &buf))
     {
-    isam_error = ISAM_NO_SUCH_FILE;
-    return NULL;
+        isam_error = ISAM_NO_SUCH_FILE;
+        return NULL;
     }
 
     /*
@@ -572,32 +571,32 @@ isam_open(const char *name, int update)
     fid = open(name, O_RDWR);
     if (fid < 0)
     {
-    isam_error = ISAM_OPEN_FAIL;
-    return NULL;
+        isam_error = ISAM_OPEN_FAIL;
+        return NULL;
     }
     /* read header and test amount of data read */
 
     if (sizeof(fileHead) != read(fid, &fh, sizeof(fileHead)))
     {
-    isam_error = ISAM_READ_ERROR;
+        isam_error = ISAM_READ_ERROR;
         close(fid);
-    return NULL;
+        return NULL;
     }
 
     /* test if it could be an isam file */
     if (fh.magic != isamMagic)
     {
-    isam_error = ISAM_BAD_MAGIC;
-    close(fid);
-    return NULL;
+        isam_error = ISAM_BAD_MAGIC;
+        close(fid);
+        return NULL;
     }
 
     /* We can only handle version 0 */
     if (fh.version > 0)
     {
-    isam_error = ISAM_BAD_VERSION;
-    close(fid);
-    return NULL;
+        isam_error = ISAM_BAD_VERSION;
+        close(fid);
+        return NULL;
     }
 
     /* Now create and initialise the isamPtr */
@@ -607,11 +606,11 @@ isam_open(const char *name, int update)
 
     if (!(fp->index = index_readFromDisk(fid)))
     {
-    close(fid);
-    free(fp->cache[0]);
-    isam_error = ISAM_INDEX_ERROR;
-    free(fp);
-    return NULL;
+        close(fid);
+        free(fp->cache[0]);
+        isam_error = ISAM_INDEX_ERROR;
+        free(fp);
+        return NULL;
     }
     fp->fileId = fid;
     fp->mayWrite = 1;
@@ -620,12 +619,12 @@ isam_open(const char *name, int update)
     fp->cur_recno = 0;
     if (read(fp->fileId, fp->cache[0], fp->blockSize) != (int) fp->blockSize)
     {
-    index_free(fp->index);
-    close(fid);
-    free(fp->cache[0]);
-    isam_error = ISAM_READ_ERROR;
-    free(fp);
-    return NULL;
+        index_free(fp->index);
+        close(fid);
+        free(fp->cache[0]);
+        isam_error = ISAM_READ_ERROR;
+        free(fp);
+        return NULL;
     }
     fp->maxKey = calloc(1, fp->fHead.KeyLen);
     assert(fp->maxKey != NULL);
@@ -634,11 +633,11 @@ isam_open(const char *name, int update)
     iCache = isam_cache_block(fp, block_no);
     if (iCache < 0)
     {
-    index_free(fp->index);
-    close(fid);
-    free(fp->cache[0]);
-    free(fp);
-    return NULL;
+        index_free(fp->index);
+        close(fid);
+        free(fp->cache[0]);
+        free(fp);
+        return NULL;
     }
     memcpy(fp->maxKey, key(*fp, iCache, rec_no), fp->fHead.KeyLen);
 
@@ -1812,18 +1811,18 @@ int isam_fileStats(isamPtr isam_ident, struct ISAM_FILE_STATS* stats) {
     return 0;
 }
 
-/* The isam_cacheStats routine updates the counters used to 
+/* The isam_cacheStats routine updates the counters used to
  * measure performance.
  */
 int isam_cacheStats(struct ISAM_CACHE_STATS* stats) {
     stats->cache_call = cache_call_global;
     stats->disk_reads = disk_reads_global;
     stats->disk_writes = disk_writes_global;
-    
+
     cache_call_global = 0;
     disk_reads_global = 0;
     disk_writes_global = 0;
-    
+
     return 0;
 }
 
