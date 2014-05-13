@@ -142,7 +142,7 @@ typedef struct {
 #define CACHE_SIZE  (6)
 
 typedef struct ISAM {
-    fileHead fHead;                      /* The file header                */
+    fileHead fHead;                     /* The file header                */
     unsigned long blockSize;            /* The file datablock size        */
     int     mayWrite;                   /* Unused - opened for read/write */
     int     fileId;                     /* The file-id for the file       */
@@ -419,7 +419,6 @@ static void debugRecord(isamPtr f, unsigned long n, char * from) {
     key(*f, ic, ir));
 #endif
 }
-
 
 /* The following function will create an empty isam file, with the specified
    parameters. It will return an isamPtr when succesful, NULL if not.
@@ -1813,6 +1812,9 @@ int isam_fileStats(isamPtr isam_ident, struct ISAM_FILE_STATS* stats) {
     return 0;
 }
 
+/* The isam_cacheStats routine updates the counters used to 
+ * measure performance.
+ */
 int isam_cacheStats(struct ISAM_CACHE_STATS* stats) {
     stats->cache_call = cache_call_global;
     stats->disk_reads = disk_reads_global;
