@@ -151,7 +151,7 @@ typedef struct ISAM {
     int     cur_recno;                  /* The position in the cache of the current record */
     int     last_in;                    /* For a FIFO cache               */
     int     blockInCache[CACHE_SIZE];   /* block number per cache slot    */
-            index_handle index;         /* The handle for the index       */
+    index_handle index;         /* The handle for the index       */
     char    *cache[CACHE_SIZE];         /* Pointers to cache blocks       */
     char    * maxKey;                   /* The highest key in the file    */
 } isam;
@@ -173,7 +173,7 @@ typedef struct ISAM {
 
 
 #define key(isam,id,Nrec)   (((isam).cache[(id)])+\
-            (Nrec)*((isam).fHead.RecordLen)+sizeof(recordHead))
+        (Nrec)*((isam).fHead.RecordLen)+sizeof(recordHead))
 
 #define cur_key(isam)       key((isam), (isam).cur_id, (isam).cur_recno)
 
@@ -222,12 +222,12 @@ static void dumpMaxKey(isamPtr f) {
 /* Write the file header to disk (again) */
 
 static int writeHead(isamPtr f) {
-    #ifdef DEBUG
+#ifdef DEBUG
     fprintf(stderr,
-    "writeHead: Nrecords = %lu DataStart = %lu CurBlocks = %lu FileState = %lu\n",
-    f->fHead.Nrecords, f->fHead.DataStart,
-    f->fHead.CurBlocks, f->fHead.FileState);
-    #endif
+            "writeHead: Nrecords = %lu DataStart = %lu CurBlocks = %lu FileState = %lu\n",
+            f->fHead.Nrecords, f->fHead.DataStart,
+            f->fHead.CurBlocks, f->fHead.FileState);
+#endif
 
     if(lseek(f->fileId, 0, SEEK_SET)) {
         isam_error = ISAM_SEEK_ERROR;
@@ -263,7 +263,7 @@ static int write_cache_block(isamPtr isam_ident, int iCache) {
     int rv;
 
     if (lseek(isam_ident->fileId, isam_ident->fHead.DataStart +
-        block_no * isam_ident->blockSize, SEEK_SET) == (off_t)-1) {
+                block_no * isam_ident->blockSize, SEEK_SET) == (off_t)-1) {
         isam_error = ISAM_SEEK_ERROR;
         return -1;
     }
@@ -291,9 +291,9 @@ static int write_cache_block(isamPtr isam_ident, int iCache) {
 static int isam_cache_block(isamPtr isam_ident, unsigned long block_no) {
     int iCache;
     int rv;
-    #ifdef DEBUG
+#ifdef DEBUG
     fprintf(stderr, "isam_cache_block(..., %lu)\n", block_no);
-    #endif
+#endif
 
     /* A block beyond the current end of the file. Write it to extend
        the file right away */
@@ -335,14 +335,14 @@ static int isam_cache_block(isamPtr isam_ident, unsigned long block_no) {
     }
     if (iCache >= CACHE_SIZE) {
         /* The block is not in the cache. Fill the slot after the last
-        slot filled */
+           slot filled */
         iCache = isam_ident->last_in + 1;
         if (iCache >= CACHE_SIZE) {
             iCache = 0;
         }
 
         if (lseek(isam_ident->fileId, isam_ident->fHead.DataStart +
-              block_no * isam_ident->blockSize, SEEK_SET) == (off_t)-1) {
+                    block_no * isam_ident->blockSize, SEEK_SET) == (off_t)-1) {
             isam_error = ISAM_SEEK_ERROR;
             return -1;
         }
@@ -375,30 +375,30 @@ static int free_record_in_block(isamPtr isam_ident, int iCache)
     if ((iCache < 0) || (iCache >= CACHE_SIZE))
     {
 #ifdef DEBUG
-    fprintf(stderr, "free_record iCache = %d\n", iCache);
+        fprintf(stderr, "free_record iCache = %d\n", iCache);
 #endif
-    return -1;
+        return -1;
     }
     if (isam_ident->blockInCache[iCache] < 0)
     {
 #ifdef DEBUG
-    fprintf(stderr, "free_record blockInCache = %d\n",
-         isam_ident->blockInCache[iCache]);
+        fprintf(stderr, "free_record blockInCache = %d\n",
+                isam_ident->blockInCache[iCache]);
 #endif
-    return -1;
+        return -1;
     }
     for (iFree = 0; iFree < isam_ident->fHead.NrecPB; iFree++)
     {
-    /* We cannot use a deleted record either. Records are only
-       marked deleted rather than unused (free) if
-       1. they are the first record of a block and have been deleted.
-          (otherwise this plays havoc with the index).
-       2. temporarily, while pointers in the preceding and following
-       records are being updated after deletion. */
-    if (!(head(*isam_ident, iCache, iFree)->statusFlags))
-    {
-        return iFree;
-    }
+        /* We cannot use a deleted record either. Records are only
+           marked deleted rather than unused (free) if
+           1. they are the first record of a block and have been deleted.
+           (otherwise this plays havoc with the index).
+           2. temporarily, while pointers in the preceding and following
+           records are being updated after deletion. */
+        if (!(head(*isam_ident, iCache, iFree)->statusFlags))
+        {
+            return iFree;
+        }
     }
     return -1;
 }
@@ -416,7 +416,7 @@ static void debugRecord(isamPtr f, unsigned long n, char * from) {
     }
 
     fprintf(stderr, "%s: key = %s\n", from,
-    key(*f, ic, ir));
+            key(*f, ic, ir));
 #endif
 }
 
@@ -429,7 +429,7 @@ static void debugRecord(isamPtr f, unsigned long n, char * from) {
    no file with the specified name should exist yet. */
 
 isamPtr isam_create(const char * name, unsigned long KeyLen,
-    unsigned long DataLen, unsigned long NrecPB, unsigned long Nblocks)
+        unsigned long DataLen, unsigned long NrecPB, unsigned long Nblocks)
 {
     struct stat buf;
     int     i, l;
@@ -441,8 +441,8 @@ isamPtr isam_create(const char * name, unsigned long KeyLen,
     isam_error = ISAM_NO_ERROR;
     if ((8 > KeyLen) || (40 < KeyLen))
     {
-    isam_error = ISAM_KEY_LEN;
-    return NULL;
+        isam_error = ISAM_KEY_LEN;
+        return NULL;
     }
 
     /*
@@ -451,8 +451,8 @@ isamPtr isam_create(const char * name, unsigned long KeyLen,
      */
     if (!stat(name, &buf))
     {
-    isam_error = ISAM_FILE_EXISTS;
-    return NULL;
+        isam_error = ISAM_FILE_EXISTS;
+        return NULL;
     }
 
     /*
@@ -461,8 +461,8 @@ isamPtr isam_create(const char * name, unsigned long KeyLen,
      */
     if (!lstat(name, &buf))
     {
-    isam_error = ISAM_LINK_EXISTS;
-    return NULL;
+        isam_error = ISAM_LINK_EXISTS;
+        return NULL;
     }
 
     /*
@@ -484,18 +484,18 @@ isamPtr isam_create(const char * name, unsigned long KeyLen,
     fp->fileId = open(name, O_RDWR | O_CREAT | O_EXCL, 0660);
     if (fp->fileId < 0)
     {
-    isam_error = ISAM_OPEN_FAIL;
-    free(fp->cache[0]);
-    free(fp);
-    return NULL;
+        isam_error = ISAM_OPEN_FAIL;
+        free(fp->cache[0]);
+        free(fp);
+        return NULL;
     }
     /* Write an initial header */
     if (writeHead(fp))
     {
-    close(fp->fileId);
-    free(fp->cache[0]);
-    free(fp);
-    return NULL;
+        close(fp->fileId);
+        free(fp->cache[0]);
+        free(fp);
+        return NULL;
     }
     fp->mayWrite = 1;
     /* Initialise the file index and write it to disk */
@@ -504,12 +504,12 @@ isamPtr isam_create(const char * name, unsigned long KeyLen,
     fp->fHead.DataStart = rv = index_writeToDisk(fp->index, fp->fileId);
     if (rv < 0)
     {
-    isam_error = ISAM_WRITE_FAIL;
-    index_free(fp->index);
-    close(fp->fileId);
-    free(fp->cache[0]);
-    free(fp);
-    return NULL;
+        isam_error = ISAM_WRITE_FAIL;
+        index_free(fp->index);
+        close(fp->fileId);
+        free(fp->cache[0]);
+        free(fp);
+        return NULL;
     }
     /* Initialise the first data block with the dummy first record.
        Store in cache and write to disk */
@@ -520,23 +520,23 @@ isamPtr isam_create(const char * name, unsigned long KeyLen,
     l = write(fp->fileId, fp->cache[0], fp->blockSize);
     if (l != (int) fp->blockSize)
     {
-    isam_error = ISAM_WRITE_FAIL;
-    index_free(fp->index);
-    close(fp->fileId);
-    free(fp->cache[0]);
-    free(fp);
-    return NULL;
+        isam_error = ISAM_WRITE_FAIL;
+        index_free(fp->index);
+        close(fp->fileId);
+        free(fp->cache[0]);
+        free(fp);
+        return NULL;
     }
     /* The file header can now be further updated */
 
     fp->fHead.CurBlocks = 1;
     if (writeHead(fp))
     {
-    close(fp->fileId);
-    index_free(fp->index);
-    free(fp->cache[0]);
-    free(fp);
-    return NULL;
+        close(fp->fileId);
+        index_free(fp->index);
+        free(fp->cache[0]);
+        free(fp);
+        return NULL;
     }
     fp->maxKey = calloc(1, KeyLen);
     assert(fp->maxKey != NULL);
@@ -646,7 +646,7 @@ isamPtr isam_open(const char *name, int update)
 
 /* Close an isam file and release the memory used */
 
-int
+    int
 isam_close(isamPtr f)
 {
     int i;
@@ -657,13 +657,13 @@ isam_close(isamPtr f)
     isam_error = ISAM_NO_ERROR;
     if (testPtr(f))
     {
-    return -1;
+        return -1;
     }
     free(f->cache[0]);
     free(f->maxKey);
     for (i = 0; i < CACHE_SIZE; i++)
     {
-    f->cache[i] = NULL;
+        f->cache[i] = NULL;
     }
     index_free(f->index);
     f->fHead.magic = 0;
@@ -687,16 +687,16 @@ int isam_setKey(isamPtr isam_ident, const char *key)
 
     if (testPtr(isam_ident))
     {
-    return -1;
+        return -1;
     }
     if (key[0] == 0)
     {
-    /* "rewind" the file to the dummy first record.*/
-    iCache = isam_cache_block(isam_ident, 0);
-    if (iCache < 0)
-    {
-        return -1;
-    }
+        /* "rewind" the file to the dummy first record.*/
+        iCache = isam_cache_block(isam_ident, 0);
+        if (iCache < 0)
+        {
+            return -1;
+        }
         isam_ident->cur_id = iCache;
         isam_ident->cur_recno = 0;
         return 0;
@@ -708,61 +708,61 @@ int isam_setKey(isamPtr isam_ident, const char *key)
     iCache = isam_cache_block(isam_ident, block_no);
     if (iCache < 0)
     {
-    return -1;
+        return -1;
     }
     /* Skip all records with smaller keys */
     while ((rv = strncmp(key, key((*isam_ident),iCache,rec_no),
-              isam_ident->fHead.KeyLen)) > 0)
+                    isam_ident->fHead.KeyLen)) > 0)
     {
-    next = head((*isam_ident),iCache,rec_no)->next;
-    debugRecord(isam_ident, next, "setkey #1");
-    if (!next)
-    {
-        /* There is no next record */
-        break;
+        next = head((*isam_ident),iCache,rec_no)->next;
+        debugRecord(isam_ident, next, "setkey #1");
+        if (!next)
+        {
+            /* There is no next record */
+            break;
+        }
+        block_no = next / isam_ident->fHead.NrecPB;
+        rec_no = next % isam_ident->fHead.NrecPB;
+        iCache = isam_cache_block(isam_ident, block_no);
+        if (iCache < 0)
+        {
+            return -1;
+        }
     }
-    block_no = next / isam_ident->fHead.NrecPB;
-    rec_no = next % isam_ident->fHead.NrecPB;
-    iCache = isam_cache_block(isam_ident, block_no);
-    if (iCache < 0)
-    {
-        return -1;
-    }
-      }
     /* Now we have found / may have found a record with a key larger than
        or equal to the given key - but then we promised to position at
        the previous valid record - so look for that.
        There may be no record with a larger key - in that case
-           (rv < 0) && (next == 0)
+       (rv < 0) && (next == 0)
        A valid record is a record that has the valid flag set.*/
 
     while (((rv = strncmp(key, key((*isam_ident),iCache,rec_no),
-             isam_ident->fHead.KeyLen)) <= 0) ||
-       (!(head((*isam_ident),iCache,rec_no)->statusFlags & ISAM_VALID)))
+                        isam_ident->fHead.KeyLen)) <= 0) ||
+            (!(head((*isam_ident),iCache,rec_no)->statusFlags & ISAM_VALID)))
     {
-    prev = head((*isam_ident),iCache,rec_no)->previous;
-    debugRecord(isam_ident, prev, "setkey #2");
-    /* prev may be 0 - that is OK; we are then pointing to the dummy
-       first record. However, that is not a valid record, but we
-       have no choice.
-       This means that a call to isam_prev must return an invalid result
-    */
-    block_no = prev / isam_ident->fHead.NrecPB;
-    rec_no = prev % isam_ident->fHead.NrecPB;
-    iCache = isam_cache_block(isam_ident, block_no);
-    if (iCache < 0)
-    {
-        return -1;
-    }
-    if (!prev)
-    {
-        /* The "current" record is not "it", and the previous is the
-           dummy first record. We have gone there already.
-           This is completely normal */
-        isam_ident->cur_id = iCache;
-        isam_ident->cur_recno = 0;
-        return 0;
-    }
+        prev = head((*isam_ident),iCache,rec_no)->previous;
+        debugRecord(isam_ident, prev, "setkey #2");
+        /* prev may be 0 - that is OK; we are then pointing to the dummy
+           first record. However, that is not a valid record, but we
+           have no choice.
+           This means that a call to isam_prev must return an invalid result
+           */
+        block_no = prev / isam_ident->fHead.NrecPB;
+        rec_no = prev % isam_ident->fHead.NrecPB;
+        iCache = isam_cache_block(isam_ident, block_no);
+        if (iCache < 0)
+        {
+            return -1;
+        }
+        if (!prev)
+        {
+            /* The "current" record is not "it", and the previous is the
+               dummy first record. We have gone there already.
+               This is completely normal */
+            isam_ident->cur_id = iCache;
+            isam_ident->cur_recno = 0;
+            return 0;
+        }
     }
     isam_ident->cur_id = iCache;
     isam_ident->cur_recno = rec_no;
@@ -779,7 +779,7 @@ int isam_readNext(isamPtr isam_ident, char *key, void *data) {
     int next;
 
     if (testPtr(isam_ident)) {
-    return -1;
+        return -1;
     }
     /* First we have to look for the next valid record (that is the way we
        decided to make all this work! */
@@ -820,7 +820,7 @@ int isam_readPrev(isamPtr isam_ident, char *key, void *data) {
     int prev;
 
     if (testPtr(isam_ident)) {
-    return -1;
+        return -1;
     }
     /* We should now be at the correct valid record (unless we are at the
        very first record). So we check, copy the data, and try to find
@@ -856,7 +856,6 @@ int isam_readPrev(isamPtr isam_ident, char *key, void *data) {
 }
 
 /* isam_readByKey will attempt to read a record with the requested key */
-
 int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
     /* STEP 5: This implementation is inefficient, and I have not verified
        that it really works according to its specification
@@ -873,23 +872,23 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
 
     if (rv)
     {
-    free(tempKey);
-    free(tempData);
-    return -1;
+        free(tempKey);
+        free(tempData);
+        return -1;
     }
     rv = isam_readNext(isam_ident, tempKey, tempData);
     if (rv)
     {
-    free(tempKey);
-    free(tempData);
-    return -1;
+        free(tempKey);
+        free(tempData);
+        return -1;
     }
     if (strncmp(key, tempKey, isam_ident->fHead.KeyLen))
     {
-    isam_error = ISAM_NO_SUCH_KEY;
-    free(tempKey);
-    free(tempData);
-    return -1;
+        isam_error = ISAM_NO_SUCH_KEY;
+        free(tempKey);
+        free(tempData);
+        return -1;
     }
     memcpy(data, tempData, isam_ident->fHead.DataLen);
     free(tempKey);
@@ -906,16 +905,16 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
    appropriate place to store the new record. The appropriate place will be
    defined as:
    1. The place of a deleted first record, if the key matches the key of
-      the deleted record.
+   the deleted record.
    2. The first free slot in the block returned by an index search for the
-      maximum key, as long as that is not the last slot in that block.
+   maximum key, as long as that is not the last slot in that block.
    3. The first slot in a new block if that still fits in with the regular
-      data blocks. In this case the key must be added to the index and
-      the index rewritten.
+   data blocks. In this case the key must be added to the index and
+   the index rewritten.
    4. An overflow record position (last block in a record, or a free slot
    in an overflow block)*/
 
-static int
+    static int
 isam_append(isamPtr isam_ident, const char * key, const void * data)
 {
     int block_no;
@@ -932,7 +931,7 @@ isam_append(isamPtr isam_ident, const char * key, const void * data)
     iCache = isam_cache_block(isam_ident, block_no);
     if (iCache < 0)
     {
-    return -1;
+        return -1;
     }
     /* First see if this is a deleted first record.
        There are a lot of properties that we could check.
@@ -946,74 +945,74 @@ isam_append(isamPtr isam_ident, const char * key, const void * data)
     if (next == 0)
     {
         /* I think this must be a deleted first record. It still may have
-       a smaller key than the new record.
-       This actually is a bit a doubtful case for append -
-       let it be for now */
-    if ((rv =strncmp(key, key((*isam_ident),iCache,rec_no),
-             isam_ident->fHead.KeyLen)))
-    {
-        assert(rv > 0);
-        /* This now implies an otherwise normal append */
-    } else
-    {
-        /* Keys are indeed equal - but, have we checked anywhere else
-           if the key did not yet exist by chance? So let's check that
-           here. Next check maxKey for added security */
-        if (ISAM_VALID & head((*isam_ident),iCache,rec_no)->statusFlags)
+           a smaller key than the new record.
+           This actually is a bit a doubtful case for append -
+           let it be for now */
+        if ((rv =strncmp(key, key((*isam_ident),iCache,rec_no),
+                        isam_ident->fHead.KeyLen)))
         {
-        isam_error = ISAM_RECORD_EXISTS;
-        return -1;
-        }
-        assert(0 == strncmp(key, isam_ident->maxKey,
-                isam_ident->fHead.KeyLen));
+            assert(rv > 0);
+            /* This now implies an otherwise normal append */
+        } else
+        {
+            /* Keys are indeed equal - but, have we checked anywhere else
+               if the key did not yet exist by chance? So let's check that
+               here. Next check maxKey for added security */
+            if (ISAM_VALID & head((*isam_ident),iCache,rec_no)->statusFlags)
+            {
+                isam_error = ISAM_RECORD_EXISTS;
+                return -1;
+            }
+            assert(0 == strncmp(key, isam_ident->maxKey,
+                        isam_ident->fHead.KeyLen));
             /* Assert deleted state */
-        assert(ISAM_DELETED ==
-           head((*isam_ident),iCache,rec_no)->statusFlags);
-        /* We only need to copy the data and mark the record as valid */
-        memcpy(data(*isam_ident, iCache, rec_no), data,
-           isam_ident->fHead.DataLen);
-        head(*isam_ident, iCache, rec_no)->statusFlags = ISAM_VALID;
-        isam_ident->fHead.Nrecords++;
-        /* Now what do we write first? - writing the header twice is
-           extra work, but at least makes it easy to identify an
-           inconsistent file. Writing intentions would be even more
-           secure*/
-        isam_ident->fHead.FileState |= ISAM_STATE_UPDATING;
-        writeHead(isam_ident);
-        if (write_cache_block(isam_ident, iCache))
-        {
-        return -1;
+            assert(ISAM_DELETED ==
+                    head((*isam_ident),iCache,rec_no)->statusFlags);
+            /* We only need to copy the data and mark the record as valid */
+            memcpy(data(*isam_ident, iCache, rec_no), data,
+                    isam_ident->fHead.DataLen);
+            head(*isam_ident, iCache, rec_no)->statusFlags = ISAM_VALID;
+            isam_ident->fHead.Nrecords++;
+            /* Now what do we write first? - writing the header twice is
+               extra work, but at least makes it easy to identify an
+               inconsistent file. Writing intentions would be even more
+               secure*/
+            isam_ident->fHead.FileState |= ISAM_STATE_UPDATING;
+            writeHead(isam_ident);
+            if (write_cache_block(isam_ident, iCache))
+            {
+                return -1;
+            }
+            isam_ident->fHead.FileState &= ~ISAM_STATE_UPDATING;
+            return writeHead(isam_ident);
         }
-        isam_ident->fHead.FileState &= ~ISAM_STATE_UPDATING;
-        return writeHead(isam_ident);
-    }
     }
     /* So there is a next, follow it to the bitter end */
     while (next)
     {
-    block_no = next / isam_ident->fHead.NrecPB;
-    rec_no = next % isam_ident->fHead.NrecPB;
-    iCache = isam_cache_block(isam_ident, block_no);
-    if (iCache < 0)
-    {
-        return -1;
-    }
-    next = head((*isam_ident),iCache,rec_no)->next;
+        block_no = next / isam_ident->fHead.NrecPB;
+        rec_no = next % isam_ident->fHead.NrecPB;
+        iCache = isam_cache_block(isam_ident, block_no);
+        if (iCache < 0)
+        {
+            return -1;
+        }
+        next = head((*isam_ident),iCache,rec_no)->next;
     }
     /* Now we should have a record with a smaller key, equal to
        maxKey */
     rv = strncmp(key, key((*isam_ident),iCache,rec_no),
-         isam_ident->fHead.KeyLen);
+            isam_ident->fHead.KeyLen);
     if (rv <= 0)
     {
-    unsigned int i;
-    dumpMaxKey(isam_ident);
-    fprintf(stderr, "key = '%s', found key ='", key);
-    for (i = 0; i <= isam_ident->fHead.KeyLen; i++)
-    {
-        fprintf(stderr, "%c", key((*isam_ident),iCache,rec_no)[i]);
-    }
-    fprintf(stderr, "'\n");
+        unsigned int i;
+        dumpMaxKey(isam_ident);
+        fprintf(stderr, "key = '%s', found key ='", key);
+        for (i = 0; i <= isam_ident->fHead.KeyLen; i++)
+        {
+            fprintf(stderr, "%c", key((*isam_ident),iCache,rec_no)[i]);
+        }
+        fprintf(stderr, "'\n");
     }
     assert(rv > 0);
     new_block_no = block_no;
@@ -1021,31 +1020,31 @@ isam_append(isamPtr isam_ident, const char * key, const void * data)
     new_rec_no = free_record_in_block(isam_ident, iCache);
     while (new_rec_no < 0 || new_rec_no >= (int) isam_ident->fHead.NrecPB)
     {
-    /* We'll leave the last slot free for inserts */
-    new_block_no ++;
-    if (new_block_no >= (int) isam_ident->fHead.Nblocks)
-    {
-        /* Insertion in an overflow block obeys slightly different
-           rules - e.g. we do not add to the index, and we do not
-           leave a free slot */
-        break;
-    }
-    nCache = isam_cache_block(isam_ident, new_block_no);
-    if (nCache < 0)
-    {
-        return -1;
-    }
-    new_rec_no = free_record_in_block(isam_ident, nCache);
+        /* We'll leave the last slot free for inserts */
+        new_block_no ++;
+        if (new_block_no >= (int) isam_ident->fHead.Nblocks)
+        {
+            /* Insertion in an overflow block obeys slightly different
+               rules - e.g. we do not add to the index, and we do not
+               leave a free slot */
+            break;
+        }
+        nCache = isam_cache_block(isam_ident, new_block_no);
+        if (nCache < 0)
+        {
+            return -1;
+        }
+        new_rec_no = free_record_in_block(isam_ident, nCache);
     }
     while (new_rec_no < 0)
     {
-    new_block_no ++;
-    nCache = isam_cache_block(isam_ident, new_block_no);
-    if (nCache < 0)
-    {
-        return -1;
-    }
-    new_rec_no = free_record_in_block(isam_ident, nCache);
+        new_block_no ++;
+        nCache = isam_cache_block(isam_ident, new_block_no);
+        if (nCache < 0)
+        {
+            return -1;
+        }
+        new_rec_no = free_record_in_block(isam_ident, nCache);
     }
     memcpy(isam_ident->maxKey, key, isam_ident->fHead.KeyLen);
     isam_ident->cur_id = nCache;
@@ -1054,7 +1053,7 @@ isam_append(isamPtr isam_ident, const char * key, const void * data)
     memcpy(cur_data(*isam_ident), data, isam_ident->fHead.DataLen);
     cur_head(*isam_ident)->statusFlags = ISAM_VALID;
     cur_head(*isam_ident)->previous = block_no * isam_ident->fHead.NrecPB +
-    rec_no;
+        rec_no;
     cur_head(*isam_ident)->next = 0;
     /* Beware - the previous record may have been deleted from the
        cache, but re-reading it may remove the current record.
@@ -1062,7 +1061,7 @@ isam_append(isamPtr isam_ident, const char * key, const void * data)
     isam_ident->fHead.FileState |= ISAM_STATE_UPDATING;
     isam_ident->fHead.Nrecords++;
     isam_ident->fHead.MaxKeyRec = new_rec_no +
-    new_block_no * isam_ident->fHead.NrecPB;
+        new_block_no * isam_ident->fHead.NrecPB;
     writeHead(isam_ident);
     /* We'll now update the index - if needed and as long as the
        file pointer is correct */
@@ -1074,7 +1073,7 @@ isam_append(isamPtr isam_ident, const char * key, const void * data)
         /* Update the "next" pointer here and now */
         assert(iCache == nCache);
         head(*isam_ident, iCache, rec_no)->next =
-        isam_ident->fHead.MaxKeyRec;
+            isam_ident->fHead.MaxKeyRec;
     }
     if (write_cache_block(isam_ident, nCache)) {
         return -1;
@@ -1085,7 +1084,7 @@ isam_append(isamPtr isam_ident, const char * key, const void * data)
             return -1;
         }
         head(*isam_ident, iCache, rec_no)->next =
-        isam_ident->fHead.MaxKeyRec;
+            isam_ident->fHead.MaxKeyRec;
 
         if (write_cache_block(isam_ident, iCache)) {
             return -1;
@@ -1133,7 +1132,7 @@ int isam_writeNew(isamPtr isam_ident, const char *key, const void *data) {
     }
     next = block_no * isam_ident->fHead.NrecPB;
     while ((rv = strncmp(key, key((*isam_ident),iCache,rec_no),
-            isam_ident->fHead.KeyLen)) > 0) {
+                    isam_ident->fHead.KeyLen)) > 0) {
         next = head((*isam_ident),iCache,rec_no)->next;
         assert(next);
         block_no = next / isam_ident->fHead.NrecPB;
@@ -1154,7 +1153,7 @@ int isam_writeNew(isamPtr isam_ident, const char *key, const void *data) {
             /* Should be simple and OK */
             /* We only need to copy the data and mark the record as valid */
             memcpy(data(*isam_ident, iCache, rec_no), data,
-                   isam_ident->fHead.DataLen);
+                    isam_ident->fHead.DataLen);
             head(*isam_ident, iCache, rec_no)->statusFlags = ISAM_VALID;
             isam_ident->fHead.Nrecords++;
             /* No what do we write first? - writing the header twice is
@@ -1165,7 +1164,7 @@ int isam_writeNew(isamPtr isam_ident, const char *key, const void *data) {
             writeHead(isam_ident);
             if (write_cache_block(isam_ident, iCache))
             {
-            return -1;
+                return -1;
             }
             isam_ident->fHead.FileState &= ~ISAM_STATE_UPDATING;
             isam_ident->cur_id = iCache;
@@ -1191,24 +1190,24 @@ int isam_writeNew(isamPtr isam_ident, const char *key, const void *data) {
     pCache = isam_cache_block(isam_ident, prev_block_no);
     if (pCache < 0)
     {
-    return -1;
+        return -1;
     }
     nCache = pCache;
     new_block_no = prev_block_no;
     new_rec_no = free_record_in_block(isam_ident, nCache);
     if (new_rec_no < 0)
     {
-    new_block_no = isam_ident->fHead.Nblocks - 1;
-    while (new_rec_no < 0)
-    {
-        new_block_no ++;
-        nCache = isam_cache_block(isam_ident, new_block_no);
-        if (nCache < 0)
+        new_block_no = isam_ident->fHead.Nblocks - 1;
+        while (new_rec_no < 0)
         {
-        return -1;
+            new_block_no ++;
+            nCache = isam_cache_block(isam_ident, new_block_no);
+            if (nCache < 0)
+            {
+                return -1;
+            }
+            new_rec_no = free_record_in_block(isam_ident, nCache);
         }
-        new_rec_no = free_record_in_block(isam_ident, nCache);
-    }
     }
     /* Set new record as current (isam_readPrev should allow you to re-read it)
        and store all necessary information (key, data, prev and next pointers
@@ -1232,81 +1231,81 @@ int isam_writeNew(isamPtr isam_ident, const char *key, const void *data) {
         /* Also update pointer in preceding record when writing block */
         assert(pCache == nCache);
         head(*isam_ident, pCache, prev_rec_no)->next = new_rec_no +
-        new_block_no * isam_ident->fHead.NrecPB;
-    if (new_block_no == block_no) {
-        /* And also that in the next record */
-        assert(iCache == nCache);
-        head(*isam_ident, iCache, rec_no)->previous = new_rec_no +
-        new_block_no * isam_ident->fHead.NrecPB;
+            new_block_no * isam_ident->fHead.NrecPB;
+        if (new_block_no == block_no) {
+            /* And also that in the next record */
+            assert(iCache == nCache);
+            head(*isam_ident, iCache, rec_no)->previous = new_rec_no +
+                new_block_no * isam_ident->fHead.NrecPB;
+            if (write_cache_block(isam_ident, nCache))
+            {
+                return -1;
+            }
+            /* Complete update and return */
+            isam_ident->fHead.FileState &= ~ISAM_STATE_UPDATING;
+            return writeHead(isam_ident);
+        }
         if (write_cache_block(isam_ident, nCache))
         {
-        return -1;
+            return -1;
         }
-        /* Complete update and return */
-        isam_ident->fHead.FileState &= ~ISAM_STATE_UPDATING;
-        return writeHead(isam_ident);
-    }
-        if (write_cache_block(isam_ident, nCache))
-    {
-        return -1;
-    }
-    /* Make sure next record is in cache, update and write */
-    iCache = isam_cache_block(isam_ident, block_no);
-    if (iCache < 0)
-    {
-        return -1;
-    }
-    head(*isam_ident, iCache, rec_no)->previous = new_rec_no +
-        new_block_no * isam_ident->fHead.NrecPB;
-    if (write_cache_block(isam_ident, iCache))
-    {
-        return -1;
-    }
-    /* Finish update and return */
+        /* Make sure next record is in cache, update and write */
+        iCache = isam_cache_block(isam_ident, block_no);
+        if (iCache < 0)
+        {
+            return -1;
+        }
+        head(*isam_ident, iCache, rec_no)->previous = new_rec_no +
+            new_block_no * isam_ident->fHead.NrecPB;
+        if (write_cache_block(isam_ident, iCache))
+        {
+            return -1;
+        }
+        /* Finish update and return */
         nCache = isam_cache_block(isam_ident, new_block_no);
-    if (nCache < 0)
-    {
-        return -1;
-    }
+        if (nCache < 0)
+        {
+            return -1;
+        }
         isam_ident->cur_id = nCache;
         isam_ident->cur_recno = new_rec_no;
-    isam_ident->fHead.FileState &= ~ISAM_STATE_UPDATING;
-    return writeHead(isam_ident);
+        isam_ident->fHead.FileState &= ~ISAM_STATE_UPDATING;
+        return writeHead(isam_ident);
     }
     /* Process all three records separately */
     if (write_cache_block(isam_ident, nCache))
     {
-    return -1;
+        return -1;
     }
     /* Preceding record */
     pCache = isam_cache_block(isam_ident, prev_block_no);
     if (pCache < 0)
     {
-    return -1;
+        return -1;
     }
     head(*isam_ident, pCache, prev_rec_no)->next = new_rec_no +
-    new_block_no * isam_ident->fHead.NrecPB;
+        new_block_no * isam_ident->fHead.NrecPB;
     if (write_cache_block(isam_ident, pCache))
     {
-    return -1;
+        return -1;
     }
     /* Next record */
     iCache = isam_cache_block(isam_ident, block_no);
     if (iCache < 0)
     {
-    return -1;
+        return -1;
     }
     head(*isam_ident, iCache, rec_no)->previous = new_rec_no +
-    new_block_no * isam_ident->fHead.NrecPB;
+        new_block_no * isam_ident->fHead.NrecPB;
     if (write_cache_block(isam_ident, iCache))
     {
-    return -1;
+        return -1;
     }
     /* Finish and return */
     nCache = isam_cache_block(isam_ident, new_block_no);
     if (nCache < 0)
     {
-    return -1;
+        return -1;
     }
     isam_ident->cur_id = nCache;
     isam_ident->cur_recno = new_rec_no;
@@ -1320,7 +1319,7 @@ int isam_writeNew(isamPtr isam_ident, const char *key, const void *data) {
 int isam_perror(const char *str) {
     /* STEP 1: instead of printing an error number, print textual
        representation for every possible error.
-     */
+       */
 
     char *msg;
 
@@ -1423,41 +1422,41 @@ int isam_delete(isamPtr isam_ident, const char *key, const void *data)
 
     if (testPtr(isam_ident))
     {
-    return -1;
+        return -1;
     }
     if (key[0] == 0)
     {
-    isam_error = ISAM_NULL_KEY;
-    return -1;
+        isam_error = ISAM_NULL_KEY;
+        return -1;
     }
-     /* First find block number from index */
+    /* First find block number from index */
     block_no = index_keyToBlock(isam_ident->index, key);
     rec_no = 0;
     /* Now make sure the block is in cache */
     iCache = isam_cache_block(isam_ident, block_no);
     if (iCache < 0)
     {
-    return -1;
+        return -1;
     }
     /* Skip all records with smaller keys */
     while ((rv = strncmp(key, key((*isam_ident),iCache,rec_no),
-              isam_ident->fHead.KeyLen)) > 0)
+                    isam_ident->fHead.KeyLen)) > 0)
     {
-    next = head((*isam_ident),iCache,rec_no)->next;
-    debugRecord(isam_ident, next, "delete #1");
-    if (!next)
-    {
-        /* There is no next record */
-        break;
+        next = head((*isam_ident),iCache,rec_no)->next;
+        debugRecord(isam_ident, next, "delete #1");
+        if (!next)
+        {
+            /* There is no next record */
+            break;
+        }
+        block_no = next / isam_ident->fHead.NrecPB;
+        rec_no = next % isam_ident->fHead.NrecPB;
+        iCache = isam_cache_block(isam_ident, block_no);
+        if (iCache < 0)
+        {
+            return -1;
+        }
     }
-    block_no = next / isam_ident->fHead.NrecPB;
-    rec_no = next % isam_ident->fHead.NrecPB;
-    iCache = isam_cache_block(isam_ident, block_no);
-    if (iCache < 0)
-    {
-        return -1;
-    }
-      }
     /* Now either rv != 0 - in which case there is no matching key,
        independent of next being zero or not, or rv == 0, in which
        case at least the key matches */
@@ -1483,8 +1482,8 @@ int isam_delete(isamPtr isam_ident, const char *key, const void *data)
         return -1;
     }
     if ((rec_no == 0) && (block_no < isam_ident->fHead.Nblocks)) {
-    /* This record occurs in the index, so we only mark it as deleted,
-       but keep it in the linked list */
+        /* This record occurs in the index, so we only mark it as deleted,
+           but keep it in the linked list */
         keep_link = 1;
         if (write_cache_block(isam_ident, iCache)) {
             return -1;
@@ -1503,7 +1502,7 @@ int isam_delete(isamPtr isam_ident, const char *key, const void *data)
     pCache = isam_cache_block(isam_ident, prev_block_no);
     if (pCache < 0)
     {
-    return -1;
+        return -1;
     }
     prev_valid = prev;
     prev_valid_block_no = prev_block_no;
@@ -1513,74 +1512,74 @@ int isam_delete(isamPtr isam_ident, const char *key, const void *data)
     isam_ident->cur_recno = prev_valid_rec_no;
     if (!keep_link)
     {
-    cur_head(*isam_ident)->next = next;
-    if (write_cache_block(isam_ident, pCache))
-    {
-        return -1;
-    }
-    /* The next record need not exist (we may have deleted the last)*/
-    if (next)
-    {
-        next_block_no = next / isam_ident->fHead.NrecPB;
-        next_rec_no   = next % isam_ident->fHead.NrecPB;
-        nCache = isam_cache_block(isam_ident, next_block_no);
-        if (nCache < 0)
+        cur_head(*isam_ident)->next = next;
+        if (write_cache_block(isam_ident, pCache))
         {
-        return -1;
+            return -1;
         }
-        head(*isam_ident, nCache, next_rec_no)->previous = prev;
-        if (write_cache_block(isam_ident, nCache))
+        /* The next record need not exist (we may have deleted the last)*/
+        if (next)
         {
-        return -1;
-        }
-    } else
-    {
-    /* This is likely to be the record with the maxKey; if it is,
-        maxKey must be set to that of the preceding record */
-        if (!strncmp(key, isam_ident->maxKey, isam_ident->fHead.KeyLen))
+            next_block_no = next / isam_ident->fHead.NrecPB;
+            next_rec_no   = next % isam_ident->fHead.NrecPB;
+            nCache = isam_cache_block(isam_ident, next_block_no);
+            if (nCache < 0)
+            {
+                return -1;
+            }
+            head(*isam_ident, nCache, next_rec_no)->previous = prev;
+            if (write_cache_block(isam_ident, nCache))
+            {
+                return -1;
+            }
+        } else
         {
-            memcpy(isam_ident->maxKey, key(*isam_ident, pCache, prev_rec_no),
-             isam_ident->fHead.KeyLen);
-        isam_ident->fHead.MaxKeyRec = prev;
+            /* This is likely to be the record with the maxKey; if it is,
+               maxKey must be set to that of the preceding record */
+            if (!strncmp(key, isam_ident->maxKey, isam_ident->fHead.KeyLen))
+            {
+                memcpy(isam_ident->maxKey, key(*isam_ident, pCache, prev_rec_no),
+                        isam_ident->fHead.KeyLen);
+                isam_ident->fHead.MaxKeyRec = prev;
+            }
         }
-    }
-    /* Now clear all status flags, but first ensure that the record
-       still/again is cached */
-    iCache = isam_cache_block(isam_ident, block_no);
-    if (iCache < 0)
-    {
-        return -1;
-    }
-    head(*isam_ident, iCache, rec_no)->statusFlags = 0;
-    if (write_cache_block(isam_ident, iCache))
-    {
-        return -1;
-    }
+        /* Now clear all status flags, but first ensure that the record
+           still/again is cached */
+        iCache = isam_cache_block(isam_ident, block_no);
+        if (iCache < 0)
+        {
+            return -1;
+        }
+        head(*isam_ident, iCache, rec_no)->statusFlags = 0;
+        if (write_cache_block(isam_ident, iCache))
+        {
+            return -1;
+        }
     }
     isam_ident->fHead.FileState &= ~ISAM_STATE_UPDATING;
     if (writeHead(isam_ident))
     {
-    return -1;
+        return -1;
     }
 
     /* Now make sure the previous valid record is found and cached */
     pvCache = isam_cache_block(isam_ident, prev_valid_block_no);
     if (pvCache < 0)
     {
-    return -1;
+        return -1;
     }
     while (prev_valid && (!(cur_head(*isam_ident)->statusFlags & ISAM_VALID)))
     {
-    prev_valid = cur_head(*isam_ident)->previous;
-    prev_valid_block_no = prev_valid / isam_ident->fHead.NrecPB;
-    prev_valid_rec_no   = prev_valid % isam_ident->fHead.NrecPB;
-    pvCache = isam_cache_block(isam_ident, prev_valid_block_no);
-    if (pvCache < 0)
-    {
-        return -1;
-    }
-    isam_ident->cur_id = pvCache;
-    isam_ident->cur_recno = prev_valid_rec_no;
+        prev_valid = cur_head(*isam_ident)->previous;
+        prev_valid_block_no = prev_valid / isam_ident->fHead.NrecPB;
+        prev_valid_rec_no   = prev_valid % isam_ident->fHead.NrecPB;
+        pvCache = isam_cache_block(isam_ident, prev_valid_block_no);
+        if (pvCache < 0)
+        {
+            return -1;
+        }
+        isam_ident->cur_id = pvCache;
+        isam_ident->cur_recno = prev_valid_rec_no;
     }
     return 0;
 }
@@ -1591,7 +1590,7 @@ int isam_delete(isamPtr isam_ident, const char *key, const void *data)
    be different). Here we choose the quick-and-dirty implementation,
    deleting and writing. The correct and more efficient implementation,
    where far fewer records need to be written, is left as an exercise.
-*/
+   */
 
 int isam_update(isamPtr isam_ident, const char *key, const void *old_data,
         const void *new_data)
@@ -1599,20 +1598,20 @@ int isam_update(isamPtr isam_ident, const char *key, const void *old_data,
     int rv = isam_delete(isam_ident, key, old_data);
     if (rv)
     {
-    return -1;
+        return -1;
     }
     return isam_writeNew(isam_ident, key, new_data);
 }
 
 /* Like strlen, but with a maximum length allowed.  There is "strnlen" in
    GNU libc, but it's non-standard, hence we provide our own version.
- */
+   */
 static long my_strnlen(const char* str, int maxLen)
 {
     const char* s = str;
     while (maxLen-- > 0 && *s)
     {
-    s++;
+        s++;
     }
     return s-str;
 }
@@ -1620,7 +1619,7 @@ static long my_strnlen(const char* str, int maxLen)
 /* Go through the file and collect statistics on the filling of records
    and complete blocks, separately for sequential part and for overflow
    part.  Also collect statistics on the key length used.
- */
+   */
 int isam_fileStats(isamPtr isam_ident, struct ISAM_FILE_STATS* stats) {
     int iCache;
     unsigned long block_no;
@@ -1631,7 +1630,7 @@ int isam_fileStats(isamPtr isam_ident, struct ISAM_FILE_STATS* stats) {
 
     if (testPtr(isam_ident))
     {
-    return -1;
+        return -1;
     }
 
     /* Initialise statistics.  */
@@ -1658,152 +1657,152 @@ int isam_fileStats(isamPtr isam_ident, struct ISAM_FILE_STATS* stats) {
     /* Iterate through all the blocks.  */
     for (block_no = 0; block_no < isam_ident->fHead.CurBlocks; block_no++)
     {
-    unsigned long rec_no;
+        unsigned long rec_no;
 
-    unsigned long empty = 0;
-    unsigned long used = 0;
+        unsigned long empty = 0;
+        unsigned long used = 0;
 
-    iCache = isam_cache_block(isam_ident, block_no);
-    if (iCache < 0)
-    {
-        return -1;
-    }
-
-    /* Iterate through all the records in each block.  */
-    for (rec_no = 0; rec_no < isam_ident->fHead.NrecPB; rec_no++)
-    {
-        recordHead* rec = head(*isam_ident, iCache, rec_no);
-
-        if (rec->statusFlags & ISAM_VALID)
+        iCache = isam_cache_block(isam_ident, block_no);
+        if (iCache < 0)
         {
-        /* Record is used.  Collect key length statistics.  */
-        int keyLen = my_strnlen(key(*isam_ident, iCache, rec_no),
-                    isam_ident->fHead.KeyLen);
-        used++;
-
-        if (stats->keyMin == -1 || keyLen < stats->keyMin)
-        {
-            stats->keyMin = keyLen;
+            return -1;
         }
-        if (keyLen > stats->keyMax)
+
+        /* Iterate through all the records in each block.  */
+        for (rec_no = 0; rec_no < isam_ident->fHead.NrecPB; rec_no++)
         {
-            stats->keyMax = keyLen;
+            recordHead* rec = head(*isam_ident, iCache, rec_no);
+
+            if (rec->statusFlags & ISAM_VALID)
+            {
+                /* Record is used.  Collect key length statistics.  */
+                int keyLen = my_strnlen(key(*isam_ident, iCache, rec_no),
+                        isam_ident->fHead.KeyLen);
+                used++;
+
+                if (stats->keyMin == -1 || keyLen < stats->keyMin)
+                {
+                    stats->keyMin = keyLen;
+                }
+                if (keyLen > stats->keyMax)
+                {
+                    stats->keyMax = keyLen;
+                }
+                keySum += keyLen;
+                keyNo++;
+            }
+            else if (rec->statusFlags & ISAM_SPECIAL)
+            {
+                /* Special null start record.  */
+                used++;
+            }
+            else
+            {
+                /* The record is empty.  Either it's ISAM_DELETED (being
+                   the index record), or it doesn't serve any function.  */
+                empty++;
+            }
         }
-        keySum += keyLen;
-        keyNo++;
-        }
-        else if (rec->statusFlags & ISAM_SPECIAL)
+
+        /* Collect statistics after iterating through all the records of
+           a block.  */
+        if (block_no < isam_ident->fHead.Nblocks)
         {
-        /* Special null start record.  */
-        used++;
+            /* Ordinary, sequential block.  */
+            stats->recordsRegularNEmpty += empty;
+            stats->recordsRegularNUsed += used;
+
+            if (empty == isam_ident->fHead.NrecPB)
+            {
+                stats->blocksRegularNEmpty++;
+            }
+            else if (used == isam_ident->fHead.NrecPB)
+            {
+                stats->blocksRegularNFull++;
+            }
+            else
+            {
+                stats->blocksRegularNPartial++;
+            }
+
+            if (stats->blocksRegularUsedMin == 0xffffffff ||
+                    used < stats->blocksRegularUsedMin)
+            {
+                stats->blocksRegularUsedMin = used;
+            }
+            if (used > stats->blocksRegularUsedMax)
+            {
+                stats->blocksRegularUsedMax = used;
+            }
+            blocksRegularUsedSum += used;
         }
         else
         {
-        /* The record is empty.  Either it's ISAM_DELETED (being
-           the index record), or it doesn't serve any function.  */
-        empty++;
-        }
-    }
+            /* Overflow block.  */
+            stats->recordsOverflowNEmpty += empty;
+            stats->recordsOverflowNUsed += used;
 
-    /* Collect statistics after iterating through all the records of
-       a block.  */
-    if (block_no < isam_ident->fHead.Nblocks)
-    {
-        /* Ordinary, sequential block.  */
-        stats->recordsRegularNEmpty += empty;
-        stats->recordsRegularNUsed += used;
+            if (empty == isam_ident->fHead.NrecPB)
+            {
+                stats->blocksOverflowNEmpty++;
+            }
+            else if (used == isam_ident->fHead.NrecPB)
+            {
+                stats->blocksOverflowNFull++;
+            }
+            else
+            {
+                stats->blocksOverflowNPartial++;
+            }
 
-        if (empty == isam_ident->fHead.NrecPB)
-        {
-        stats->blocksRegularNEmpty++;
+            if (stats->blocksOverflowUsedMin == 0xffffffff ||
+                    used < stats->blocksOverflowUsedMin)
+            {
+                stats->blocksOverflowUsedMin = used;
+            }
+            if (used > stats->blocksOverflowUsedMax)
+            {
+                stats->blocksOverflowUsedMax = used;
+            }
+            blocksOverflowUsedSum += used;
         }
-        else if (used == isam_ident->fHead.NrecPB)
-        {
-        stats->blocksRegularNFull++;
-        }
-        else
-        {
-        stats->blocksRegularNPartial++;
-        }
-
-        if (stats->blocksRegularUsedMin == 0xffffffff ||
-        used < stats->blocksRegularUsedMin)
-        {
-        stats->blocksRegularUsedMin = used;
-        }
-        if (used > stats->blocksRegularUsedMax)
-        {
-        stats->blocksRegularUsedMax = used;
-        }
-        blocksRegularUsedSum += used;
-    }
-    else
-    {
-        /* Overflow block.  */
-        stats->recordsOverflowNEmpty += empty;
-        stats->recordsOverflowNUsed += used;
-
-        if (empty == isam_ident->fHead.NrecPB)
-        {
-        stats->blocksOverflowNEmpty++;
-        }
-        else if (used == isam_ident->fHead.NrecPB)
-        {
-        stats->blocksOverflowNFull++;
-        }
-        else
-        {
-        stats->blocksOverflowNPartial++;
-        }
-
-        if (stats->blocksOverflowUsedMin == 0xffffffff ||
-        used < stats->blocksOverflowUsedMin)
-        {
-        stats->blocksOverflowUsedMin = used;
-        }
-        if (used > stats->blocksOverflowUsedMax)
-        {
-        stats->blocksOverflowUsedMax = used;
-        }
-        blocksOverflowUsedSum += used;
-    }
     }
 
     /* Collect statistics after iterating through all the records of all
        blocks.  Take into account the possibility that no statistics could
        have been collected.  */
     if (stats->blocksRegularNEmpty + stats->blocksRegularNFull +
-    stats->blocksRegularNPartial > 0)
+            stats->blocksRegularNPartial > 0)
     {
-    stats->blocksRegularUsedAverage = blocksRegularUsedSum /
-        (stats->blocksRegularNEmpty + stats->blocksRegularNFull +
-         stats->blocksRegularNPartial);
+        stats->blocksRegularUsedAverage = blocksRegularUsedSum /
+            (stats->blocksRegularNEmpty + stats->blocksRegularNFull +
+             stats->blocksRegularNPartial);
     }
     if (stats->blocksOverflowNEmpty + stats->blocksOverflowNFull +
-    stats->blocksOverflowNPartial)
+            stats->blocksOverflowNPartial)
     {
-    stats->blocksOverflowUsedAverage = blocksOverflowUsedSum /
-        (stats->blocksOverflowNEmpty + stats->blocksOverflowNFull +
-         stats->blocksOverflowNPartial);
+        stats->blocksOverflowUsedAverage = blocksOverflowUsedSum /
+            (stats->blocksOverflowNEmpty + stats->blocksOverflowNFull +
+             stats->blocksOverflowNPartial);
     }
     if (keyNo > 0)
     {
-    stats->keyAverage = keySum / keyNo;
+        stats->keyAverage = keySum / keyNo;
     }
     if (stats->blocksRegularUsedMin == 0xffffffff)
     {
-    stats->blocksRegularUsedMin = 0;
+        stats->blocksRegularUsedMin = 0;
     }
     if (stats->blocksOverflowUsedMin == 0xffffffff)
     {
-    stats->blocksOverflowUsedMin = 0;
+        stats->blocksOverflowUsedMin = 0;
     }
 
     /* Leave the ISAM file in a well defined state.  */
     iCache = isam_cache_block(isam_ident, 0);
     if (iCache < 0)
     {
-    return -1;
+        return -1;
     }
     isam_ident->cur_id = iCache;
     isam_ident->cur_recno = 0;
