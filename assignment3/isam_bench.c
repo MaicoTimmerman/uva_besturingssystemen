@@ -542,9 +542,9 @@ main (int argc, char *argv[])
     
     isam_cacheStats(stats);
     
-    printf("%d\n", stats->cache_call);
-    printf("%d\n", stats->disk_reads);
-    printf("%d\n", stats->disk_writes);
+    printf("Cache calls %d\n", stats->cache_call);
+    printf("Disk reads %d\n", stats->disk_reads);
+    printf("Disk writes %d\n", stats->disk_writes);
     
     free(stats);
 
