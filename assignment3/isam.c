@@ -154,6 +154,8 @@ typedef struct ISAM {
     index_handle index;         /* The handle for the index       */
     char    *cache[CACHE_SIZE];         /* Pointers to cache blocks       */
     char    * maxKey;                   /* The highest key in the file    */
+    void    * tempData;                 /* Enough to hold its data temporary */
+    char    * tempKey;                  /* Enough to hold its key temporary */
 } isam;
 
 /* Starting a file with a magic number provides a simple validity test
@@ -405,7 +407,9 @@ static int free_record_in_block(isamPtr isam_ident, int iCache)
 
 /* Strictly for debugging - print some information about a record */
 
-static void debugRecord(isamPtr f, unsigned long n, char * from) {
+static void debugRecord(isamPtr __attribute__((__unused__)) f,
+        unsigned long __attribute__((__unused__)) n,
+        char __attribute__((__unused__)) * from) {
 #ifdef DEBUG
     int ib = n / f->fHead.NrecPB;
     int ic = isam_cache_block(f, ib);
@@ -479,6 +483,15 @@ isamPtr isam_create(const char * name, unsigned long KeyLen,
     fp = makeIsamPtr(&fHead);
 
     /*
+     * Get enough space for the temporary data
+     */
+    fp->tempData = malloc(fHead.DataLen);
+    fp->tempKey = malloc(fHead.KeyLen);
+
+    assert(fp->tempData && fp->tempKey);
+
+
+    /*
      * At last - create a file
      */
     fp->fileId = open(name, O_RDWR | O_CREAT | O_EXCL, 0660);
@@ -544,7 +557,7 @@ isamPtr isam_create(const char * name, unsigned long KeyLen,
 }
 
 isamPtr
-isam_open(const char *name, int update)
+isam_open(const char *name, int __attribute__((__unused__)) update)
 {
     struct stat buf;
     isamPtr fp;
@@ -866,35 +879,25 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
        structure pointed to by isam_ident. That also saves some mallocs
        and frees */
 
-    void * tempData = malloc(isam_ident->fHead.DataLen);
-    char * tempKey = malloc(isam_ident->fHead.KeyLen);
     int rv = isam_setKey(isam_ident, key);
 
-    assert(tempData != NULL && tempKey != NULL);
+    assert(isam_ident->tempData != NULL && isam_ident->tempKey != NULL);
 
     if (rv)
     {
-        free(tempKey);
-        free(tempData);
         return -1;
     }
-    rv = isam_readNext(isam_ident, tempKey, tempData);
+    rv = isam_readNext(isam_ident, isam_ident->tempKey, isam_ident->tempData);
     if (rv)
     {
-        free(tempKey);
-        free(tempData);
         return -1;
     }
-    if (strncmp(key, tempKey, isam_ident->fHead.KeyLen))
+    if (strncmp(key, isam_ident->tempKey, isam_ident->fHead.KeyLen))
     {
         isam_error = ISAM_NO_SUCH_KEY;
-        free(tempKey);
-        free(tempData);
         return -1;
     }
-    memcpy(data, tempData, isam_ident->fHead.DataLen);
-    free(tempKey);
-    free(tempData);
+    memcpy(data, isam_ident->tempData, isam_ident->fHead.DataLen);
     return 0;
 }
 
@@ -916,8 +919,7 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
    4. An overflow record position (last block in a record, or a free slot
    in an overflow block)*/
 
-    static int
-isam_append(isamPtr isam_ident, const char * key, const void * data)
+static int isam_append(isamPtr isam_ident, const char * key, const void * data)
 {
     int block_no;
     int rec_no;
@@ -1583,6 +1585,9 @@ int isam_delete(isamPtr isam_ident, const char *key, const void *data)
         isam_ident->cur_id = pvCache;
         isam_ident->cur_recno = prev_valid_rec_no;
     }
+
+    free(isam_ident->tempData);
+    free(isam_ident->tempKey);
     return 0;
 }
 
