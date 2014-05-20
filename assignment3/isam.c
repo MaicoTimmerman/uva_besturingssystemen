@@ -882,7 +882,12 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
        It is probably better to include tempData and tempKey as part of the
        structure pointed to by isam_ident. That also saves some mallocs
        and frees */
-
+    
+    if (testPtr(isam_ident)) {
+        isam_perror(NULL);
+        return -1;
+    }
+    
     int rv = isam_setKey(isam_ident, key);
 
     assert(isam_ident->tempData != NULL && isam_ident->tempKey != NULL);
