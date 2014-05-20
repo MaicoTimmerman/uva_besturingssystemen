@@ -209,6 +209,15 @@ static isamPtr  makeIsamPtr(fileHead * fHead) {
         ipt->cache[i] = blockSize + ipt->cache[i - 1];
         ipt->blockInCache[i] = -1;
     }
+
+    /*
+     * Get enough space for the temporary data
+     */
+    ipt->tempData = malloc(fHead->DataLen);
+    ipt->tempKey = malloc(fHead->KeyLen);
+
+    assert(ipt->tempData && ipt->tempKey);
+
     return ipt;
 }
 
@@ -482,14 +491,6 @@ isamPtr isam_create(const char * name, unsigned long KeyLen,
     fHead.RecordLen = 8 * l;
     fp = makeIsamPtr(&fHead);
 
-    /*
-     * Get enough space for the temporary data
-     */
-    fp->tempData = malloc(fHead.DataLen);
-    fp->tempKey = malloc(fHead.KeyLen);
-
-    assert(fp->tempData && fp->tempKey);
-
 
     /*
      * At last - create a file
@@ -683,6 +684,9 @@ isam_close(isamPtr f)
     index_free(f->index);
     f->fHead.magic = 0;
     close(f->fileId);
+
+    free(f->tempData);
+    free(f->tempKey);
     free(f);
     return 0;
 }
@@ -1586,8 +1590,6 @@ int isam_delete(isamPtr isam_ident, const char *key, const void *data)
         isam_ident->cur_recno = prev_valid_rec_no;
     }
 
-    free(isam_ident->tempData);
-    free(isam_ident->tempKey);
     return 0;
 }
 
