@@ -885,7 +885,7 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
        
     int block_no;
     int rec_no;
-    unsigned long next, prev;
+    unsigned long next;
     int iCache;
     int rv;
     
@@ -941,8 +941,8 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
     assert(isam_ident->tempData != NULL && isam_ident->tempKey != NULL);
     
     if (cur_head(*isam_ident)->statusFlags & ISAM_VALID) {
-        memcpy(key, cur_key(*isam_ident), isam_ident->fHead.KeyLen);
-        memcpy(data, cur_data(*isam_ident), isam_ident->fHead.DataLen);
+        memcpy(isam_ident->tempKey , cur_key(*isam_ident), isam_ident->fHead.KeyLen);
+        memcpy(isam_ident->tempData, cur_data(*isam_ident), isam_ident->fHead.DataLen);
     }
     else {
         return -1;
