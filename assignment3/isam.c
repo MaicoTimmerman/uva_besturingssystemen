@@ -882,34 +882,81 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
        It is probably better to include tempData and tempKey as part of the
        structure pointed to by isam_ident. That also saves some mallocs
        and frees */
+       
+    int block_no;
+    int rec_no;
+    unsigned long next, prev;
+    int iCache;
+    int rv;
     
     if (testPtr(isam_ident)) {
-        isam_perror(NULL);
         return -1;
     }
     
-    int rv = isam_setKey(isam_ident, key);
-
+    if (key[0] == 0)
+    {
+        /* "rewind" the file to the dummy first record.*/
+        iCache = isam_cache_block(isam_ident, 0);
+        if (iCache < 0)
+        {
+            return -1;
+        }
+        isam_ident->cur_id = iCache;
+        isam_ident->cur_recno = 0;
+    }
+    else {
+        /* First find block number from index */
+        block_no = index_keyToBlock(isam_ident->index, key);
+        rec_no = 0;
+        /* Now make sure the block is in cache */
+        iCache = isam_cache_block(isam_ident, block_no);
+        if (iCache < 0)
+        {
+            return -1;
+        }
+        /* Skip all records with smaller keys */
+        while ((rv = strncmp(key, key((*isam_ident),iCache,rec_no),
+                        isam_ident->fHead.KeyLen)) > 0)
+        {
+            next = head((*isam_ident),iCache,rec_no)->next;
+            debugRecord(isam_ident, next, "setkey #1");
+            if (!next)
+            {
+                /* There is no next record */
+                break;
+            }
+            block_no = next / isam_ident->fHead.NrecPB;
+            rec_no = next % isam_ident->fHead.NrecPB;
+            iCache = isam_cache_block(isam_ident, block_no);
+            if (iCache < 0)
+            {
+                return -1;
+            }
+        }
+        
+        isam_ident->cur_id = iCache;
+        isam_ident->cur_recno = rec_no;
+    }
+    
     assert(isam_ident->tempData != NULL && isam_ident->tempKey != NULL);
+    
+    if (cur_head(*isam_ident)->statusFlags & ISAM_VALID) {
+        memcpy(key, cur_key(*isam_ident), isam_ident->fHead.KeyLen);
+        memcpy(data, cur_data(*isam_ident), isam_ident->fHead.DataLen);
+    }
+    else {
+        return -1;
+    }
 
-    if (rv)
-    {
-        return -1;
-    }
-    rv = isam_readNext(isam_ident, isam_ident->tempKey, isam_ident->tempData);
-    if (rv)
-    {
-        return -1;
-    }
     if (strncmp(key, isam_ident->tempKey, isam_ident->fHead.KeyLen))
     {
         isam_error = ISAM_NO_SUCH_KEY;
         return -1;
     }
     memcpy(data, isam_ident->tempData, isam_ident->fHead.DataLen);
+    
     return 0;
 }
-
 /* isam_append implements part of the functionality of isam_writeNew.
    It is only used when the key is larger than or equal to the largest key
    so far (this can be a key in a regular record, in a deleted first record
@@ -1402,6 +1449,8 @@ int isam_perror(const char *str) {
             break;
         case ISAM_EOF:
             msg = "End of file";
+            break;
+        default:
             break;
     }
 
