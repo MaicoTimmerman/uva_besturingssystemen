@@ -474,7 +474,8 @@ main (int argc, char *argv[])
        schrijf nieuw
        Probeer dit te herhalen.
        */
-    while (Nsleutels < maxSleutels)
+    int n_runs;
+    for(n_runs = 0; n_runs < 3; n_runs++)
     {
         leesBereik (ip, "2300", "4500", berekenDag (25, 1, 2002));
         for (i = 0, j = 0; i < 500; i++)

@@ -1,6 +1,6 @@
 CC =	gcc
 
-CFLAGS = -Wall -W -Wstrict-prototypes -O2 -ansi -g
+CFLAGS = -Wall -W -Wstrict-prototypes -O2 -ansi -g -DDebug
 DFLAGS = -D_POSIX_C_SOURCE=200809L
 
 LIBS = -lm
@@ -30,3 +30,7 @@ mt19937ar.o:	mt19937ar.c mt19937.h
 
 clean:
 	rm -f *.o *~ isam_bench isam_test core
+
+bench: isam_bench
+	rm -f klant.isam
+	./isam_bench namen initialen.txt titels.txt
