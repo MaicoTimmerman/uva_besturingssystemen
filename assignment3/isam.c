@@ -154,8 +154,6 @@ typedef struct ISAM {
     index_handle index;         /* The handle for the index       */
     char    *cache[CACHE_SIZE];         /* Pointers to cache blocks       */
     char    * maxKey;                   /* The highest key in the file    */
-    void    * tempData;                 /* Enough to hold its data temporary */
-    char    * tempKey;                  /* Enough to hold its key temporary */
 } isam;
 
 /* Starting a file with a magic number provides a simple validity test
@@ -209,14 +207,6 @@ static isamPtr  makeIsamPtr(fileHead * fHead) {
         ipt->cache[i] = blockSize + ipt->cache[i - 1];
         ipt->blockInCache[i] = -1;
     }
-
-    /*
-     * Get enough space for the temporary data
-     */
-    ipt->tempData = malloc(fHead->DataLen);
-    ipt->tempKey = malloc(fHead->KeyLen);
-
-    assert(ipt->tempData && ipt->tempKey);
 
     return ipt;
 }
@@ -661,9 +651,7 @@ isam_open(const char *name, int __attribute__((__unused__)) update)
 
 
 /* Close an isam file and release the memory used */
-
-    int
-isam_close(isamPtr f)
+int isam_close(isamPtr f)
 {
     int i;
     /* Before closing the file, we should actually make sure it has been
@@ -685,8 +673,6 @@ isam_close(isamPtr f)
     f->fHead.magic = 0;
     close(f->fileId);
 
-    free(f->tempData);
-    free(f->tempKey);
     free(f);
     return 0;
 }
@@ -882,17 +868,30 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
        It is probably better to include tempData and tempKey as part of the
        structure pointed to by isam_ident. That also saves some mallocs
        and frees */
-       
+
+    int rv;
+
+    rv = isam_seekByKey(isam_ident, key);
+    if (rv) {
+        return -1;
+    }
+    memcpy(data, cur_data(*isam_ident), isam_ident->fHead.DataLen);
+    return 0;
+}
+
+/* Search a record by its key. */
+int isam_seekByKey(isamPtr isam_ident, const char *key) {
+
     int block_no;
     int rec_no;
     unsigned long next;
     int iCache;
     int rv;
-    
+
     if (testPtr(isam_ident)) {
         return -1;
     }
-    
+
     if (key[0] == 0)
     {
         /* "rewind" the file to the dummy first record.*/
@@ -903,6 +902,7 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
         }
         isam_ident->cur_id = iCache;
         isam_ident->cur_recno = 0;
+        return 0;
     }
     else {
         /* First find block number from index */
@@ -933,30 +933,19 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
                 return -1;
             }
         }
-        
+
+        if (((strncmp(key, key((*isam_ident),iCache,rec_no), isam_ident->fHead.KeyLen)) != 0) ||
+                    (!(head((*isam_ident),iCache, rec_no)->statusFlags & ISAM_VALID ))) {
+            isam_error = ISAM_NO_SUCH_KEY;
+            return -1;
+        }
+
         isam_ident->cur_id = iCache;
         isam_ident->cur_recno = rec_no;
+        return 0;
     }
-    
-    assert(isam_ident->tempData != NULL && isam_ident->tempKey != NULL);
-    
-    if (cur_head(*isam_ident)->statusFlags & ISAM_VALID) {
-        memcpy(isam_ident->tempKey , cur_key(*isam_ident), isam_ident->fHead.KeyLen);
-        memcpy(isam_ident->tempData, cur_data(*isam_ident), isam_ident->fHead.DataLen);
-    }
-    else {
-        return -1;
-    }
-
-    if (strncmp(key, isam_ident->tempKey, isam_ident->fHead.KeyLen))
-    {
-        isam_error = ISAM_NO_SUCH_KEY;
-        return -1;
-    }
-    memcpy(data, isam_ident->tempData, isam_ident->fHead.DataLen);
-    
-    return 0;
 }
+
 /* isam_append implements part of the functionality of isam_writeNew.
    It is only used when the key is larger than or equal to the largest key
    so far (this can be a key in a regular record, in a deleted first record
@@ -974,7 +963,6 @@ int isam_readByKey(isamPtr isam_ident, const char *key, void *data) {
    the index rewritten.
    4. An overflow record position (last block in a record, or a free slot
    in an overflow block)*/
-
 static int isam_append(isamPtr isam_ident, const char * key, const void * data)
 {
     int block_no;
@@ -1008,8 +996,7 @@ static int isam_append(isamPtr isam_ident, const char * key, const void * data)
            a smaller key than the new record.
            This actually is a bit a doubtful case for append -
            let it be for now */
-        if ((rv =strncmp(key, key((*isam_ident),iCache,rec_no),
-                        isam_ident->fHead.KeyLen)))
+        if ((rv =strncmp(key, key((*isam_ident),iCache,rec_no), isam_ident->fHead.KeyLen)))
         {
             assert(rv > 0);
             /* This now implies an otherwise normal append */

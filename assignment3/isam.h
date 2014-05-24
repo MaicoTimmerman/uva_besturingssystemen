@@ -99,6 +99,17 @@ int isam_readPrev(isamPtr isam_ident, char *key, void *data);
 
 int isam_readByKey(isamPtr isam_ident, const char *key, void *data);
 
+/* isam_seekByKey will try to read a record with the requested key.
+   like an isam_setKey followed by an isam_readNext plus a check that the
+   requested key and the retrieved key are the same.
+   The parameters are:
+   isam_ident: the isamPtr for the file.
+   key:        a string containing the requested key.
+   isam_seekByKey will return 0 on success, -1 on failure.
+*/
+
+int isam_seekByKey(isamPtr isam_ident, const char *key);
+
 /* isam_update will replace the data field for a record with the given key,
    if such a record exists. As a security measure, it will verify that the
    user has the correct original data.
