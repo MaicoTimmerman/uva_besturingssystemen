@@ -29,7 +29,7 @@ mt19937ar.o:	mt19937ar.c mt19937.h
 	$(CC) $(CFLAGS) -c mt19937ar.c
 
 clean:
-	rm -f *.o *~ isam_bench isam_test core
+	rm -f *.o *~ isam_bench isam_test core *.isam
 
 bench: isam_bench
 	rm -f klant.isam
