@@ -12,10 +12,17 @@ Date: January 2002 */
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <sys/resource.h>
+#include <time.h>
+
 #include "mt19937.h"
-
-
 #include "isam.h"
+
+void print_elapsed_ru(struct rusage start, struct rusage stop);
+void print_elapsed_clock(clock_t start, clock_t stop);
+void convert_to_lower(char *dest, char *src);
+double get_sec(struct timeval data);
+int contains_numbers(char *word);
 
 
 typedef struct KLANT
@@ -322,9 +329,25 @@ poetsBestaandRecord (isamPtr ip, int sleutelNr)
     return rv;
 }
 
-    int
-main (int argc, char *argv[])
-{
+void print_elapsed_ru(struct rusage start, struct rusage stop) {
+    double tuser, tsystem;
+    tuser = get_sec(stop.ru_utime) - get_sec(start.ru_utime);
+    tsystem = get_sec(stop.ru_stime) - get_sec(start.ru_stime);
+    printf("User cpu time (s):     %f\n", tuser);
+    printf("System cpu time (s):   %f\n", tsystem);
+    printf("Total cpu time (s):    %f\n", tuser + tsystem);
+}
+
+double get_sec(struct timeval data) {
+    return data.tv_sec + data.tv_usec/1000000.0;
+}
+
+void print_elapsed_clock(clock_t start, clock_t stop) {
+    printf("seconds:               %f\n",
+            (float)(stop - start)/CLOCKS_PER_SEC);
+}
+
+int main (int argc, char *argv[]) {
     isamPtr ip;
     FILE   *inp;
     char    sleutel[20] =
@@ -332,6 +355,12 @@ main (int argc, char *argv[])
     klant   nieuweKlant;
     char    str[512];
     int     i, j;
+
+    clock_t start, stop;
+    struct rusage start_tdata, stop_tdata;
+
+    start = clock();
+    getrusage(RUSAGE_SELF, &start_tdata);
 
     memset(&nieuweKlant, 0, sizeof(nieuweKlant));
     /* Lees het bestand met namen (en voorvoegsels) */
@@ -535,6 +564,15 @@ main (int argc, char *argv[])
         leesBereik (ip, "1000", "9999", berekenDag (25, 1, 2002));
     }
     isam_close (ip);
+
+    /* stop measuring the timing */
+    stop = clock();
+    getrusage(RUSAGE_SELF, &stop_tdata);
+    printf("cleanup Timings\n");
+    printf("clock() timing:\n");
+    print_elapsed_clock(start, stop);
+    printf("rusage() timing:\n");
+    print_elapsed_ru(start_tdata, stop_tdata);
 
     struct ISAM_CACHE_STATS* stats = malloc(3 * sizeof(int));
     stats->cache_call = 0;
